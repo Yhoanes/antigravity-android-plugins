@@ -58,13 +58,13 @@
         "description": "Android ARM64 headless Chromium automation, DOM/network inspection, and Core Web Vitals debugging via Chrome DevTools MCP.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip?v=1.10.3",
-            "sha256": "7955b146f073095ac9e28723a85803de0a11ca9699d7babc66fae91f5ecb3ab9"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip?v=1.10.4",
+            "sha256": "51708a163158433c6eced6cfeef6fbdee035d5d171f51b73c044ff736393967b"
           }
         },
         "plugin": {},
         "logo": "https://www.gstatic.com/images/branding/productlogos/chrome/v7/192px.svg",
-        "version": "1.10.3-android",
+        "version": "1.10.4-android",
         "_androidNative": true
       },
       {
@@ -74,13 +74,13 @@
         "description": "On-device Android CLI (`android` bridge + Shizuku `rish`), official skills & Android Knowledge Base adapted for ARM64.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip?v=1.0.16625372",
-            "sha256": "5b860c28c2001bec91e76c758c308d9f32683439ddae2824753022c04627d788"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip?v=1.0.16625373",
+            "sha256": "527eb08becc331084b3d314d807910167edde3d9167b8323def853a3ef626e7e"
           }
         },
         "plugin": {},
         "logo": "https://www.gstatic.com/antigravity/plugins/android-cli-plugin/assets/logo.png?v=9d8234ff50a7",
-        "version": "1.0.16625372-android",
+        "version": "1.0.16625373-android",
         "_androidNative": true
       },
       {
@@ -90,13 +90,13 @@
         "description": "Curated collection of agent skills for science tasks.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip?v=1.3.1",
-            "sha256": "dc5997a5cdc281098e984d0edce6068abe0f2ee5b213ed7a3728aecfa348e3b0"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip?v=1.3.2",
+            "sha256": "72377c4da2b6d7951bd063ac6491440f5111320d8aaf85feb9c1f685589fcac8"
           }
         },
         "plugin": {},
         "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
-        "version": "1.3.1-android",
+        "version": "1.3.2-android",
         "_androidNative": true
       }
     ],
@@ -222,13 +222,13 @@
         "description": "Android ARM64 headless Chromium automation, DOM/network inspection, and Core Web Vitals debugging via Chrome DevTools MCP.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip?v=1.10.3",
-            "sha256": "7955b146f073095ac9e28723a85803de0a11ca9699d7babc66fae91f5ecb3ab9"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip?v=1.10.4",
+            "sha256": "51708a163158433c6eced6cfeef6fbdee035d5d171f51b73c044ff736393967b"
           }
         },
         "plugin": {},
         "logo": "https://www.gstatic.com/images/branding/productlogos/chrome/v7/192px.svg",
-        "version": "1.10.3-android",
+        "version": "1.10.4-android",
         "_androidNative": true
       },
       "plugin": {
@@ -261,7 +261,7 @@
         ],
         "description": "Reliable automation, in-depth debugging, and performance analysis in Chrome using Chrome DevTools and Puppeteer",
         "logo": "https://www.gstatic.com/images/branding/productlogos/chrome/v7/192px.svg",
-        "version": "1.10.3-android",
+        "version": "1.10.4-android",
         "displayName": "Chrome DevTools",
         "mcpServers": [
           {
@@ -281,13 +281,13 @@
         "description": "On-device Android CLI (`android` bridge + Shizuku `rish`), official skills & Android Knowledge Base adapted for ARM64.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip?v=1.0.16625372",
-            "sha256": "5b860c28c2001bec91e76c758c308d9f32683439ddae2824753022c04627d788"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip?v=1.0.16625373",
+            "sha256": "527eb08becc331084b3d314d807910167edde3d9167b8323def853a3ef626e7e"
           }
         },
         "plugin": {},
         "logo": "https://www.gstatic.com/antigravity/plugins/android-cli-plugin/assets/logo.png?v=9d8234ff50a7",
-        "version": "1.0.16625372-android",
+        "version": "1.0.16625373-android",
         "_androidNative": true
       },
       "plugin": {
@@ -309,7 +309,7 @@
         "description": "Core tools and knowledge required to develop for Android.",
         "readme": "<p align=\"center\">\n  <img src=\"assets/logo.png\" alt=\"Android CLI Logo\" width=\"180\" />\n</p>\n\n# Android CLI\n\n**Android CLI** is the official command-line interface that standardizes core Android development competencies for agent-first workflows. It gives coding agents and developers an entry point to the official tools, skills, and documentation needed to build for Android efficiently.\n\nWhether you are scaffolding a new app, launching virtual devices, running fast incremental builds, inspecting live device layouts, or evaluating user journeys, the Android CLI streamlines development directly from your workspace.\n\n---\n\n## 🚀 Key Capabilities\n\n### 🛠️ Project Scaffolding\n- Initialize modern Android projects from official templates using `android create`.\n- Pre-configured with the latest Android Gradle Plugin (AGP), Jetpack Compose, and best practices.\n- Print environment information including SDK location, connected devices, and configuration variables using `android info` (use specific fields to narrow the output).\n\n### 📱 Device & Emulator Management\n- Inspect, create, and launch Android Virtual Devices (AVDs) directly from the terminal with `android emulator`.\n- Deploy and launch applications with fast delta installs using `android run`.\n\n### 🧠 Agent Skills Management\n- The `android skills` command provides an official way to discover, install, update, and manage recommended skills.\n- Skills installed using this command aren't removed if the Android plugin for Antigravity is uninstalled.\n\n### 🔍 UI Layout Inspection & Screen Analysis\n- Extract the live application layout tree in structured JSON using `android layout`.\n- Inspect UI hierarchies, interactive bounds, accessibility attributes, and focus states.\n- Capture device screenshots and resolve visual coordinates for automated interactions using `android screen`.\n\n### 🧪 Journey Testing\n- Test end-to-end user flows with Journey tests defined using natural language, using `android layout` and visual verification.\n- Output structured Markdown reports detailing pass/fail statuses, ADB interaction commands, and verification screenshots.\n\n### 📚 Official Android Knowledge Base\n- Search authoritative, up-to-date Android developer documentation directly from the CLI via `android docs search \"<query>\"`.\n- Fetch full articles and migration guides using `android docs fetch kb://...`.\n\n### 🖥️ Device Hub & Compose Preview Panes\n- **Android Device Hub**: list, start, stop, create, and remove Android Virtual Devices, and mirror and control emulators and physical devices connected to adb, in a side pane.\n- **Android Compose Preview**: render Jetpack Compose `@Preview` functions with `android preview` and review the results in a side pane.\n- Both panes are served by the Android CLI (`android sidecar run <name>`), which downloads their implementation on first use.\n\n---\n\n## 📦 On-Device Android ARM64 Setup (Antigravity for Android)\n\nOn **Antigravity for Android (`aarch64`)**, the native on-device `android` CLI bridge is **bundled and pre-installed automatically** at `$HOME/runtime/bin/android` — no external desktop installer is needed.\n\n1. Enable **Shizuku** on your Android device (via Wireless Debugging) whenever you want live UI inspection, screenshots, or silent APK installs.\n2. Verify connection status from the Antigravity terminal or chat:\n   ```bash\n   android --version\n   android status\n   ```\n\n> [!IMPORTANT]\n> Do **not** run desktop `linux_x86_64/install.sh` scripts on Android Bionic ARM64 devices; use the bundled `android` bridge + `rish` directly.\n\n---\n\n## 💡 Starter Prompts\n\nOnce enabled, try asking your agent:\n\n1. **Creating a new Android project**:\n   > *\"Create a new Android project called MyFirstApp using the empty-activity template\"*\n\n2. **Running on a device**:\n   > *\"Run my app on a Samsung Galaxy Ultra device.\"*\n\n3. **Testing & Play readiness**:\n   > *\"Test my app and make sure that it's ready to publish to Google Play.\"*\n\n---\n\n## 📖 Command Reference\n\n| Command | Description |\n| :--- | :--- |\n| `android create` | Initialize a new Android project from available templates. |\n| `android describe` | Generate descriptive build target and artifact metadata for a project. |\n| `android run` | Build, deploy, and launch an application on a connected device or emulator. |\n| `android layout` | Returns the active UI layout tree in JSON format (supports `--pretty` and `--diff`). |\n| `android screen` | Commands to view, capture, and target UI elements visually on device. |\n| `android emulator` | Create, start, stop, and list Android Virtual Devices (AVDs). |\n| `android sdk` | Manage Android SDK packages, platforms, and build tools. |\n| `android docs` | Search and fetch documentation from the official Android Knowledge Base. |\n| `android info` | Print environment information including SDK location, connected devices, and configuration variables. Use specific fields to narrow the output. |\n| `android init` | Initialize the environment and install default Android CLI agent skills (skills that are installed aren't removed if the Android plugin for Antigravity is uninstalled). |\n| `android skills` | Manage Android CLI skills (search, add, remove, list, update). Skills that are installed aren't removed if the Android plugin for Antigravity is uninstalled. |\n| `android update` | Update the Android CLI to the latest version. |\n\n---\n\nFor more documentation, visit [developer.android.com/tools/agents/android-cli](https://developer.android.com/tools/agents/android-cli).\n",
         "logo": "https://www.gstatic.com/antigravity/plugins/android-cli-plugin/assets/logo.png?v=9d8234ff50a7",
-        "version": "1.0.16625372-android",
+        "version": "1.0.16625373-android",
         "suggestedPrompts": [
           "Create a new Android project called MyFirstApp using the empty-activity template",
           "Run my app on a Samsung Galaxy Ultra device.",
@@ -326,13 +326,13 @@
         "description": "Curated collection of agent skills for science tasks.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip?v=1.3.1",
-            "sha256": "dc5997a5cdc281098e984d0edce6068abe0f2ee5b213ed7a3728aecfa348e3b0"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip?v=1.3.2",
+            "sha256": "72377c4da2b6d7951bd063ac6491440f5111320d8aaf85feb9c1f685589fcac8"
           }
         },
         "plugin": {},
         "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
-        "version": "1.3.1-android",
+        "version": "1.3.2-android",
         "_androidNative": true
       },
       "plugin": {
@@ -521,7 +521,7 @@
         "description": "Curated collection of agent skills for science tasks.",
         "readme": "![Science Plugin: scientific tools for your agent](https://www.gstatic.com/antigravity/buildWithGoogle/science/banner.png)\n\n# Science Plugin\n\nA collection of extensions (e.g. skills) for scientific research tasks, spanning\ngenomics, structural biology, cheminformatics, scientific literature, and more.\n\nEach extension provides structured instructions, scripts, and resources that\nextend Antigravity's capabilities for specialized scientific tasks.\n\n## Usage\n\n### Prerequisites\n\nWe use the `uv` package manager to handle dependencies. The first time you\ntrigger an extension in the Science Plugin, the agent will ask for approval to\ninstall `uv`, and then proceed to respond to your scientific query / task. We\nrecommend restarting Antigravity after this first time installation.\n\nSome skills, such as AlphaGenome and OpenAlex, require an API key to function.\nOthers, such as ClinVar, benefit from an API key to unlock higher rate limits\nbut are still functional without one. The agent should prompt you to obtain the\nAPI key and guide you through writing in the correct location. However, if you\nwould rather do this yourself, you can run a command like this in your terminal:\n`echo \"ALPHAGENOME_API_KEY=your_actual_api_key\" >> ~/.env`\n\n### Customizing or creating extensions\n\nIf you want to customize an existing extension or create a new extension of your\nown, you should **not** modify the files inside the Science Plugin installation\ndirectory, as your changes will be overwritten whenever the Science Plugin is\nupdated. Instead, place your custom or modified extensions elsewhere, e.g.\nskills can be placed in your personal skills directory:\n\n```\n~/.gemini/config/skills/\n```\n\n## Learn More\n\nYou can find examples of Science Plugin use cases, including demos, at\n[antigravity.google/use-cases/science](https://antigravity.google/use-cases/science).\n\n## Licensing & Disclaimer\n\nCopyright 2026 Google LLC\n\nAll software is licensed under the Apache License, Version 2.0 (Apache 2.0); you\nmay not use this file except in compliance with the Apache 2.0 license. You may\nobtain a copy of the Apache 2.0 license at:\nhttps://www.apache.org/licenses/LICENSE-2.0\n\nAs set out in the attached file\n‘[Skill Licences and Terms of Use](SKILL_LICENSES.md)’ certain third party data\nsources referenced within individual Skill files have their own applicable\nlicenses and/or terms of use. See the\n‘[Skill Licences and Terms of Use](SKILL_LICENSES.md)’ file for more\ninformation. You are responsible for ensuring that your use of individual Skill\nfiles complies with any such applicable licenses/ terms of use.\n\nAll other materials are licensed under the Creative Commons Attribution 4.0\nInternational License (CC-BY). You may obtain a copy of the CC-BY license at:\nhttps://creativecommons.org/licenses/by/4.0/legalcode\n\nUnless required by applicable law or agreed to in writing, all software and\nmaterials distributed here under the Apache 2.0 or CC-BY licenses are\ndistributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,\neither express or implied. See the licenses for the specific language governing\npermissions and limitations under those licenses.\n",
         "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
-        "version": "1.3.1-android",
+        "version": "1.3.2-android",
         "displayName": "Science"
       }
     },
