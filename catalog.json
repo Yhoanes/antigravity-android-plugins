@@ -42,13 +42,13 @@
         "description": "91 native ARM64 GitHub MCP tools (repos, PRs, code review, issues, Actions CI/CD, code search & security) + 1-command Bionic Git/GH OAuth bridge — 100% local on Android without Docker.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/github.zip?v=2.1.0",
-            "sha256": "4db806e704b805d61b1bf005d7512dfe4309718f1f1fa3529c09d763ea79851d"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/github.zip?v=2.1.1",
+            "sha256": "5637cc5f6f353c9cabbd5b4f51e06c64c5f7cdd8d8a2db7c0c7e3be2107cb183"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/logo.svg",
-        "version": "2.1.0-android",
+        "version": "2.1.1-android",
         "_androidNative": true
       },
       {
@@ -533,22 +533,22 @@
         "description": "91 native ARM64 GitHub MCP tools (repos, PRs, code review, issues, Actions CI/CD, code search & security) + 1-command Bionic Git/GH OAuth bridge — 100% local on Android without Docker.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/github.zip?v=2.1.0",
-            "sha256": "4db806e704b805d61b1bf005d7512dfe4309718f1f1fa3529c09d763ea79851d"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/github.zip?v=2.1.1",
+            "sha256": "5637cc5f6f353c9cabbd5b4f51e06c64c5f7cdd8d8a2db7c0c7e3be2107cb183"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/logo.svg",
-        "version": "2.1.0-android",
+        "version": "2.1.1-android",
         "_androidNative": true
       },
       "plugin": {
         "name": "github",
         "displayName": "GitHub",
-        "version": "2.1.0-android",
+        "version": "2.1.1-android",
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/github/logo.svg",
         "description": "91 native ARM64 GitHub MCP tools (repos, PRs, code review, issues, Actions CI/CD, code search & security) + 1-command Bionic Git/GH OAuth bridge — 100% local on Android without Docker.",
-        "readme": "# GitHub (`v2.1.0-android`) — Servidor MCP Nativo ARM64 + Puente Git/OAuth para Android\n\nPlugin oficial nativo **ARM64 (`aarch64`)** para **Antigravity for Android** que ejecuta localmente el motor oficial **`github-mcp-server` (`v2.1.0`) con sus 91 herramientas MCP** sin requerir Docker, integrando además detección automática de sesión (`gh` / `.netrc` / PAT) y parches Bionic para `git` y `gh`.\n\n---\n\n## ¿Por qué este plugin nativo en Android?\n\nEn escritorio, la integración local de GitHub suele requerir **Docker** (`ghcr.io/github/github-mcp-server`), lo cual no puede ejecutarse en teléfonos Android sin root. Esta edición **`Built for Android`** incluye:\n\n| Componente | Descripción |\n| :--- | :--- |\n| **`github-mcp-server` (`v2.1.0` ARM64)** | Binario nativo `aarch64` con los **21 toolsets activados (91 herramientas MCP)**: Repositorios, Ramas, Commits, Pull Requests, Code Review, Issues, GitHub Actions CI/CD, Dependabot, Code Security, Discussions, Gists y Proyectos. |\n| **Auto-Detección de Credenciales (`<2 ms`)** | `start-mcp.sh` detecta automáticamente tu sesión existente en `~/.config/gh/hosts.yml`, `~/.netrc`, `~/.config/github-mcp/token` o variables `GITHUB_PERSONAL_ACCESS_TOKEN` / `GH_TOKEN`. |\n| **`github-mcp-setup` (1 Comando)** | Instala `git` + `gh` si faltan, abre el login OAuth (`https://github.com/login/device`) directo en el navegador de Android vía `xdg-open` y configura `GODEBUG=netdns=cgo`, `GIT_EXEC_PATH` y `~/.netrc` (`0600`) para que `git push` nunca falle por `/bin/sh` ni DNS. |\n| **Modo Zero-Day Siempre En Verde** | Si lo instalas en un teléfono nuevo sin cuenta vinculada, el servidor MCP arranca en `<1s` en verde y guía el inicio de sesión con `github_android_status`. |\n\n---\n\n## Activación Rápida\n\n1. Instálalo con un toque desde **Customizations &rarr; Marketplace &rarr; Built for Android &rarr; GitHub**.\n2. Si ya iniciaste sesión con `gh` en el dispositivo, **las 91 herramientas quedan activas al instante**.\n3. Si aún no has vinculado tu cuenta de GitHub, ejecuta una vez:\n\n```bash\ngithub-mcp-setup\n```\n",
+        "readme": "# GitHub (`v2.1.1-android`) — Servidor MCP Nativo ARM64 + Puente Git/OAuth para Android\n\nPlugin oficial nativo **ARM64 (`aarch64`)** para **Antigravity for Android** que ejecuta localmente el motor oficial **`github-mcp-server` (`v2.1.0`) con sus 91 herramientas MCP** sin requerir Docker, integrando además detección automática de sesión (`gh` / `.netrc` / PAT) y parches Bionic para `git` y `gh`.\n\n---\n\n## ¿Por qué este plugin nativo en Android?\n\nEn escritorio, la integración local de GitHub suele requerir **Docker** (`ghcr.io/github/github-mcp-server`), lo cual no puede ejecutarse en teléfonos Android sin root. Esta edición **`Built for Android`** incluye:\n\n| Componente | Descripción |\n| :--- | :--- |\n| **`github-mcp-server` (`v2.1.0` ARM64)** | Binario nativo `aarch64` con los **21 toolsets activados (91 herramientas MCP)**: Repositorios, Ramas, Commits, Pull Requests, Code Review, Issues, GitHub Actions CI/CD, Dependabot, Code Security, Discussions, Gists y Proyectos. |\n| **Auto-Detección de Credenciales (`<2 ms`)** | `start-mcp.sh` detecta automáticamente tu sesión existente en `~/.config/gh/hosts.yml`, `~/.netrc`, `~/.config/github-mcp/token` o variables `GITHUB_PERSONAL_ACCESS_TOKEN` / `GH_TOKEN`. |\n| **`github-mcp-setup` (1 Comando)** | Instala `git` + `gh` si faltan, abre el login OAuth (`https://github.com/login/device`) directo en el navegador de Android vía `xdg-open` y configura `GODEBUG=netdns=cgo`, `GIT_EXEC_PATH` y `~/.netrc` (`0600`) para que `git push` nunca falle por `/bin/sh` ni DNS. |\n| **Modo Zero-Day Siempre En Verde** | Si lo instalas en un teléfono nuevo sin cuenta vinculada, el servidor MCP arranca en `<1s` en verde y guía el inicio de sesión con `github_android_status`. |\n\n---\n\n## Activación Rápida\n\n1. Instálalo con un toque desde **Customizations &rarr; Marketplace &rarr; Built for Android &rarr; GitHub**.\n2. Si ya iniciaste sesión con `gh` en el dispositivo, **las 91 herramientas quedan activas al instante**.\n3. Si aún no has vinculado tu cuenta de GitHub, ejecuta una vez:\n\n```bash\ngithub-mcp-setup\n```\n",
         "skills": [
           {
             "name": "github",
@@ -560,7 +560,7 @@
             "serverName": "github",
             "originalServerName": "github",
             "pluginName": "github",
-            "pluginVersion": "2.1.0-android"
+            "pluginVersion": "2.1.1-android"
           }
         ],
         "suggestedPrompts": [
