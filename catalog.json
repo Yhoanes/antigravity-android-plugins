@@ -1,0 +1,816 @@
+{
+  "schema": 1,
+  "featured": [
+    {
+      "id": "android-featured-hero",
+      "eyebrow": "Featured · Built for Android",
+      "memberIds": [
+        "antigravity-plugins-official/plugin/agy-video-studio",
+        "antigravity-plugins-official/plugin/chrome-devtools-plugin"
+      ]
+    }
+  ],
+  "search": {
+    "customizations": [
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/agy-video-studio",
+        "displayName": "AGY Video Studio",
+        "description": "Universal native ARM64 Android video studio: 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via GPU h264_mediacodec, neural ES/EN/PT voiceover, rootless CapCut drafts & Shizuku.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip",
+            "sha256": "c376e72987e4a9a5ea602a86e2bdc37698fa4bb6bbd0965da2bdd665abc35392"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
+        "version": "2.1.2",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/chrome-devtools-plugin",
+        "displayName": "Chrome DevTools",
+        "description": "Android ARM64 headless Chromium automation, DOM/network inspection, and Core Web Vitals debugging via Chrome DevTools MCP.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip",
+            "sha256": "1f0c4e035d8457c05a568d6b66af15388eaec27e0260d0e5e3f57c3f093e59fc"
+          }
+        },
+        "plugin": {},
+        "logo": "https://www.gstatic.com/images/branding/productlogos/chrome/v7/192px.svg",
+        "version": "1.10.1-android",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/android-cli-plugin",
+        "displayName": "Android CLI",
+        "description": "Official Android development skills & Knowledge Base adapted for on-device ARM64 + Shizuku (rish) workflows.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip",
+            "sha256": "5cde18019c1abb0e0c8290ce77a249970110899233274b17f5c1f24327de5001"
+          }
+        },
+        "plugin": {},
+        "logo": "https://www.gstatic.com/antigravity/plugins/android-cli-plugin/assets/logo.png?v=9d8234ff50a7",
+        "version": "1.0.16625370-android",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/science",
+        "displayName": "Science",
+        "description": "Curated collection of agent skills for science tasks.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip",
+            "sha256": "ca7f1a4cba3f6d00ee5f3ec5748206dc9311b005ebde2e333654470b59f1caf7"
+          }
+        },
+        "plugin": {},
+        "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
+        "version": "1.3.0-android",
+        "_androidNative": true
+      }
+    ],
+    "groups": [
+      {
+        "id": "built-for-android",
+        "displayName": "Built for Android",
+        "description": "Native ARM64 plugins engineered specifically for Android, MediaCodec GPU acceleration, headless Chromium, and Shizuku.",
+        "memberIds": [
+          "antigravity-plugins-official/plugin/agy-video-studio",
+          "antigravity-plugins-official/plugin/chrome-devtools-plugin",
+          "antigravity-plugins-official/plugin/android-cli-plugin"
+        ]
+      }
+    ]
+  },
+  "details": {
+    "antigravity-plugins-official/plugin/agy-video-studio": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/agy-video-studio",
+        "displayName": "AGY Video Studio",
+        "description": "Universal native ARM64 Android video studio: 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via GPU h264_mediacodec, neural ES/EN/PT voiceover, rootless CapCut drafts & Shizuku.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip",
+            "sha256": "c376e72987e4a9a5ea602a86e2bdc37698fa4bb6bbd0965da2bdd665abc35392"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
+        "version": "2.1.2",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "agy-video-studio",
+        "displayName": "AGY Video Studio",
+        "version": "2.1.2",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
+        "description": "Universal native ARM64 Android video studio: 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via GPU h264_mediacodec, neural ES/EN/PT voiceover, rootless CapCut drafts & Shizuku.",
+        "readme": "# AGY Video Studio v2.1.2 — Estudio Universal de Video para Antigravity Android\n\n**`agy-video-studio` (`v2.1.2.2`)** es un plugin MCP **100 % independiente y todo-terreno** diseñado para **Antigravity for Android (ARM64 Bionic + Shizuku `rish`)** (y compatible con PC). Sirve para editar **cualquier tipo de video y cualquier formato**.\n\n---\n\n## ¿Qué tipos de video puedes crear y editar?\n\n| Tipo de Video | Formato(s) | Herramienta Principal | Funciones Destacadas |\n| :--- | :--- | :--- | :--- |\n| **YouTube Horizontal, Cursos y Tutoriales** | `16:9` (`1920×1080`) | `video_universal_edit` | Cámara flotante *Facecam* (`pip_corner`), plecas de nombre (`lower_thirds`), transiciones `xfade`, mezcla de fotos + clips y música con *ducking* bajo tu voz real. |\n| **Vlogs de Cámara, Viajes y Cine** | `16:9`, `9:16`, `4:5`, `21:9` | `video_universal_edit` | Etalonaje de color (`cinematic_teal_orange`, `warm_vlog`, `moody_matte`, `bw_film`), subtítulos de cine (`cinema_yellow`) y limpieza de micrófono (`enhance_speech`). |\n| **Podcasts, Entrevistas y Gaming** | `9:16` o `16:9` | `video_universal_edit` + `video_smart_autocut` | Pantalla dividida 50/50 (`split_vertical`), eliminación automática de silencios (`silencedetect`) y mejora de voz de estudio (`podcast_voice_enhance`). |\n| **Canales *Faceless* / Documentales / Historias** | `16:9` o `9:16` | `audio_studio_generate` + `video_universal_edit` | Voz neuronal (`ES`/`EN`/`PT`) sincronizada al milisegundo + música `cinematic_epic` o `lofi_vlog` sin copyright + fotos con *Ken Burns*. |\n| **TikToks, Reels y Shorts Virales** | `9:16` (`1080×1920`) | `video_render_viral_tiktok` / `video_universal_edit` | *Zoom punches*, *speed-ramps*, encuadre `blurred_bg` (para pasar clips `16:9` a `9:16`) y subtítulos animados `Outfit Bold`. |\n| **Tráilers de Apps y Presentaciones** | `9:16` y `16:9` | `video_render_keynote_trailer` | Marcos en titanio cepillado, degradados ópticos estilo Google Gemini y lupas flotantes (`pip_crop`) sin usar navegador. |\n| **Utilidades Rápidas del Día a Día** | Todos | `video_utility_ops` | Compresión exacta en MB para WhatsApp/Discord (`compress_social`), miniaturas con título para YouTube (`cover_thumbnail`), extracción MP3/WAV y GIFs. |\n| **Proyectos Editables en CapCut Android** | `16:9`, `9:16`, `1:1`, `4:5` | `capcut_export_draft` | Inyección multipista **sin root** en CapCut Mobile vía Shizuku conservando el `draft_id` de SQLite. |\n\n---\n\n## Las 14 Herramientas MCP Incluidas\n\n1. `video_environment_status`: Diagnóstico de ARM64, GPU `h264_mediacodec`, fuentes offline, Shizuku y apps instaladas.\n2. `video_probe_and_scenes`: Detección rápida de escenas (`scdet`), silencios (`silencedetect`) y pausas congeladas (`freezedetect`).\n3. `video_smart_autocut`: Recorte automático de silencios de voz o pantallas muertas.\n4. `video_universal_edit`: Editor multipropósito (`16:9`, `9:16`, `1:1`, `4:5`, `source`) con transiciones `xfade`, color grading, *Split-Screen*, *Facecam PiP*, *lower-thirds* y audio de cámara conservado.\n5. `video_utility_ops`: Limpieza de micrófono a `-16 LUFS`, compresión para WhatsApp/redes, portadas/miniaturas con texto, extracción de audio y GIFs.\n6. `audio_studio_generate`: Locución neuronal (`ES`/`EN`/`PT`) + subtítulos exactos + 5 estilos musicales libres de copyright (`lofi_vlog`, `cinematic_epic`, `gemini_keynote`, `deep_tech_pulse`, `minimal_pad`).\n7. `video_render_keynote_trailer`: Motor de presentaciones estilo Google/Apple (`9:16` vertical y `16:9` horizontal a 2 columnas).\n8. `video_render_viral_tiktok`: Renderizador rápido de formato corto con *zoom punches* y subtítulos `.ass`.\n9. `capcut_android_list_drafts`: Lista proyectos existentes de CapCut Android vía Shizuku (`rish`) o PC.\n10. `capcut_export_draft`: Inyección multipista sin root en CapCut Android (`16:9`, `9:16`, `1:1`, `4:5`).\n11. `android_screen_record`: Grabación por hardware (`start` en segundo plano / `stop` limpio con `SIGINT` / `timed`).\n12. `android_ui_inspect`: Lectura en vivo de botones y coordenadas en pantalla vía `uiautomator`.\n13. `android_ui_action`: Toques autónomos (`tap`, `tap_text`, `swipe`, `text`, `keyevent`, `launch_app`).\n14. `android_media_and_intent`: Refresco inmediato en Galería (`MediaStore`) y apertura directa en TikTok, YouTube, Instagram, VN o CapCut.\n\n---\n\n## Instalación en Antigravity for Android (1 Comando)\n\nCopia `agy-video-studio-v2.1.2.2-android.tar.gz` a la carpeta `Download` de tu teléfono Android y ejecuta en la terminal de Antigravity:\n\n```sh\nmkdir -p ~/tmp_plugin && tar -xzf /sdcard/Download/agy-video-studio-v2.1.2.2-android.tar.gz -C ~/tmp_plugin\nsh ~/tmp_plugin/agy-video-studio/install-plugin.sh\nagy-video-setup\n```\n",
+        "skills": [
+          {
+            "name": "agy-video-studio",
+            "description": "Universal native Android ARM64 video production studio (v2.1.2): 16:9 YouTube, Vlogs, Split-Screen Podcasts, Facecam PiP, 9:16 Reels/TikTok & 60fps Keynote trailers with GPU h264_mediacodec, neural voice/music, rootless CapCut drafts & Shizuku."
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "agy-video-studio",
+            "originalServerName": "agy-video-studio",
+            "pluginName": "agy-video-studio",
+            "pluginVersion": "2.1.2"
+          }
+        ],
+        "suggestedPrompts": [
+          "Run agy-video-setup and check my phone's GPU h264_mediacodec & Shizuku status",
+          "Create a 60fps 9:16 TikTok/Reels trailer with neural Spanish voiceover and background music",
+          "Auto-cut silences from my camera vlog in /sdcard/DCIM and export an editable CapCut draft"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/chrome-devtools-plugin": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/chrome-devtools-plugin",
+        "displayName": "Chrome DevTools",
+        "description": "Android ARM64 headless Chromium automation, DOM/network inspection, and Core Web Vitals debugging via Chrome DevTools MCP.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip",
+            "sha256": "1f0c4e035d8457c05a568d6b66af15388eaec27e0260d0e5e3f57c3f093e59fc"
+          }
+        },
+        "plugin": {},
+        "logo": "https://www.gstatic.com/images/branding/productlogos/chrome/v7/192px.svg",
+        "version": "1.10.1-android",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "chrome-devtools-plugin",
+        "skills": [
+          {
+            "name": "a11y-debugging",
+            "description": "Uses Chrome DevTools MCP for accessibility (a11y) debugging and auditing based on web.dev guidelines. Use when testing semantic HTML, ARIA labels, focus states, keyboard navigation, tap targets, and color contrast.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/chrome-devtools-plugin/0.21.0/skills/a11y-debugging/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "chrome-devtools",
+            "description": "Uses Chrome DevTools via MCP for efficient debugging, troubleshooting and browser automation. Use when debugging web pages, automating browser interactions, analyzing performance, or inspecting network requests. This skill does not apply to `--slim` mode (MCP configuration).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/chrome-devtools-plugin/0.21.0/skills/chrome-devtools/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "debug-optimize-lcp",
+            "description": "Guides debugging and optimizing Largest Contentful Paint (LCP) using Chrome DevTools MCP tools. Use this skill whenever the user asks about LCP performance, slow page loads, Core Web Vitals optimization, or wants to understand why their page's main content takes too long to appear. Also use when the user mentions \"largest contentful paint\", \"page load speed\", \"CWV\", or wants to improve how fast their hero image or main content renders.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/chrome-devtools-plugin/0.21.0/skills/debug-optimize-lcp/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "memory-leak-debugging",
+            "description": "Diagnoses and resolves memory leaks in JavaScript/Node.js applications. Use when a user reports high memory usage, OOM errors, or wants to analyze heapsnapshots or run memory leak detection tools like memlab.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/chrome-devtools-plugin/0.21.0/skills/memory-leak-debugging/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "troubleshooting",
+            "description": "Uses Chrome DevTools MCP and documentation to troubleshoot connection and target issues. Trigger this skill when list_pages, new_page, or navigate_page fail, or when the server initialization fails.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/chrome-devtools-plugin/0.21.0/skills/troubleshooting/SKILL.md"
+                ]
+              }
+            }
+          }
+        ],
+        "description": "Reliable automation, in-depth debugging, and performance analysis in Chrome using Chrome DevTools and Puppeteer",
+        "logo": "https://www.gstatic.com/images/branding/productlogos/chrome/v7/192px.svg",
+        "version": "1.10.1-android",
+        "displayName": "Chrome DevTools"
+      }
+    },
+    "antigravity-plugins-official/plugin/android-cli-plugin": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/android-cli-plugin",
+        "displayName": "Android CLI",
+        "description": "Official Android development skills & Knowledge Base adapted for on-device ARM64 + Shizuku (rish) workflows.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip",
+            "sha256": "5cde18019c1abb0e0c8290ce77a249970110899233274b17f5c1f24327de5001"
+          }
+        },
+        "plugin": {},
+        "logo": "https://www.gstatic.com/antigravity/plugins/android-cli-plugin/assets/logo.png?v=9d8234ff50a7",
+        "version": "1.0.16625370-android",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "android-cli-plugin",
+        "skills": [
+          {
+            "name": "android-cli",
+            "description": "Provides instructions for installing and using the `android` CLI. The `android` command-line tool is a critical tool for Android development and helps you create new Android projects, run Android apps on devices, manage and interact with Android virtual devices (including screenshots and UI inspection), manage Android SDK components, look up official Android documentation, and discover and install official Android skills.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/android-cli-plugin/1.0.16500706/skills/SKILL.md"
+                ]
+              }
+            }
+          }
+        ],
+        "description": "Core tools and knowledge required to develop for Android.",
+        "readme": "<p align=\"center\">\n  <img src=\"assets/logo.png\" alt=\"Android CLI Logo\" width=\"180\" />\n</p>\n\n# Android CLI\n\n**Android CLI** is the official command-line interface that standardizes core Android development competencies for agent-first workflows. It gives coding agents and developers an entry point to the official tools, skills, and documentation needed to build for Android efficiently.\n\nWhether you are scaffolding a new app, launching virtual devices, running fast incremental builds, inspecting live device layouts, or evaluating user journeys, the Android CLI streamlines development directly from your workspace.\n\n---\n\n## 🚀 Key Capabilities\n\n### 🛠️ Project Scaffolding\n- Initialize modern Android projects from official templates using `android create`.\n- Pre-configured with the latest Android Gradle Plugin (AGP), Jetpack Compose, and best practices.\n- Print environment information including SDK location, connected devices, and configuration variables using `android info` (use specific fields to narrow the output).\n\n### 📱 Device & Emulator Management\n- Inspect, create, and launch Android Virtual Devices (AVDs) directly from the terminal with `android emulator`.\n- Deploy and launch applications with fast delta installs using `android run`.\n\n### 🧠 Agent Skills Management\n- The `android skills` command provides an official way to discover, install, update, and manage recommended skills.\n- Skills installed using this command aren't removed if the Android plugin for Antigravity is uninstalled.\n\n### 🔍 UI Layout Inspection & Screen Analysis\n- Extract the live application layout tree in structured JSON using `android layout`.\n- Inspect UI hierarchies, interactive bounds, accessibility attributes, and focus states.\n- Capture device screenshots and resolve visual coordinates for automated interactions using `android screen`.\n\n### 🧪 Journey Testing\n- Test end-to-end user flows with Journey tests defined using natural language, using `android layout` and visual verification.\n- Output structured Markdown reports detailing pass/fail statuses, ADB interaction commands, and verification screenshots.\n\n### 📚 Official Android Knowledge Base\n- Search authoritative, up-to-date Android developer documentation directly from the CLI via `android docs search \"<query>\"`.\n- Fetch full articles and migration guides using `android docs fetch kb://...`.\n\n---\n\n## 📦 Installation & Setup\n\nIf the `android` tool is not already in your `PATH`, install it using the platform-specific installer:\n\n### Linux\n```bash\ncurl -fsSL https://dl.google.com/android/cli/latest/linux_x86_64/install.sh | bash\n```\n\n### macOS (Apple Silicon)\n```bash\ncurl -fsSL https://dl.google.com/android/cli/latest/darwin_arm64/install.sh | bash\n```\n\n### macOS (Intel)\n```bash\ncurl -fsSL https://dl.google.com/android/cli/latest/darwin_x86_64/install.sh | bash\n```\n\n### Windows\n```cmd\ncurl -fsSL https://dl.google.com/android/cli/latest/windows_x86_64/install.cmd -o \"%TEMP%\\i.cmd\" && \"%TEMP%\\i.cmd\"\n```\n\n### Initialize Android CLI\nYou must run `android init` for Antigravity to discover and use Android CLI:\n```bash\nandroid init\n```\n> [!NOTE]\n> The skill installed by running this command isn't removed if the Android plugin for Antigravity is uninstalled.\n\n### Update Android CLI\nTo keep your CLI and embedded skills up to date, run:\n```bash\nandroid update\n```\n\n---\n\n## 💡 Starter Prompts\n\nOnce enabled, try asking your agent:\n\n1. **Creating a new Android project**:\n   > *\"Create a new Android project called MyFirstApp using the empty-activity template\"*\n\n2. **Running on a device**:\n   > *\"Run my app on a Samsung Galaxy Ultra device.\"*\n\n3. **Testing & Play readiness**:\n   > *\"Test my app and make sure that it's ready to publish to Google Play.\"*\n\n---\n\n## 📖 Command Reference\n\n| Command | Description |\n| :--- | :--- |\n| `android create` | Initialize a new Android project from available templates. |\n| `android describe` | Generate descriptive build target and artifact metadata for a project. |\n| `android run` | Build, deploy, and launch an application on a connected device or emulator. |\n| `android layout` | Returns the active UI layout tree in JSON format (supports `--pretty` and `--diff`). |\n| `android screen` | Commands to view, capture, and target UI elements visually on device. |\n| `android emulator` | Create, start, stop, and list Android Virtual Devices (AVDs). |\n| `android sdk` | Manage Android SDK packages, platforms, and build tools. |\n| `android docs` | Search and fetch documentation from the official Android Knowledge Base. |\n| `android info` | Print environment information including SDK location, connected devices, and configuration variables. Use specific fields to narrow the output. |\n| `android init` | Initialize the environment and install default Android CLI agent skills (skills that are installed aren't removed if the Android plugin for Antigravity is uninstalled). |\n| `android skills` | Manage Android CLI skills (search, add, remove, list, update). Skills that are installed aren't removed if the Android plugin for Antigravity is uninstalled. |\n| `android update` | Update the Android CLI to the latest version. |\n\n---\n\nFor more documentation, visit [developer.android.com/tools/agents/android-cli](https://developer.android.com/tools/agents/android-cli).\n",
+        "logo": "https://www.gstatic.com/antigravity/plugins/android-cli-plugin/assets/logo.png?v=9d8234ff50a7",
+        "version": "1.0.16625370-android",
+        "suggestedPrompts": [
+          "Create a new Android project called MyFirstApp using the empty-activity template",
+          "Run my app on a Samsung Galaxy Ultra device.",
+          "Test my app and make sure that it's ready to publish to Google Play."
+        ],
+        "displayName": "Android CLI"
+      }
+    },
+    "antigravity-plugins-official/plugin/science": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/science",
+        "displayName": "Science",
+        "description": "Curated collection of agent skills for science tasks.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip",
+            "sha256": "ca7f1a4cba3f6d00ee5f3ec5748206dc9311b005ebde2e333654470b59f1caf7"
+          }
+        },
+        "plugin": {},
+        "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
+        "version": "1.3.0-android",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "science",
+        "skills": [
+          {
+            "name": "alphafold-database-fetch-and-analyze",
+            "description": "Retrieve and analyze AlphaFold predicted structures for a protein. Use when the user provides a specific UniProt Accession ID and wants structural confidence metrics (pLDDT), domain boundary analysis, or disorder assessment. Do not use if the user only has a protein name, gene name, or amino acid sequence — ask for a UniProt ID first.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/alphafold_database_fetch_and_analyze/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "alphagenome-atlas-website-links",
+            "description": "Constructs deep-links and URLs for the AlphaGenome Atlas website. Supports generating single-variant exploration links (1-based chr:pos:ref>alt), genomic locus views (1-based closed chr:start-end), candidate summary tables, and AlphaGenome reference vs. alternate predictions. Use whenever visualizing, exploring, charting, or linking genetic variants and genomic loci on the AlphaGenome Atlas, or when asked to inspect, view, or link predictions for a genomic variant.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/alphagenome_atlas_website_links/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "alphagenome-single-variant-analysis",
+            "description": "Analyzes genetic variant effects on gene expression (RNA-seq), chromatin accessibility (DNASE), histone marks (ChIP), and transcription factors using the AlphaGenome API. Use when the user asks about non-coding variant effects, pathogenicity, clinical significance, disease associations, functional effects, gene expression changes, splicing disruption, or regulatory effects in promoters and enhancers. Also use for resolving biological terms to tissue/cell-type ontologies (UBERON/CL) or analyzing variants in chr:pos:ref>alt format.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/alphagenome_single_variant_analysis/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "alphagenome-variant-impact-score",
+            "description": "Score, annotate, and analyze the functional impact of genetic variants using AlphaGenome Variant Impact (AVI) scores. Query variants in chr:pos:ref>alt format, annotate VCF/tabular callsets, perform saturation mutagenesis window scans (1-based closed chr:start-end), and extract GENCODE v46 GTF gene/exon/junction coordinates all via the AlphaGenome Atlas API.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/alphagenome_variant_impact_score/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "biomolecular-structure-viewer",
+            "description": "Interactive 3D biomolecular structure viewer via Mol*. Renders 3D molecular structures from local workspace files (.cif, .mmcif, .pdb) or conversation artifacts, and manages user 3D annotations and highlighted residues. Use when the user asks to visualise a protein or nucleic acid, display a 3D structure, or asks about 3D biomolecular structure annotations and highlighted residues.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/biomolecular_structure_viewer/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "chembl-database",
+            "description": "Query the ChEMBL database for bioactive molecules, drug targets, bioactivity data, approved drugs, and chemical structures. Use when the user asks about compounds, targets, IC50/Ki values, drug mechanisms, or structure searches.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/chembl_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "clinical-trials-database",
+            "description": "Query ClinicalTrials.gov via APIv2. Use when you want to search for trials by condition, drug, location, status, or phase; retrieve trial details by NCT ID; check eligibility/inclusion criteria; count trials across conditions or time periods; identify a sponsor's trial portfolio; find recruiting trials for patient matching.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/clinical_trials_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "clinvar-database",
+            "description": "Use when needing clinical significance, pathogenicity classifications (e.g., Pathogenic, Benign, VUS), clinical evidence rationales, or finding \"hard positive\" benchmark controls for human genomic variants.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/clinvar_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "credentials",
+            "description": "Instructions for handling API keys and credentials safely, verifying their presence, and prompting the user to add them if missing using a safe protocol.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/credentials/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "dbsnp-database",
+            "description": "Use when you want to look up, map, and search for short genetic variants (SNPs, indels) in NCBI's dbSNP database. Resolves between rsIDs, genomic coordinates in VCF format, and HGVS strings. For an rsID, returns variant type, gene associations, clinical significance, allele frequencies, and genomic coordinates (GRCh38).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/dbsnp_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "embl-ebi-ols",
+            "description": "Query and search the EMBL-EBI Ontology Lookup Service (OLS) for biomedical ontology terms, definitions, and hierarchies across 250+ ontologies (e.g., GO, DOID, HP). Use when the user asks to search for terms, retrieve details, navigate hierarchies (parents, children, ancestors), look up properties and individuals, get autocomplete suggestions, or access ontology metadata and statistics.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/embl_ebi_ols/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "encode-ccres-database",
+            "description": "Query the ENCODE Registry of cis-Regulatory Elements (cCREs) via the SCREEN GraphQL API, or make custom queries to the ENCODE Portal REST API for experiments and files (ChIP-seq peaks, etc.). Use when you want to query regulatory annotations or raw experimental data across human cell types.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/encode_ccres_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "ensembl-database",
+            "description": "Query the Ensembl database to resolve gene, transcript, and protein IDs, fetch genomic or protein sequences, retrieve gene structures (exons), and get variant consequence and effect predictions (VEP). Use this skill as a primary ID translator, genomic sequence database and variant effect prediction tool.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/ensembl_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "foldseek-structural-search",
+            "description": "Performs 3D structural searches of proteins against various databases (PDB, AlphaFold, CATH, MGnify, etc.) using the Foldseek API. Use ONLY when the user provides a physical 3D coordinate file (.cif, .mmcif, or .pdb) and wants to find structurally similar proteins. Do NOT use if the user only provides a protein sequence, gene name, or UniProt ID.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/foldseek_structural_search/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "gnomad-database",
+            "description": "Query the Genome Aggregation Database (gnomAD). Use when determining the rarity or allele frequency of specific genetic variants, retrieving gene constraint metrics (pLI, LOEUF) to assess loss-of-function intolerance, finding variants in a genomic region or gene, or querying structural variants. Don't use for analyzing individual patient genomes, tracking somatic mutations in cancer (use COSMIC), or requesting raw sequencing reads (use ENA).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/gnomad_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "gtex-database",
+            "description": "Use when you want to retrieve quantitative RNA expression data and variant eQTL information from the GTEx (Genotype-Tissue Expression) Project across 54 non-diseased tissue sites.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/gtex_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "human-protein-atlas-database",
+            "description": "Use when you want to retrieve semi-quantitative protein expression and spatial localisation data from the Human Protein Atlas (HPA).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/human_protein_atlas_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "interpro-database",
+            "description": "Identify domains, families, and sites in proteins; find all proteins in a family or sharing a domain; explore species distribution for a domain; annotate genomes with protein families and GO terms. InterPro combines 14 databases (e.g., Pfam, CDD) into one searchable resource. InterPro-N significantly expands annotation and sequence coverage with deep learning. Includes domain architecture (IDA) search.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/interpro_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "jaspar-database",
+            "description": "Query the JASPAR database for Transcription Factor (TF) binding profiles. Use when retrieving Position Frequency Matrices (PFMs) or Position Weight Matrices (PWMs) for specific TFs, resolving gene symbols to JASPAR Matrix IDs, or getting TF metadata. Supports multiple output formats (MEME, TRANSFAC, PFM, JASPAR, YAML).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/jaspar_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "literature-search-arxiv",
+            "description": "Search for scientific papers, preprints, and publications on arXiv. Extract metadata, abstracts, and download full-text PDFs or HTML versions of papers. Use when the user asks to find research papers, literature, or specific arXiv IDs.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/literature_search_arxiv/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "literature-search-biorxiv",
+            "description": "Browse, filter, and download life sciences, biology, and medical preprints from bioRxiv and medRxiv. Supports fetching paper metadata by DOI, and browsing by date range with category and keyword filters. Keyword filtering is local, so date ranges MUST be narrow (1-4 weeks) with a category to prevent timeouts.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/literature_search_biorxiv/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "literature-search-europepmc",
+            "description": "Search Europe PMC for scientific literature and download open-access full texts and PDFs. Retrieve full-text XML/plain text by PMCID, get citation lists and bibliography.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/literature_search_europepmc/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "literature-search-openalex",
+            "description": "Query the OpenAlex scholarly database for research papers, authors, institutions, topics, sources, publishers, funders, geo-locations, and keywords. Use when searching academic papers, resolving DOIs, downloading open-access PDFs, finding an author's publications, aggregating bibliometric data (citation counts, h-index, impact factor), exploring the research taxonomies, or performing DOI lookups.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/literature_search_openalex/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "ncbi-sequence-fetch",
+            "description": "Retrieve protein and nucleotide sequences from NCBI databases using E-utilities. Supports direct accession lookup, CDS translation, gene+organism search, locus lookup, PubMed-linked sequences, patent protein extraction, and organism+length fallback search. Use when you need to fetch biological sequences by accession, gene name, locus tag, PubMed ID, or patent number.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/ncbi_sequence_fetch/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "openfda-database",
+            "description": "Query, search, and download data from the openFDA API for drugs, devices, foods, tobacco, cosmetics, animal and veterinary products, substances, and transparency data. Use for FDA adverse events, recalls, labeling, approvals, shortages, 510(k) clearances, NDC lookups, and any FDA safety or regulatory data query across all 28 API endpoints.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/openfda_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "opentargets-database",
+            "description": "Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/omics evidence, known drugs, for therapeutic target identification.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/opentargets_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "pdb-database",
+            "description": "Use when you want to search for or download experimentally-determined 3D structures for biomolecules (proteins, nucleic acids, bound ligands). Supports searching by sequence similarity, structure similarity, chemical and other attributes. Also use to get metadata about biomolecular structure experiments.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/pdb_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "predictingthepast",
+            "description": "Ancient text restoration, attribution, dating, contextualization, and embedding via Aeneas (Latin) / Ithaca (Ancient Greek). Use when asked to \"restore\", \"attribute\", \"date\", \"contextualize\", \"find parallels\", \"where was it written\", \"when was it written\", \"embed\", or \"analyze\" an ancient text, inscription, or epigraphic document, or when the user mentions \"Aeneas\", or \"Ithaca\".",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/predictingthepast/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "protein-sequence-msa",
+            "description": "Performs multiple sequence alignment of proteins with EBI Clustal Omega. Use when you need to align multiple sequences to assess similarity, domain conservation, or key residue conservation. Supports up to 4000 sequences and a maximum file size of 4 MB. Do not use to search for homologous proteins in a database (use MMseqs2, BLAST), align non-protein sequences (DNA, RNA), perform structural alignment (use Foldseek, PyMOL), or if you only have a single sequence.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/protein_sequence_msa/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "protein-sequence-similarity-search",
+            "description": "Searches for homologous protein sequences using MMseqs2 (fast, default) or BLAST (comprehensive, fallback). Trigger this whenever the user provides a protein sequence or FASTA file and asks to find homologues, sequence matches, or wants to infer protein function based on sequence similarity, but not when the user wants to infer protein function based on structural similarity.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/protein_sequence_similarity_search/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "pubchem-database",
+            "description": "Query PubChem, search by name/CID/SMILES, retrieve properties, similarity/substructure searches, bioactivity, for cheminformatics. Use when a user asks about a specific chemical, drug, or molecule.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/pubchem_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "pubmed-database",
+            "description": "Search PubMed for scientific literature, including published clinical trials. Fetch abstracts and full text. Link published research to biological databases (gene, protein, nucleotide, PubChem) to discover associations between papers and specific compounds or genes. Verify medical spelling, match raw citations, and cache result sets for bulk processing. Interfaces NCBI E-utilities and PMC BioC APIs.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/pubmed_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "pymol",
+            "description": "Visualize, analyze, and render protein and molecular structures using PyMOL. Use when the user wants to create images of protein structures, perform structural alignments or superposition, measure distances or contacts, highlight binding sites or active site residues, color by B-factor/pLDDT, or analyze protein-ligand interactions. Do not use for docking, molecular dynamics, or sequence-only analysis.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/pymol/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "quickgo-database",
+            "description": "Query the QuickGO and Evidence & Conclusion Ontology (ECO) REST API. Use this when you need to map genes to biological processes, molecular functions, or cellular components, find genes associated with a specific pathway/GO term, or explore the Gene Ontology hierarchy. Do not use for querying drug targets (use OpenTargets) or mechanistic signaling pathway diagrams (use KEGG).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/quickgo_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "reactome-database",
+            "description": "Query the Reactome database (Analysis and Content Services). Use when the user asks about pathway analysis, gene list enrichment, retrieving results by token, finding unmapped or not-found identifiers, mapping identifiers, reaction participants (inputs, outputs), pathway hierarchy (including top-level pathways), diagram export, cross-reference mapping, or searching the knowledgebase.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/reactome_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "string-database",
+            "description": "Query the STRING database for protein-protein interactions (PPIs), functional enrichment, and homology. Use when the user asks about interactions between specific proteins, interaction evidence, confidence scores, protein interaction partners, or pathway enrichments.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/string_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "ucsc-conservation-and-tfbs",
+            "description": "Fetch Evolutionary Conservation scores (phyloP, phastCons) and Transcription Factor Binding Sites (TFBS) from the UCSC Genome Browser. Use when analyzing whether genomic variants or regions are evolutionarily conserved, functionally important, or bounded by TF regulators across major projects (ENCODE, JASPAR, ReMap).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/ucsc_conservation_and_tfbs/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "unibind-database",
+            "description": "Queries the UniBind database for experimentally validated transcription factor (TF) binding sites. Use when retrieving direct TF-DNA interaction datasets, downloading binding site coordinates (BED/FASTA) for local analysis, or listing available datasets by species, cell line, or TF name. Don't use to query specific intervals, locations, genes, motif models or expression data.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/unibind_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "uniprot-database",
+            "description": "Access protein metadata, function, taxonomy, and sequences across UniProtKB, UniParc, and UniRef. Use when searching for proteins, mapping identifiers, or retrieving functional annotations and publications. Don't use for sequence alignment, protein folding, or sequence similarity search (use specialized skills for those tasks).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/uniprot_database/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "uv",
+            "description": "Checks whether the uv Python package manager is installed and installs it if missing. Ensures uv is on PATH. Use when another skill requires uv as a prerequisite.",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/uv/SKILL.md"
+                ]
+              }
+            }
+          },
+          {
+            "name": "workflow-skill-creator",
+            "description": "Distills a completed user workflow or interaction into a reusable agent skill. Use when the user asks to turn their workflow, interaction, or multi-step process into a skill, or when they say \"make this a skill\", \"create a skill from what we just did\", \"package this workflow\" or similar. Do not use for creating skills from scratch without an existing workflow (use a generic skill-creator for that).",
+            "scope": {
+              "localScope": {
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/skills/workflow_skill_creator/SKILL.md"
+                ]
+              }
+            }
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "1_3_0_biomolecular_structure_viewer_mcp",
+            "command": "agy-node",
+            "args": [
+              "sidecars/biomolecular_structure_viewer/dist/mcp_entry.cjs"
+            ],
+            "cwd": "C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0",
+            "pluginName": "science",
+            "pluginRoot": "C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0",
+            "configPath": "C:\\Users\\shadr\\.gemini\\antigravity\\cache\\marketplaces\\antigravity-plugins-official\\plugins\\science\\1.3.0\\mcp_config.json",
+            "pluginVersion": "1.3.0",
+            "originalServerName": "biomolecular_structure_viewer_mcp"
+          }
+        ],
+        "rules": [
+          {
+            "memoryId": "C:\\Users\\shadr\\.gemini\\antigravity\\cache\\marketplaces\\antigravity-plugins-official\\plugins\\science\\1.3.0\\rules\\AGENTS.md",
+            "title": "AGENTS.md: ",
+            "metadata": {
+              "tags": [
+                "plugin_rule"
+              ]
+            },
+            "source": "CORTEX_MEMORY_SOURCE_USER",
+            "scope": {
+              "projectScope": {
+                "filePath": "AGENTS.md",
+                "absoluteFilePath": "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0/rules/AGENTS.md",
+                "baseDirUris": [
+                  "file:///C:/Users/shadr/.gemini/antigravity/cache/marketplaces/antigravity-plugins-official/plugins/science/1.3.0"
+                ],
+                "trigger": "CORTEX_MEMORY_TRIGGER_ALWAYS_ON",
+                "globs": [
+                  ""
+                ]
+              }
+            },
+            "textMemory": {
+              "content": "# Science Visualization Priority Rules\n\nFor any science visualization task, **prefer the interactive sidecar viewers**\n(e.g. Biomolecular Structure Viewer) over static image generation, Generative\nUI, or text-based representations. The sidecars provide an interactive\nexperience that the user can explore directly.\n\n## Key Rules\n\n-   Only fall back to other visualization skills (e.g. `pymol`) when no viewer\n    sidecar can do what the user needs.\n\n-   **Always surface a sidecar link.** Whenever the agent loads or updates a\n    visualization in a sidecar (e.g. by calling its MCP tools), it **MUST**\n    include that viewer's `sidecar://` pill link in the chat response so the\n    user can open the viewer panel with one click. Copy the exact link given in\n    the viewer's skill; don't read sidecar files to build it.\n"
+            },
+            "absolutePath": "C:\\Users\\shadr\\.gemini\\antigravity\\cache\\marketplaces\\antigravity-plugins-official\\plugins\\science\\1.3.0\\rules\\AGENTS.md",
+            "discoveredIn": "C:\\Users\\shadr\\.gemini\\antigravity\\cache\\marketplaces\\antigravity-plugins-official\\plugins\\science\\1.3.0",
+            "discoveryCategory": "DISCOVERY_CATEGORY_INSTALLED"
+          }
+        ],
+        "description": "Curated collection of agent skills for science tasks.",
+        "readme": "![Science Plugin: scientific tools for your agent](https://www.gstatic.com/antigravity/buildWithGoogle/science/banner.png)\n\n# Science Plugin\n\nA collection of extensions (e.g. skills) for scientific research tasks, spanning\ngenomics, structural biology, cheminformatics, scientific literature, and more.\n\nEach extension provides structured instructions, scripts, and resources that\nextend Antigravity's capabilities for specialized scientific tasks.\n\n## Usage\n\n### Prerequisites\n\nWe use the `uv` package manager to handle dependencies. The first time you\ntrigger an extension in the Science Plugin, the agent will ask for approval to\ninstall `uv`, and then proceed to respond to your scientific query / task. We\nrecommend restarting Antigravity after this first time installation.\n\nSome skills, such as AlphaGenome and OpenAlex, require an API key to function.\nOthers, such as ClinVar, benefit from an API key to unlock higher rate limits\nbut are still functional without one. The agent should prompt you to obtain the\nAPI key and guide you through writing in the correct location. However, if you\nwould rather do this yourself, you can run a command like this in your terminal:\n`echo \"ALPHAGENOME_API_KEY=your_actual_api_key\" >> ~/.env`\n\n### Customizing or creating extensions\n\nIf you want to customize an existing extension or create a new extension of your\nown, you should **not** modify the files inside the Science Plugin installation\ndirectory, as your changes will be overwritten whenever the Science Plugin is\nupdated. Instead, place your custom or modified extensions elsewhere, e.g.\nskills can be placed in your personal skills directory:\n\n```\n~/.gemini/config/skills/\n```\n\n## Learn More\n\nYou can find examples of Science Plugin use cases, including demos, at\n[antigravity.google/use-cases/science](https://antigravity.google/use-cases/science).\n\n## Licensing & Disclaimer\n\nCopyright 2026 Google LLC\n\nAll software is licensed under the Apache License, Version 2.0 (Apache 2.0); you\nmay not use this file except in compliance with the Apache 2.0 license. You may\nobtain a copy of the Apache 2.0 license at:\nhttps://www.apache.org/licenses/LICENSE-2.0\n\nAs set out in the attached file\n‘[Skill Licences and Terms of Use](SKILL_LICENSES.md)’ certain third party data\nsources referenced within individual Skill files have their own applicable\nlicenses and/or terms of use. See the\n‘[Skill Licences and Terms of Use](SKILL_LICENSES.md)’ file for more\ninformation. You are responsible for ensuring that your use of individual Skill\nfiles complies with any such applicable licenses/ terms of use.\n\nAll other materials are licensed under the Creative Commons Attribution 4.0\nInternational License (CC-BY). You may obtain a copy of the CC-BY license at:\nhttps://creativecommons.org/licenses/by/4.0/legalcode\n\nUnless required by applicable law or agreed to in writing, all software and\nmaterials distributed here under the Apache 2.0 or CC-BY licenses are\ndistributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,\neither express or implied. See the licenses for the specific language governing\npermissions and limitations under those licenses.\n",
+        "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
+        "sidecars": [
+          {
+            "sidecarId": "science/biomolecular_structure_viewer",
+            "config": {
+              "command": "node",
+              "restartPolicy": "always",
+              "args": [
+                "dist/server.cjs"
+              ],
+              "description": "Interactive 3D biomolecular structure viewer via Mol*",
+              "hasWebUi": true,
+              "displayName": "Biomolecular Structure Viewer",
+              "uiConfig": {
+                "displayName": "Biomolecular Structure Viewer",
+                "views": [
+                  {
+                    "entrypoint": "SIDECAR_UI_ENTRYPOINT_AUX_PANE",
+                    "path": "/ui.html",
+                    "title": "Biomolecular Structure Viewer"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "version": "1.3.0-android",
+        "displayName": "Science"
+      }
+    }
+  }
+}
