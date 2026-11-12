@@ -1,15 +1,6 @@
 {
   "schema": 1,
-  "featured": [
-    {
-      "id": "android-featured-hero",
-      "eyebrow": "Featured · Built for Android",
-      "memberIds": [
-        "antigravity-plugins-official/plugin/agy-video-studio",
-        "antigravity-plugins-official/plugin/chrome-devtools-plugin"
-      ]
-    }
-  ],
+  "featured": [],
   "search": {
     "customizations": [
       {
@@ -20,12 +11,28 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip",
-            "sha256": "c376e72987e4a9a5ea602a86e2bdc37698fa4bb6bbd0965da2bdd665abc35392"
+            "sha256": "2186caea65114a6b2dc81b8558842953ac2ef43a1d414165444507456d0edd46"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
         "version": "2.1.2",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/craft-anything",
+        "displayName": "Craft Anything + Ghidra",
+        "description": "302 native ARM64 Rust MCP tools for static software inspection, multi-format binary analysis (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS), clean-room rebuilding, and on-demand Android ARM64 Ghidra 12.1.4 decompilation.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/craft-anything.zip",
+            "sha256": "fe9e49ea4928de0f8724b910793d6bfd46a9914601ff134699c8f1f318c7275a"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/logo.svg",
+        "version": "0.4.0-r7",
         "_androidNative": true
       },
       {
@@ -36,7 +43,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip",
-            "sha256": "1f0c4e035d8457c05a568d6b66af15388eaec27e0260d0e5e3f57c3f093e59fc"
+            "sha256": "01c538ec051c8f127f92a05fc2cd28da3abfca1948b70e61d08a9d4eb6c34db6"
           }
         },
         "plugin": {},
@@ -52,7 +59,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip",
-            "sha256": "5cde18019c1abb0e0c8290ce77a249970110899233274b17f5c1f24327de5001"
+            "sha256": "70ff1b37f17ef4c9e0714c4bd0a79e8364b334c04a1d8141f35903b3a61c41b9"
           }
         },
         "plugin": {},
@@ -68,7 +75,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip",
-            "sha256": "ca7f1a4cba3f6d00ee5f3ec5748206dc9311b005ebde2e333654470b59f1caf7"
+            "sha256": "9a92d65942a3ec3d0ff58965bb7b091f71b5f685b217972124b40fec126062ac"
           }
         },
         "plugin": {},
@@ -81,9 +88,10 @@
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered specifically for Android, MediaCodec GPU acceleration, headless Chromium, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: GPU video production, Ghidra binary analysis, headless Chromium, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
+          "antigravity-plugins-official/plugin/craft-anything",
           "antigravity-plugins-official/plugin/chrome-devtools-plugin",
           "antigravity-plugins-official/plugin/android-cli-plugin"
         ]
@@ -100,7 +108,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip",
-            "sha256": "c376e72987e4a9a5ea602a86e2bdc37698fa4bb6bbd0965da2bdd665abc35392"
+            "sha256": "2186caea65114a6b2dc81b8558842953ac2ef43a1d414165444507456d0edd46"
           }
         },
         "plugin": {},
@@ -136,6 +144,59 @@
         ]
       }
     },
+    "antigravity-plugins-official/plugin/craft-anything": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/craft-anything",
+        "displayName": "Craft Anything + Ghidra",
+        "description": "302 native ARM64 Rust MCP tools for static software inspection, multi-format binary analysis (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS), clean-room rebuilding, and on-demand Android ARM64 Ghidra 12.1.4 decompilation.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/craft-anything.zip",
+            "sha256": "fe9e49ea4928de0f8724b910793d6bfd46a9914601ff134699c8f1f318c7275a"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/logo.svg",
+        "version": "0.4.0-r7",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "craft-anything",
+        "displayName": "Craft Anything + Ghidra",
+        "version": "0.4.0-r7",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/logo.svg",
+        "description": "302 native ARM64 Rust MCP tools for static software inspection, multi-format binary analysis (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS), clean-room rebuilding, and on-demand Android ARM64 Ghidra 12.1.4 decompilation.",
+        "readme": "# Craft Anything + Ghidra 12.1.4 (Android ARM64)\n\nPlugin nativo oficial para **Antigravity Android (`aarch64-linux-android`)** y **Vektron Studio Android** que integra el motor completo de **Craft Anything** (**302 herramientas MCP** compiladas en Rust para Bionic ARM64) junto con los binarios nativos **ARM64 de Ghidra 12.1.4** (`decompile` y `sleigh`) e instalador inteligente bajo demanda.\n\n> [!TIP]\n> **¿Cómo funciona al instalarlo?**\n> 1. **Nivel 1 — Motor Rápido en Rust (Activo al instante, 0 descargas extra):** En cuanto instalas este plugin desde la tienda, queda habilitado automáticamente con las **302 herramientas MCP** y su desensamblador/decompilador pseudo-C integrado (`<50 MB` de RAM, sin Java).\n> 2. **Nivel 2 — Superpotencia Ghidra 12.1.4 Nativo ARM64 (Bajo demanda):** Cuando quieras análisis profundo de tipos C++/vtables, grafos globales de referencias cruzadas (`xrefs`) o ejecutar `analyzeHeadless`, simplemente escríbele al asistente en el chat: **«Instala Ghidra»** (o ejecuta `craft-ghidra-setup` en la terminal).\n\n---\n\n## Qué incluye este plugin\n\n| Componente | Descripción |\n| :--- | :--- |\n| **`craft-anything` MCP Server** | Binario nativo `craft-anything-cli` (`aarch64-linux-android`, PIE, 16 KB page-aligned) ejecutándose en modo `--deep mcp --all-tools` con **302 herramientas**. |\n| **Ghidra 12.1.4 ARM64 Binaries** | Binarios nativos Bionic ARM64 `decompile` y `sleigh` precompilados con Android NDK e inyectados automáticamente. |\n| **`craft-ghidra-setup`** | Comando automático de 1 paso para descargar e instalar bajo demanda **OpenJDK 21 + Ghidra 12.1.4 Public** (~450 MB) usando `pkg`, verificando SHA-256 y eliminando el `.zip` al instante. |\n| **3 Skills Especializados** | `craft-anything` (investigación basada en evidencia), `craft-rebuild` (estudio, portado y reconstrucción Clean-Room / Deep), y `ghidra-arm64` (descompilación nativa en Android). |\n| **Reglas (`rules/AGENTS.md`)** | Contexto automático de rutas Android (`$HOME`, `$PREFIX`, directorios temporales sin puntos para Ghidra), recomendación proactiva de Ghidra y buenas prácticas de memoria en móvil. |\n\n---\n\n## Niveles de Potencia\n\n### 1. Inspección multi-formato inmediata (sin requerir Java/Ghidra)\n- Ejecutables y librerías nativas **ELF (`.so`), PE (`.exe`/`.dll`), Mach-O** (desensamblador y pseudo-C integrado en Rust).\n- Paquetes **Android APK / DEX / AAB**, manifiestos, recursos y tablas de símbolos JNI.\n- Aplicaciones **Electron (`.asar`)**, bundles JavaScript/TypeScript y mapas de módulos (`js_app_map`).\n- Ensamblados **.NET / CIL**, módulos **WebAssembly (WASM)**, binarios Go y motores de videojuegos (Unity, Godot, Unreal, GameMaker, RPG Maker).\n\n### 2. Descompilación profunda con Ghidra 12.1.4 ARM64 (bajo demanda)\n- Desbloquea el decompilador C/C++ oficial de Ghidra (NSA), recuperación avanzada de structs/`vtables` C++, análisis global de referencias cruzadas y `analyzeHeadless`.\n- Pídele al agente en el chat **«Instala Ghidra»** o ejecuta una sola vez:\n  ```sh\n  craft-ghidra-setup\n  ```\n- El servidor MCP detectará automáticamente `$PREFIX/opt/ghidra/ghidra_12.1.4_PUBLIC` y usará los binarios nativos ARM64 `decompile` y `sleigh` sin necesidad de reiniciar la app.\n\n### 3. Portado y reconstrucción de software (`craft-rebuild`)\n- Estudio de arquitectura, inventario de assets/rutas, registro de hipótesis/hallazgos con IDs de evidencia (`ev_...`) y reconstrucción paso a paso hacia Android (Kotlin/Compose, NDK/SDL), Web (React/Vite) o Rust.\n",
+        "skills": [
+          {
+            "name": "craft-anything",
+            "description": "Evidence-backed static software inspection and multi-format binary reverse engineering (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS) via 302 native ARM64 MCP tools."
+          },
+          {
+            "name": "craft-rebuild",
+            "description": "Structured architecture study, asset inventory, and clean-room or deep rebuilding/porting of desktop & mobile apps."
+          },
+          {
+            "name": "ghidra-arm64",
+            "description": "On-demand native Android ARM64 Ghidra 12.1.4 C/C++ decompilation, vtable recovery, and analyzeHeadless workflows."
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "craft-anything",
+            "originalServerName": "craft-anything",
+            "pluginName": "craft-anything",
+            "pluginVersion": "0.4.0-r7"
+          }
+        ],
+        "suggestedPrompts": [
+          "Inspect an APK or ELF binary in /sdcard/Download using Craft Anything's static analysis tools",
+          "Run craft-ghidra-setup to enable full native ARM64 Ghidra 12.1.4 C++ decompilation",
+          "Analyze the architecture of a desktop app and plan an Android Kotlin/Compose port"
+        ]
+      }
+    },
     "antigravity-plugins-official/plugin/chrome-devtools-plugin": {
       "customization": {
         "marketplace": "antigravity-plugins-official",
@@ -145,7 +206,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/chrome-devtools-plugin/chrome-devtools-plugin.zip",
-            "sha256": "1f0c4e035d8457c05a568d6b66af15388eaec27e0260d0e5e3f57c3f093e59fc"
+            "sha256": "01c538ec051c8f127f92a05fc2cd28da3abfca1948b70e61d08a9d4eb6c34db6"
           }
         },
         "plugin": {},
@@ -227,7 +288,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/android-cli-plugin/android-cli-plugin.zip",
-            "sha256": "5cde18019c1abb0e0c8290ce77a249970110899233274b17f5c1f24327de5001"
+            "sha256": "70ff1b37f17ef4c9e0714c4bd0a79e8364b334c04a1d8141f35903b3a61c41b9"
           }
         },
         "plugin": {},
@@ -271,7 +332,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/science/science.zip",
-            "sha256": "ca7f1a4cba3f6d00ee5f3ec5748206dc9311b005ebde2e333654470b59f1caf7"
+            "sha256": "9a92d65942a3ec3d0ff58965bb7b091f71b5f685b217972124b40fec126062ac"
           }
         },
         "plugin": {},
