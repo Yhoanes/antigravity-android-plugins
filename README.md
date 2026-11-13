@@ -8,6 +8,7 @@
     <code>ARM64 v8.0-A+</code> &nbsp;&bull;&nbsp;
     <code>GPU h264_mediacodec</code> &nbsp;&bull;&nbsp;
     <code>Craft Anything + Ghidra 12.1.4</code> &nbsp;&bull;&nbsp;
+    <code>Game Studio 2D/3D (Rust)</code> &nbsp;&bull;&nbsp;
     <code>GitHub MCP 91 Tools</code> &nbsp;&bull;&nbsp;
     <code>Headless Chromium MCP</code> &nbsp;&bull;&nbsp;
     <code>Shizuku Ready</code>
@@ -42,10 +43,11 @@ https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/catal
 | :-: | :--- | :--- | :---: | :--- |
 | **1** | **AGY Video Studio** | `antigravity-plugins-official/plugin/agy-video-studio` | `2.1.3` | **14 MCP tools:** 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via Android hardware GPU (`h264_mediacodec`), neural ES/EN/PT voiceover (`edge-tts`), procedural ambient music, rootless CapCut drafts & Shizuku UI automation. |
 | **2** | **Craft Anything + Ghidra** | `antigravity-plugins-official/plugin/craft-anything` | `0.4.0-r8` | **302 native ARM64 Rust MCP tools** (`craft-anything-cli --deep mcp --all-tools`) for static triage of `ELF`, `PE`, `Mach-O`, `APK/DEX`, `.NET`, `WASM` & `Electron/JS` + on-demand native ARM64 **Ghidra 12.1.4** (`decompile` & `sleigh`). |
-| **3** | **GitHub (Local ARM64 MCP)** | `antigravity-plugins-official/plugin/github` | `2.1.1-android` | **91 native ARM64 GitHub MCP tools** (`github-mcp-server` `v2.1.0` without Docker: repos, PRs, code reviews, issues, Actions CI/CD logs, Dependabot & security) + 1-command Bionic `git`/`gh` OAuth bridge (`github-mcp-setup`). |
-| **4** | **Chrome DevTools (Android)** | `antigravity-plugins-official/plugin/chrome-devtools-plugin` | `1.10.4-android` | Headless ARM64 Chromium (`--no-sandbox`) MCP launcher + all 6 official Chrome DevTools web debugging, LCP & accessibility skills. |
-| **5** | **Android CLI (On-Device)** | `antigravity-plugins-official/plugin/android-cli-plugin` | `1.0.16625373-android` | Bundles the on-device `android` CLI bridge (`status`, `devices`, `layout`, `screen capture`, `install`, `shell` via Shizuku `rish`) + official Android & Jetpack Compose skills. |
-| **6** | **Science (Android Clean)** | `antigravity-plugins-official/plugin/science` | `1.3.2-android` | All 28 official Science skills (AlphaFold, ChEMBL, PubMed, RDKit, genomics & structure analysis) pre-cleaned for Android ARM64 without desktop Electron sidecars. |
+| **3** | **Game Studio 2D/3D** | `antigravity-plugins-official/plugin/game-studio` | `1.1.0` | **12 native ARM64 Rust MCP tools** (`game-studio-mcp` with `Rayon` + `LSE`): **Godot 4 Vulkan Mobile (60–120 FPS)** 2D/3D touch projects, Sprite Atlas (`PNG/WebP/TGA/DDS`) + Sobel 2D normal maps, binary 3D `.glb` optimizer & spatial LOD decimator, `0 ms` WAV DSP + loop crossfader, Monte Carlo combat sim & live **Shizuku** FPS/RAM profiler. |
+| **4** | **GitHub (Local ARM64 MCP)** | `antigravity-plugins-official/plugin/github` | `2.1.1-android` | **91 native ARM64 GitHub MCP tools** (`github-mcp-server` `v2.1.0` without Docker: repos, PRs, code reviews, issues, Actions CI/CD logs, Dependabot & security) + 1-command Bionic `git`/`gh` OAuth bridge (`github-mcp-setup`). |
+| **5** | **Chrome DevTools (Android)** | `antigravity-plugins-official/plugin/chrome-devtools-plugin` | `1.10.4-android` | Headless ARM64 Chromium (`--no-sandbox`) MCP launcher + all 6 official Chrome DevTools web debugging, LCP & accessibility skills. |
+| **6** | **Android CLI (On-Device)** | `antigravity-plugins-official/plugin/android-cli-plugin` | `1.0.16625373-android` | Bundles the on-device `android` CLI bridge (`status`, `devices`, `layout`, `screen capture`, `install`, `shell` via Shizuku `rish`) + official Android & Jetpack Compose skills. |
+| **7** | **Science (Android Clean)** | `antigravity-plugins-official/plugin/science` | `1.3.2-android` | All 28 official Science skills (AlphaFold, ChEMBL, PubMed, RDKit, genomics & structure analysis) pre-cleaned for Android ARM64 without desktop Electron sidecars. |
 
 ---
 
@@ -57,6 +59,7 @@ Each plugin connects its MCP server immediately upon installation (`<1s` zero-da
 | :--- | :--- | :--- |
 | **AGY Video Studio** | `agy-video-setup` | Installs native ARM64 `python`, `ffmpeg` (`h264_mediacodec` GPU), `Pillow`, `NumPy` & `edge-tts`, activating all 14 video production tools. |
 | **Craft Anything + Ghidra** | `craft-ghidra-setup` *(optional — 302 Rust tools work immediately with 0 downloads)* | Downloads & configures `openjdk-21` + **Ghidra 12.1.4 PUBLIC** (~450 MB) and injects native ARM64 `decompile` & `sleigh`. |
+| **Game Studio 2D/3D** | `game-studio-setup` *(optional — all 12 Rust tools work immediately with 0 downloads)* | Installs native ARM64 `ffmpeg` (`.ogg/.opus/.mp3`), `imagemagick` & `@gltf-transform/cli` skinned-mesh optimizer. |
 | **GitHub** | `github-mcp-setup` *(automatic if already logged into `gh`)* | Launches Android browser OAuth login (`https://github.com/login/device`), configures Bionic `git` (`GODEBUG=netdns=cgo`, `GIT_EXEC_PATH`, `.netrc`), and unlocks all 91 local GitHub MCP tools. |
 | **Chrome DevTools** | `pkg update && pkg install nodejs chromium` | Enables live headless ARM64 Chromium DOM/network/performance automation via `chrome-devtools-mcp`. |
 | **Android CLI** | Start the **Shizuku** app on Android | Enables live `android layout`, `android screen capture`, `android install`, and `rish` ADB shell operations on-device. |

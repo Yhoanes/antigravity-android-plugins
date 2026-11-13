@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#0B0E17"/>
+  <rect x="6" y="6" width="116" height="116" rx="23" stroke="url(#gs_rim)" stroke-width="3"/>
+  <!-- 3D Isometric Cube (Engine / GLB Mesh) -->
+  <polygon points="64,22 86,34 64,46 42,34" fill="#38BDF8" fill-opacity="0.32" stroke="url(#gs_cube)" stroke-width="2.6" stroke-linejoin="round"/>
+  <polygon points="42,34 64,46 64,70 42,58" fill="#6366F1" fill-opacity="0.38" stroke="url(#gs_cube)" stroke-width="2.6" stroke-linejoin="round"/>
+  <polygon points="86,34 64,46 64,70 86,58" fill="#34D399" fill-opacity="0.30" stroke="url(#gs_cube)" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- Pro Gamepad Silhouette -->
+  <path d="M31 74C31 65 40 60 50 62H78C88 60 97 65 97 74L101 93C103 101 94 107 87 102L77 94H51L41 102C34 107 25 101 27 93L31 74Z" fill="#111827" stroke="url(#gs_rim)" stroke-width="3" stroke-linejoin="round"/>
+  <!-- D-Pad -->
+  <path d="M43 74H49V80H55V86H49V92H43V86H37V80H43V74Z" fill="#38BDF8"/>
+  <!-- Action Buttons -->
+  <circle cx="83" cy="76" r="3.4" fill="#34D399"/>
+  <circle cx="90" cy="83" r="3.4" fill="#F472B6"/>
+  <circle cx="76" cy="83" r="3.4" fill="#60A5FA"/>
+  <circle cx="83" cy="90" r="3.4" fill="#FBBF24"/>
+  <defs>
+    <linearGradient id="gs_rim" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="gs_cube" x1="42" y1="22" x2="86" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+</svg>
