@@ -48,7 +48,7 @@ https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/catal
 | **5** | **Chrome DevTools (Android)** | `antigravity-plugins-official/plugin/chrome-devtools-plugin` | `1.10.4-android` | Headless ARM64 Chromium (`--no-sandbox`) MCP launcher + all 6 official Chrome DevTools web debugging, LCP & accessibility skills. |
 | **6** | **Android CLI (On-Device)** | `antigravity-plugins-official/plugin/android-cli-plugin` | `1.0.16625373-android` | Bundles the on-device `android` CLI bridge (`status`, `devices`, `layout`, `screen capture`, `install`, `shell` via Shizuku `rish`) + official Android & Jetpack Compose skills. |
 | **7** | **Science (Android Clean)** | `antigravity-plugins-official/plugin/science` | `1.3.2-android` | All 28 official Science skills (AlphaFold, ChEMBL, PubMed, RDKit, genomics & structure analysis) pre-cleaned for Android ARM64 without desktop Electron sidecars. |
-| **8** | **AGY ADB Bridge** | `antigravity-plugins-official/plugin/agy-adb-bridge` | `1.0.0` | **7 MCP tools + CLI Rust ARM64:** Puente nativo `uid=2000(shell)` sin Shizuku externo mediante `android-tools` (`adb`), llave RSA persistente, modo local `127.0.0.1:5555` inmune a apagar Wi-Fi, mDNS UDP 0% batería y wrapper auto-reparable `$PREFIX/bin/rish` con watchdog de 2s para MIUI/HyperOS. |
+| **8** | **AGY ADB Bridge** | `antigravity-plugins-official/plugin/agy-adb-bridge` | `1.0.1` | **7 MCP tools + CLI Rust ARM64:** Puente nativo `uid=2000(shell)` sin Shizuku externo mediante `android-tools` (`adb`), llave RSA persistente, modo local `127.0.0.1:5555` inmune a apagar Wi-Fi, mDNS UDP 0% batería y wrapper auto-reparable `$PREFIX/bin/rish` con watchdog de 2s para MIUI/HyperOS. |
 
 ---
 
