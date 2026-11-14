@@ -23,16 +23,16 @@
         "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/craft-anything",
         "displayName": "Craft Anything + Ghidra",
-        "description": "302 native ARM64 Rust MCP tools for static software inspection, multi-format binary analysis (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS), clean-room rebuilding, and on-demand Android ARM64 Ghidra 12.1.4 decompilation.",
+        "description": "335 native ARM64 Rust MCP tools for static software inspection, binary & firmware analysis (ELF, PE, Mach-O, APK/DEX, .NET & NativeAOT, WASM, CUDA/PTX, ESP32/UF2/DTB, Godot .pck, Unity IL2CPP, Wii/GC .dol & retro->ELF), clean-room rebuilding, stateful RL HAR mock environments, and Android ARM64 Ghidra 12.1.4.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/craft-anything.zip?v=0.4.0-r8",
-            "sha256": "edd15151e2f4139f7b29fff2fefa87f3458234c6d688596fc08d8093e767603f"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/craft-anything.zip?v=0.5.0",
+            "sha256": "492e168b15fa971a0a9f76d4e527ec600a1501e0dfe34e3e9f5c19f45030896a"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/logo.svg",
-        "version": "0.4.0-r8",
+        "version": "0.5.0",
         "_androidNative": true
       },
       {
@@ -200,37 +200,37 @@
         "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/craft-anything",
         "displayName": "Craft Anything + Ghidra",
-        "description": "302 native ARM64 Rust MCP tools for static software inspection, multi-format binary analysis (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS), clean-room rebuilding, and on-demand Android ARM64 Ghidra 12.1.4 decompilation.",
+        "description": "335 native ARM64 Rust MCP tools for static software inspection, binary & firmware analysis (ELF, PE, Mach-O, APK/DEX, .NET & NativeAOT, WASM, CUDA/PTX, ESP32/UF2/DTB, Godot .pck, Unity IL2CPP, Wii/GC .dol & retro->ELF), clean-room rebuilding, stateful RL HAR mock environments, and Android ARM64 Ghidra 12.1.4.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/craft-anything.zip?v=0.4.0-r8",
-            "sha256": "edd15151e2f4139f7b29fff2fefa87f3458234c6d688596fc08d8093e767603f"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/craft-anything.zip?v=0.5.0",
+            "sha256": "492e168b15fa971a0a9f76d4e527ec600a1501e0dfe34e3e9f5c19f45030896a"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/logo.svg",
-        "version": "0.4.0-r8",
+        "version": "0.5.0",
         "_androidNative": true
       },
       "plugin": {
         "name": "craft-anything",
         "displayName": "Craft Anything + Ghidra",
-        "version": "0.4.0-r8",
+        "version": "0.5.0",
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/craft-anything/logo.svg",
-        "description": "302 native ARM64 Rust MCP tools for static software inspection, multi-format binary analysis (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS), clean-room rebuilding, and on-demand Android ARM64 Ghidra 12.1.4 decompilation.",
-        "readme": "# Craft Anything + Ghidra 12.1.4 (Android ARM64)\n\nPlugin nativo oficial para **Antigravity for Android (`aarch64-linux-android`)** que integra el motor completo de **Craft Anything** (**302 herramientas MCP** compiladas en Rust para Bionic ARM64) junto con los binarios nativos **ARM64 de Ghidra 12.1.4** (`decompile` y `sleigh`) e instalador inteligente bajo demanda.\n\n> [!TIP]\n> **¿Cómo funciona al instalarlo?**\n> 1. **Nivel 1 — Motor Rápido en Rust (Activo al instante, 0 descargas extra):** En cuanto instalas este plugin desde la tienda, queda habilitado automáticamente con las **302 herramientas MCP** y su desensamblador/decompilador pseudo-C integrado (`<50 MB` de RAM, sin Java).\n> 2. **Nivel 2 — Superpotencia Ghidra 12.1.4 Nativo ARM64 (Bajo demanda):** Cuando quieras análisis profundo de tipos C++/vtables, grafos globales de referencias cruzadas (`xrefs`) o ejecutar `analyzeHeadless`, simplemente escríbele al asistente en el chat: **«Instala Ghidra»** (o ejecuta `craft-ghidra-setup` en la terminal).\n\n---\n\n## Qué incluye este plugin\n\n| Componente | Descripción |\n| :--- | :--- |\n| **`craft-anything` MCP Server** | Binario nativo `craft-anything-cli` (`aarch64-linux-android`, PIE, 16 KB page-aligned) ejecutándose en modo `--deep mcp --all-tools` con **302 herramientas**. |\n| **Ghidra 12.1.4 ARM64 Binaries** | Binarios nativos Bionic ARM64 `decompile` y `sleigh` precompilados con Android NDK e inyectados automáticamente. |\n| **`craft-ghidra-setup`** | Comando automático de 1 paso para descargar e instalar bajo demanda **OpenJDK 21 + Ghidra 12.1.4 Public** (~450 MB) usando `pkg`, verificando SHA-256 y eliminando el `.zip` al instante. |\n| **3 Skills Especializados** | `craft-anything` (investigación basada en evidencia), `craft-rebuild` (estudio, portado y reconstrucción Clean-Room / Deep), y `ghidra-arm64` (descompilación nativa en Android). |\n| **Reglas (`rules/AGENTS.md`)** | Contexto automático de rutas Android (`$HOME`, `$PREFIX`, directorios temporales sin puntos para Ghidra), recomendación proactiva de Ghidra y buenas prácticas de memoria en móvil. |\n\n---\n\n## Niveles de Potencia\n\n### 1. Inspección multi-formato inmediata (sin requerir Java/Ghidra)\n- Ejecutables y librerías nativas **ELF (`.so`), PE (`.exe`/`.dll`), Mach-O** (desensamblador y pseudo-C integrado en Rust).\n- Paquetes **Android APK / DEX / AAB**, manifiestos, recursos y tablas de símbolos JNI.\n- Aplicaciones **Electron (`.asar`)**, bundles JavaScript/TypeScript y mapas de módulos (`js_app_map`).\n- Ensamblados **.NET / CIL**, módulos **WebAssembly (WASM)**, binarios Go y motores de videojuegos (Unity, Godot, Unreal, GameMaker, RPG Maker).\n\n### 2. Descompilación profunda con Ghidra 12.1.4 ARM64 (bajo demanda)\n- Desbloquea el decompilador C/C++ oficial de Ghidra (NSA), recuperación avanzada de structs/`vtables` C++, análisis global de referencias cruzadas y `analyzeHeadless`.\n- Pídele al agente en el chat **«Instala Ghidra»** o ejecuta una sola vez:\n  ```sh\n  craft-ghidra-setup\n  ```\n- El servidor MCP detectará automáticamente `$PREFIX/opt/ghidra/ghidra_12.1.4_PUBLIC` y usará los binarios nativos ARM64 `decompile` y `sleigh` sin necesidad de reiniciar la app.\n\n### 3. Portado y reconstrucción de software (`craft-rebuild`)\n- Estudio de arquitectura, inventario de assets/rutas, registro de hipótesis/hallazgos con IDs de evidencia (`ev_...`) y reconstrucción paso a paso hacia Android (Kotlin/Compose, NDK/SDL), Web (React/Vite) o Rust.\n",
+        "description": "335 native ARM64 Rust MCP tools for static software inspection, binary & firmware analysis (ELF, PE, Mach-O, APK/DEX, .NET & NativeAOT, WASM, CUDA/PTX, ESP32/UF2/DTB, Godot .pck, Unity IL2CPP, Wii/GC .dol & retro->ELF), clean-room rebuilding, stateful RL HAR mock environments, and Android ARM64 Ghidra 12.1.4.",
+        "readme": "# Craft Anything + Ghidra 12.1.4 (Android ARM64 — v0.5.0 Plus)\n\nPlugin nativo oficial para **Antigravity for Android (`aarch64-linux-android`)** que combina el motor completo de **Craft Anything** con el motor especializado **`craft-plus-mcp` en Rust puro (`ARMv8.1-A + LSE`)** — sumando **335 herramientas MCP 100% en Rust** — junto con los binarios nativos **ARM64 de Ghidra 12.1.4** (`decompile` y `sleigh`).\n\n> [!TIP]\n> **¿Cómo funciona por niveles sin gastar RAM ni almacenamiento innecesario?**\n> 1. **Nivel 1 — Motor Rápido 100% Rust (Activo al instante, 0 descargas extra, `<50 MB` RAM):** Las **335 herramientas MCP** funcionan desde el primer segundo sin Java, Python ni Node.js: desensamblador y pseudo-C en Rust, DEX/APK, Electron/JS, `.NET` + **NativeAOT**, **WASM**, **CUDA/PTX**, **ESP32/UF2/DeviceTree**, **Godot `.pck`**, **Unity `IL2CPP`**, convertidor **`.dol`/retro/firmware -> ELF** y servidor mock **RL desde `.har`**.\n> 2. **Nivel 2 — Superpotencia Ghidra 12.1.4 Nativo ARM64 (Bajo demanda):** Cuando necesites recuperación profunda de structs/`vtables` C++, SLEIGH o ejecución por lotes con `ghidra_headless_run`, escribe en el chat **«Instala Ghidra»** (o ejecuta `craft-ghidra-setup`).\n\n---\n\n## Qué incluye la versión `v0.5.0`\n\n| Componente | Descripción |\n| :--- | :--- |\n| **`craft-anything-cli` + `craft-plus-mcp`** | Multiplexor `stdio` y motor binario **100% Rust ARM64** (`PIE`, `16 KB` page-aligned, enlazado solo a Bionic `libc.so`/`libdl.so`) exponiendo **335 herramientas MCP** unificadas (`100% <= 64` caracteres prefijados; traduce automáticamente `native_fn_references_list`, `native_fn_instructions_list` y `native_rizin_session_cmd_run` para que ninguna herramienta quede deshabilitada). |\n| **Sintetizador `retro_to_elf_convert` (0 Java)** | Convierte contenedores **GameCube/Wii (`.dol`)**, **DOS 16-bit (`.com`)**, **ESP32 (`0xE9`)**, **UF2** y **ROMs raw** en un ejecutable **ELF estándar** con direcciones virtuales y símbolos reales para decompilarlos al instante en Rust o Ghidra. |\n| **Parsers Especializados IoT, GPU & Juegos** | `firmware_esp_uf2_show`, `firmware_dtb_fit_show` (`.dtb` y U-Boot `FIT`), `gpu_cuda_ptx_show` (descompresor LZ4 `nvcc` + kernels `PTX`), `game_godot_pck_extract`, `game_il2cpp_meta_show` (`v24–v39`), `nativeaot_metadata_show`, `formats_beam_show` y `js_release_audit`. |\n| **Entornos RL sin Docker (`rl_har_env_*`)** | `rl_har_env_build` convierte capturas `.har` en paquetes OpenAPI + `reward_checks.json`, y `rl_har_env_serve` levanta en memoria un servidor HTTP mock determinista en Rust (`127.0.0.1`, `<2 MB` RAM) con endpoints `/__rl/reset`, `/__rl/trace` y `/__rl/evaluate`. |\n| **Ghidra 12.1.4 ARM64 + `ghidra_headless_run`** | Binarios C++ ARM64 `decompile` y `sleigh`, instalador `craft-ghidra-setup` y runner seguro `ghidra_headless_run` con límite de RAM móvil (`1536M`) y rutas sin puntos en `$PREFIX/tmp`. |\n",
         "skills": [
           {
             "name": "craft-anything",
-            "description": "Evidence-backed static software inspection and multi-format binary reverse engineering (ELF, PE, Mach-O, APK/DEX, .NET, WASM, Electron/JS) via 302 native ARM64 MCP tools."
+            "description": "Investigate how shipped software, firmware, consoles, GPUs, games, and web APIs work (ELF/PE/Mach-O, APK/DEX, Electron .asar, .NET & NativeAOT, WASM, CUDA/PTX, ESP32/UF2/DTB, Godot .pck, Unity IL2CPP, GameCube/Wii .dol, Erlang BEAM, and RL HAR mocks) using Craft Anything + Plus's 335 native Rust MCP tools."
           },
           {
             "name": "craft-rebuild",
-            "description": "Structured architecture study, asset inventory, and clean-room or deep rebuilding/porting of desktop & mobile apps."
+            "description": "Study, port, and rebuild applications, games, consoles/firmware, Electron bundles, websites, or native tools into a clean modern codebase (including Android ARM64, Web, React/Vite, Rust, Godot 4, or Kotlin/Compose) using Craft Anything v0.5.0's Study -> Brief -> Build -> Check workflow in Deep or Clean-Room mode."
           },
           {
             "name": "ghidra-arm64",
-            "description": "On-demand native Android ARM64 Ghidra 12.1.4 C/C++ decompilation, vtable recovery, and analyzeHeadless workflows."
+            "description": "Install on demand, configure, and run native Android ARM64 Ghidra 12.1.4 (decompile, sleigh, analyzeHeadless, ghidra_headless_run, retro_to_elf_convert, and Craft Anything Deep Ghidra integration) inside Antigravity Android while respecting mobile RAM and storage constraints."
           }
         ],
         "mcpServers": [
@@ -238,13 +238,13 @@
             "serverName": "craft-anything",
             "originalServerName": "craft-anything",
             "pluginName": "craft-anything",
-            "pluginVersion": "0.4.0-r8"
+            "pluginVersion": "0.5.0"
           }
         ],
         "suggestedPrompts": [
-          "Inspect an APK or binary in /sdcard/Download using Craft Anything's static analysis tools",
-          "Run craft-ghidra-setup to enable full native ARM64 Ghidra 12.1.4 C++ decompilation",
-          "Analyze the architecture of a desktop app and plan an Android Kotlin/Compose port"
+          "Analiza este binario, APK o paquete Electron y explícame cómo funciona con evidencia",
+          "Convierte este archivo .dol / firmware ESP32 / UF2 a ELF en Rust y decompila sus funciones clave",
+          "Genera un entorno RL desde mi captura .har y levanta el servidor mock determinista en Rust"
         ]
       }
     },
