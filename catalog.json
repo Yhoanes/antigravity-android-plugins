@@ -114,17 +114,34 @@
         "logo": "https://www.gstatic.com/antigravity/buildWithGoogle/science/logo.svg",
         "version": "1.3.2-android",
         "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/agy-adb-bridge",
+        "displayName": "AGY ADB Bridge",
+        "description": "Puente nativo en Rust ARM64 de permisos uid=2000(shell) sin Shizuku externo: emparejamiento ADB inalambrico con llave RSA persistente, modo local 127.0.0.1:5555 inmune a apagar el Wi-Fi, auto-descubrimiento mDNS 0% bateria y wrapper inteligente rish con fallback anti-bloqueo de 2s para MIUI/HyperOS.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-adb-bridge/agy-adb-bridge.zip?v=1.0.0",
+            "sha256": "0b81a5562c91f22f73ff893925ebe2282b9ab615387b9ba9d51080705a3eed0e"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-adb-bridge/logo.svg",
+        "version": "1.0.0",
+        "_androidNative": true
       }
     ],
     "groups": [
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered for Android: GPU video production, Ghidra binary analysis, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: GPU video production, Ghidra binary analysis, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
           "antigravity-plugins-official/plugin/craft-anything",
           "antigravity-plugins-official/plugin/game-studio",
+          "antigravity-plugins-official/plugin/agy-adb-bridge",
           "antigravity-plugins-official/plugin/chrome-devtools-plugin",
           "antigravity-plugins-official/plugin/android-cli-plugin",
           "antigravity-plugins-official/plugin/github"
@@ -637,6 +654,51 @@
           "Crea un proyecto 3D o 2D en Godot 4 con joystick tactil y escena jugable lista para Android",
           "Empaqueta mis sprites (.png/.tga/.dds/.webp) en un Atlas 2D con mapas normales y elimina el silencio inicial del audio",
           "Inspecciona y optimiza mis modelos 3D .glb con LODs nativos para GPU movil y mide los FPS reales con Shizuku"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/agy-adb-bridge": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/agy-adb-bridge",
+        "displayName": "AGY ADB Bridge",
+        "description": "Puente nativo en Rust ARM64 de permisos uid=2000(shell) sin Shizuku externo: emparejamiento ADB inalambrico con llave RSA persistente, modo local 127.0.0.1:5555 inmune a apagar el Wi-Fi, auto-descubrimiento mDNS 0% bateria y wrapper inteligente rish con fallback anti-bloqueo de 2s para MIUI/HyperOS.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-adb-bridge/agy-adb-bridge.zip?v=1.0.0",
+            "sha256": "0b81a5562c91f22f73ff893925ebe2282b9ab615387b9ba9d51080705a3eed0e"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-adb-bridge/logo.svg",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "agy-adb-bridge",
+        "displayName": "AGY ADB Bridge",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-adb-bridge/logo.svg",
+        "description": "Puente nativo en Rust ARM64 de permisos uid=2000(shell) sin Shizuku externo: emparejamiento ADB inalambrico con llave RSA persistente, modo local 127.0.0.1:5555 inmune a apagar el Wi-Fi, auto-descubrimiento mDNS 0% bateria y wrapper inteligente rish con fallback anti-bloqueo de 2s para MIUI/HyperOS.",
+        "readme": "# AGY ADB Bridge v1.0.0 — Puente Nativo `uid=2000(shell)` en Rust ARM64\n\n**`agy-adb-bridge` (`v1.0.0`)** es un plugin MCP + CLI compilado en **Rust ARM64 nativo (`aarch64`)** para **Antigravity for Android** que elimina la dependencia de una app externa de Shizuku en segundo plano, evitando desconexiones y bloqueos de batería en Xiaomi MIUI / HyperOS.\n\n---\n\n## ¿Qué resuelve?\n\n1. **Llave RSA persistente (`$HOME/.android/adbkey`) + `adb tcpip 5555`:**\n   * Vinculas **una sola vez** con el código de 6 dígitos de *Depuración inalámbrica*.\n   * El puente activa `127.0.0.1:5555` en local para que `uid=2000(shell)` siga funcionando **incluso si apagas el Wi-Fi o sales con datos móviles** (hasta el próximo reinicio del equipo).\n2. **Wrapper inteligente auto-reparable en `$PREFIX/bin/rish`:**\n   * No toca `/data/user/0/com.agy/files/runtime/bin/rish`.\n   * Se auto-repara al instante si una actualización o reinicio de `com.agy` sobreescribe `$PREFIX/bin/rish`.\n   * Si `adb` aún no está vinculado, cae en *fallback* limpio a Shizuku con un **watchdog estricto de 2 segundos** para no quedarse colgado nunca.\n3. **Auto-descubrimiento mDNS bajo demanda (`224.0.0.251:5353`):**\n   * 0% consumo de batería en reposo (cero procesos o *polling* en segundo plano).\n   * Detecta automáticamente los puertos dinámicos `_adb-tls-pairing._tcp` y `_adb-tls-connect._tcp`.\n\n---\n\n## Las 7 Herramientas MCP Incluidas\n\n1. `adb_bridge_status`: Diagnóstico completo (`127.0.0.1:5555`, llave RSA, backend activo, mDNS, salud de `$PREFIX/bin/rish` y fallback Shizuku).\n2. `adb_bridge_discover`: Escaneo mDNS bajo demanda de puertos activos de Depuración Inalámbrica.\n3. `adb_bridge_pair`: Emparejamiento único con código de 6 dígitos (`adb pair`), conexión TLS, promoción automática a `tcpip 5555` y verificación de `uid=2000(shell)`.\n4. `adb_bridge_connect`: Reconexión rápida tras un reinicio usando tu llave `$HOME/.android/adbkey` sin volver a emparejar.\n5. `adb_bridge_shell`: Ejecuta cualquier comando como `uid=2000(shell)`.\n6. `adb_bridge_configure`: Cambia entre modo `tcpip`, `tls_only` o `shizuku_only`, puerto local o desconexión rápida.\n7. `adb_bridge_setup`: Instala `android-tools` (`adb`) vía `pkg` y repara wrappers en `$PREFIX/bin`.\n\n---\n\n## Uso Rápido\n\n```sh\n# 1. Ver estado del puente:\nagy-adb status\n\n# 2. Vincular una sola vez (con Depuración inalámbrica -> código de 6 dígitos abierto):\nagy-adb pair 123456\n\n# 3. Ejecutar cualquier comando elevado con rish o agy-adb:\nrish -c \"id\"\nagy-adb exec \"pm list packages -3\"\n```\n",
+        "skills": [
+          {
+            "name": "agy-adb-bridge",
+            "description": "Native Android ARM64 Rust ADB & Shizuku bridge providing persistent uid=2000(shell) permissions via android-tools ($PREFIX/bin/adb + $HOME/.android/adbkey + adb tcpip 5555 on 127.0.0.1:5555), zero-polling mDNS discovery, and a self-healing rish wrapper with a 2s MIUI-safe Shizuku fallback. Use whenever checking, pairing, reconnecting, or troubleshooting elevated shell/rish permissions on Android."
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "agy-adb-bridge",
+            "originalServerName": "agy-adb-bridge",
+            "pluginName": "agy-adb-bridge",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Revisa el estado de AGY ADB Bridge y escanea puertos de Depuracion Inalambrica por mDNS",
+          "Vincula el puente ADB nativo con mi codigo de 6 digitos de Depuracion Inalambrica y activa 127.0.0.1:5555",
+          "Reconecta el puente ADB usando la llave RSA guardada o verifica que rish responde sin bloqueos"
         ]
       }
     }

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="#0B111B"/>
+  <rect x="34" y="34" width="444" height="444" rx="98" stroke="url(#adb_rim)" stroke-width="10"/>
+  <!-- Outer Hardware Gear Arc (Rust / Native ARM64) -->
+  <circle cx="256" cy="256" r="142" stroke="#1E293B" stroke-width="14"/>
+  <path d="M256 102V132M256 380V410M102 256H132M380 256H410M147 147L168 168M344 344L365 365M365 147L344 168M168 344L147 365" stroke="#10B981" stroke-width="14" stroke-linecap="round"/>
+  <!-- Wireless ADB Signal Arcs -->
+  <path d="M188 186C225 152 287 152 324 186" stroke="#38BDF8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M214 214C237 194 275 194 298 214" stroke="#34D399" stroke-width="14" stroke-linecap="round"/>
+  <!-- Central Bridge Bolt / Shell Core -->
+  <polygon points="274,218 214,284 252,284 238,342 298,274 260,274" fill="url(#adb_bolt)" stroke="#ECFEFF" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Loopback Anchor Nodes (127.0.0.1:5555) -->
+  <circle cx="154" cy="256" r="16" fill="#0F172A" stroke="#38BDF8" stroke-width="8"/>
+  <circle cx="358" cy="256" r="16" fill="#0F172A" stroke="#10B981" stroke-width="8"/>
+  <defs>
+    <linearGradient id="adb_rim" x1="34" y1="34" x2="478" y2="478" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="0.5" stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="adb_bolt" x1="214" y1="218" x2="298" y2="342" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+</svg>
