@@ -1,8 +1,8 @@
 <div align="center">
 
-  <p><font size="6"><b>Antigravity Android Native Plugins Marketplace</b></font></p>
+  <h1 align="center">Antigravity Android Native Plugins Marketplace</h1>
 
-  <p><font color="#7d8590">Official live OTA repository of native <b>ARM64 / Bionic</b> plugins, MCP servers, and skills engineered for <a href="https://github.com/Yhoanes/antigravity-android"><b>Antigravity for Android</b></a>.</font></p>
+  <p><font color="#7d8590">Official live OTA repository of native <b>ARM64 / Bionic</b> plugins, MCP servers, and skills engineered by <a href="https://github.com/Yhoanes"><b>Yhoanes</b></a> for <a href="https://github.com/Yhoanes/antigravity-android"><b>Antigravity for Android</b></a> (<a href="https://yhoanes.github.io/antigravity-android/">Website</a>).</font></p>
 
   <p>
     <code>ARM64 v8.0-A+</code> &nbsp;&bull;&nbsp;
