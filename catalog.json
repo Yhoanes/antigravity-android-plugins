@@ -37,6 +37,22 @@
       },
       {
         "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/unity-android",
+        "displayName": "Unity Studio Android",
+        "description": "13 herramientas MCP nativas en Rust ARM64 + Unity CLI v1.0.0 oficial porteado para desarrollar, auditar, compilar ($0 Cloud CI en Unity 6.3 LTS Personal) y depurar en vivo juegos Unity 2D/3D a 120-144 FPS en Android: escenas YAML y GUIDs .meta sin roturas, shaders anti-stripping, .unitypackage offline, auto-instalacion APK y Live Debugger con rish.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/unity-android/unity-android.zip?v=1.0.0",
+            "sha256": "e495ed60400fc2787cb413154ff3b0491b44419e25305795f078be9410f2d87d"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/unity-android/logo.svg",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/game-studio",
         "displayName": "Game Studio 2D/3D",
         "description": "12 native ARM64 Rust MCP tools for 2D/3D game creation & porting: Godot 4 Vulkan Mobile (60-120 FPS) touch projects, multi-core Rayon Sprite Atlas (PNG/WebP/TGA/DDS) & 2D normal maps, 3D GLB optimizer + native LODs, 0-ms WAV DSP & Shizuku FPS profiler.",
@@ -136,10 +152,11 @@
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered for Android: GPU video production, Ghidra binary analysis, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: GPU video production, Ghidra binary analysis, Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
           "antigravity-plugins-official/plugin/craft-anything",
+          "antigravity-plugins-official/plugin/unity-android",
           "antigravity-plugins-official/plugin/game-studio",
           "antigravity-plugins-official/plugin/agy-adb-bridge",
           "antigravity-plugins-official/plugin/chrome-devtools-plugin",
@@ -699,6 +716,51 @@
           "Revisa el estado de AGY ADB Bridge y escanea puertos de Depuracion Inalambrica por mDNS",
           "Vincula el puente ADB nativo con mi codigo de 6 digitos de Depuracion Inalambrica y activa 127.0.0.1:5555",
           "Reconecta el puente ADB usando la llave RSA guardada o verifica que rish responde sin bloqueos"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/unity-android": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/unity-android",
+        "displayName": "Unity Studio Android",
+        "description": "13 herramientas MCP nativas en Rust ARM64 + Unity CLI v1.0.0 oficial porteado para desarrollar, auditar, compilar ($0 Cloud CI en Unity 6.3 LTS Personal) y depurar en vivo juegos Unity 2D/3D a 120-144 FPS en Android: escenas YAML y GUIDs .meta sin roturas, shaders anti-stripping, .unitypackage offline, auto-instalacion APK y Live Debugger con rish.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/unity-android/unity-android.zip?v=1.0.0",
+            "sha256": "e495ed60400fc2787cb413154ff3b0491b44419e25305795f078be9410f2d87d"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/unity-android/logo.svg",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "unity-android",
+        "displayName": "Unity Studio Android",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/unity-android/logo.svg",
+        "description": "13 herramientas MCP nativas en Rust ARM64 + Unity CLI v1.0.0 oficial porteado para desarrollar, auditar, compilar ($0 Cloud CI en Unity 6.3 LTS Personal) y depurar en vivo juegos Unity 2D/3D a 120-144 FPS en Android: escenas YAML y GUIDs .meta sin roturas, shaders anti-stripping, .unitypackage offline, auto-instalacion APK y Live Debugger con rish.",
+        "readme": "# Unity Studio Android (`v1.0.0`) — Motor Nativo en Rust ARM64 + `unity-cli` v1.0.0 Oficial Porteado\n\nPlugin oficial nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que une un motor MCP ultrarrápido en **Rust puro (`<10 MB` RAM, arranque instantáneo)** con el **`unity-cli v1.0.0` oficial de Unity Technologies porteado a Android ARM64**, permitiéndote crear, auditar, compilar por **\\$0 en la nube** (**Unity 6.3 LTS `6000.3.28f1` Personal**) y depurar en vivo videojuegos **2D y 3D a 120–144 FPS** directamente desde tu teléfono o tablet.\n\n> [!TIP]\n> **Flujo Completo Zero-PC Verificado en Dispositivo Real:**\n> 1. **Autoría Local sin Roturas:** Genera proyectos **Unity 6.3 LTS (`6000.3.28f1`, 100 % compatible con licencia gratuita Unity Personal)** con controles táctiles, desbloqueo de pantalla **120–144 Hz** (`optimizedFramePacing = false`) y shader `Assets/Resources/NeonLit.shader` inmune al *stripping* de Vulkan/GLES3 (cero pantallas magenta `#FF00FF`).\n> 2. **Compilación Cloud \\$0 (`arm64-v8a` IL2CPP):** Compila el `.apk` o `.aab` gratis con **GitHub Actions (`GameCI`)** o **Unity Cloud Build** usando activación OAuth de un toque.\n> 3. **Instalación y Telemetría en Vivo (`rish`):** Instala el `.apk` directo en tu Android, captura excepciones C#/IL2CPP en `logcat -s Unity` y mide FPS reales, hercios de pantalla (`SurfaceFlinger`), `PSS` RAM y temperatura.\n\n---\n\n## Las 13 Herramientas MCP Nativas en Rust\n\n| Herramienta | Departamento | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `unity_status` | Diagnóstico | Verifica el motor Rust ARM64, estado y sesión OAuth de `unity-cli v1.0.0`, conexión `rish`/ADB y herramientas Cloud (`gh`, `git`). |\n| `unity_cli_exec` | CLI Oficial | Ejecuta cualquier subcomando oficial de **`unity-cli v1.0.0`** en Android (`releases`, `docs`, `auth`, `license`, `projects`, `vcs diff/blame/guid`, `pipeline cloud-build`) con salida JSON limpia. |\n| `unity_cli_setup` | Auto-Instalador | Descarga desde el CDN de Unity y parchea automáticamente `unity-linux-arm64` + `glibc` de 31 bytes + shim `libunity_android_compat.so` (`ENOSYS` para syscalls `217/218/219`) y wrappers `$PREFIX/bin/{unity,agy-unity}`. |\n| `unity_project_create` | Motor 2D/3D | Crea proyectos **Unity 6.3 LTS (`6000.3.28f1`)** 2D o 3D preconfigurados para Android `arm64-v8a` IL2CPP, 120–144 Hz, *New Input System* táctil, `Resources/NeonLit.shader`, `.meta` deterministas y workflow CI \\$0. |\n| `unity_script_create` | Scripting C# | Crea o actualiza scripts `.cs`, shaders o UI Toolkit validando coincidencia exacta `class == archivo` en `MonoBehaviour` y generando su `.meta` con GUID determinista. |\n| `unity_scene_build` | Serializador YAML | Construye escenas `.unity` y `.prefab` (`%YAML 1.1`) puras en Rust con cámara, luz, primitivas 2D/3D, colisionadores, `Rigidbody` y enlace de scripts por `guid`. |\n| `unity_yaml_audit` | QA Pre-Vuelo | Audita en `<1s` antes de compilar: repara `.meta` faltantes, detecta GUIDs duplicados, verifica enlaces `&fileID` en escenas/prefabs y valida llaves/clases C#. |\n| `unity_package_io` | Paquetes Offline | Motor `.unitypackage` puro en Rust (`tar.gz`): inspecciona (`inspect`), importa (`import`) o exporta (`export`) carpetas `Assets/` conservando sus GUIDs. |\n| `unity_asset_opt` | Arte 3D y Audio | Inspecciona presupuestos móviles de modelos `.glb` (triángulos, huesos, *draw calls*) y masteriza audio `.wav` sin latencia (`0 ms` attack, `-1.0 dBFS` y loops BGM). |\n| `unity_ci_workflow` | Cloud Build \\$0 | Orquesta compilaciones gratuitas en **GitHub Actions (`GameCI`)**: `scaffold` (con limpieza de ~35 GB de disco y activación Personal automática), `trigger`, `status`, `logs` de errores `CS...` y `download_apk`. |\n| `unity_apk_deploy` | Despliegue APK | Instala tu `.apk` en el teléfono vía `rish` (auto-resolviendo cambios de firma `INSTALL_FAILED_UPDATE_INCOMPATIBLE`), limpia `logcat` y lanza el juego en pantalla. |\n| `unity_live_debug` | Live Debugger | Captura en vivo `logcat -s Unity` (excepciones C#, shaders, `Debug.Log`) junto a FPS, `gfxinfo`, tasa de refresco real (`60/120/144 Hz`), RAM `PSS` y temperatura de batería. |\n| `unity_remote_mcp` | Puente Remoto | Puente HTTP JSON-RPC opcional para controlar un Unity 6 Editor abierto en PC/Mac vía Wi-Fi local o Tailscale. |\n\n---\n\n## Activación Rápida del `unity-cli` Oficial\n\nLas **13 herramientas MCP en Rust** arrancan en `<2 ms` apenas instalas el plugin desde el Marketplace. Para descargar y activar el binario oficial **`unity-cli v1.0.0`** en terminal (o al ejecutar `unity` por primera vez):\n\n```bash\n# Instala y parchea automaticamente unity-linux-arm64 v1.0.0 + glibc:\nagy-unity setup\n\n# Inicia sesion OAuth con tu cuenta gratuita de Unity Personal:\nunity auth login\n```\n",
+        "skills": [
+          {
+            "name": "unity-android",
+            "description": "Native Android ARM64 Unity 6 Studio & Ported Official Unity CLI v1.0.0 workflow guide. Use whenever creating, editing, auditing, building ($0 GitHub GameCI / Unity Cloud Build), installing, or live-debugging Unity 2D/3D Android games (`unity_project_create`, `unity_script_create`, `unity_scene_build`, `unity_yaml_audit`, `unity_package_io`, `unity_cli_exec`, `unity_ci_workflow`, `unity_apk_deploy`, `unity_live_debug`)."
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "unity-android",
+            "originalServerName": "unity-android",
+            "pluginName": "unity-android",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Crea un proyecto Unity 6.3 LTS 3D o 2D optimizado para Android ARM64 (120-144 FPS) con controles tactiles, shader NeonLit y escena jugable",
+          "Audita las escenas .unity, prefabs, scripts C# y GUIDs .meta de mi proyecto y compila el APK gratis con GitHub Actions GameCI",
+          "Instala mi APK de Unity en el telefono con rish, captura excepciones C# en logcat -s Unity y mide los FPS reales y RAM"
         ]
       }
     }

@@ -8,6 +8,7 @@
     <code>ARM64 v8.0-A+</code> &nbsp;&bull;&nbsp;
     <code>GPU h264_mediacodec</code> &nbsp;&bull;&nbsp;
     <code>Craft Anything + Ghidra 12.1.4</code> &nbsp;&bull;&nbsp;
+    <code>Unity 6 Studio + CLI (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Game Studio 2D/3D (Rust)</code> &nbsp;&bull;&nbsp;
     <code>GitHub MCP 91 Tools</code> &nbsp;&bull;&nbsp;
     <code>Headless Chromium MCP</code> &nbsp;&bull;&nbsp;
@@ -49,6 +50,7 @@ https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/catal
 | **6** | **Android CLI (On-Device)** | `antigravity-plugins-official/plugin/android-cli-plugin` | `1.0.16625373-android` | Bundles the on-device `android` CLI bridge (`status`, `devices`, `layout`, `screen capture`, `install`, `shell` via Shizuku `rish`) + official Android & Jetpack Compose skills. |
 | **7** | **Science (Android Clean)** | `antigravity-plugins-official/plugin/science` | `1.3.2-android` | All 28 official Science skills (AlphaFold, ChEMBL, PubMed, RDKit, genomics & structure analysis) pre-cleaned for Android ARM64 without desktop Electron sidecars. |
 | **8** | **AGY ADB Bridge** | `antigravity-plugins-official/plugin/agy-adb-bridge` | `1.0.1` | **7 MCP tools + CLI Rust ARM64:** Puente nativo `uid=2000(shell)` sin Shizuku externo mediante `android-tools` (`adb`), llave RSA persistente, modo local `127.0.0.1:5555` inmune a apagar Wi-Fi, mDNS UDP 0% batería y wrapper auto-reparable `$PREFIX/bin/rish` con watchdog de 2s para MIUI/HyperOS. |
+| **9** | **Unity Studio Android** | `antigravity-plugins-official/plugin/unity-android` | `1.0.0` | **13 native ARM64 Rust MCP tools + Ported Official `unity-cli v1.0.0`:** Proyectos **Unity 6.3 LTS (`6000.3.28f1` Personal)** 2D/3D a 120–144 FPS (`arm64-v8a` IL2CPP), serializador/auditor YAML de escenas `.unity`/`.prefab` y GUIDs `.meta`, shader `NeonLit` anti-stripping, `.unitypackage` offline, `$0` GitHub Actions `GameCI` / Cloud Build, auto-instalación APK y Live Debugger (`logcat -s Unity` + FPS/RAM) vía `rish`. |
 
 ---
 
@@ -65,6 +67,7 @@ Each plugin connects its MCP server immediately upon installation (`<1s` zero-da
 | **Chrome DevTools** | `pkg update && pkg install nodejs chromium` | Enables live headless ARM64 Chromium DOM/network/performance automation via `chrome-devtools-mcp`. |
 | **Android CLI** | Start the **Shizuku** app on Android | Enables live `android layout`, `android screen capture`, `android install`, and `rish` ADB shell operations on-device. |
 | **AGY ADB Bridge** | `agy-adb setup && agy-adb pair <6-digitos>` (o **vía chat** con `adb_bridge_pair`) | Puente nativo `uid=2000(shell)` en `127.0.0.1:5555` con llave RSA persistente sin depender de Shizuku ni de Wi-Fi tras vincular una vez. |
+| **Unity Studio Android** | `agy-unity setup && unity auth login` *(13 Rust MCP tools work immediately with 0 downloads)* | Downloads & patches official **`unity-cli v1.0.0` (`linux-arm64`)** + isolated `glibc` runtime + `ENOSYS` syscall shim, unlocking `unity docs`, `unity vcs`, `unity releases`, `unity projects`, and `unity pipeline cloud-build`. |
 
 ---
 
