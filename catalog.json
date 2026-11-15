@@ -55,16 +55,16 @@
         "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/game-studio",
         "displayName": "Game Studio 2D/3D",
-        "description": "12 native ARM64 Rust MCP tools for 2D/3D game creation & porting: Godot 4 Vulkan Mobile (60-120 FPS) touch projects, multi-core Rayon Sprite Atlas (PNG/WebP/TGA/DDS) & 2D normal maps, 3D GLB optimizer + native LODs, 0-ms WAV DSP & Shizuku FPS profiler.",
+        "description": "16 native ARM64 Rust MCP tools + GDExtension (C/C++ & Rust) + Zero-Cloud Local APK Compiler for Godot 4.7 Vulkan (120-144 FPS): .gdshader & MultiMesh GPU Instancing (5,000+ units), Rayon Sprite Atlas (PNG/WebP/TGA/DDS), 3D GLB LODs, 0-ms WAV DSP & 144 Hz rish debugger.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/game-studio.zip?v=1.1.0",
-            "sha256": "28e9cf750438c840884dfc2ac3d256c5d6bdd7100acdf801f96674b2dbf86168"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/game-studio.zip?v=2.0.0",
+            "sha256": "8cf5607b6a5091cd25418737f7907bd57aab9b709cdc8f99ccc2f94f4b283a6d"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/logo.svg",
-        "version": "1.1.0",
+        "version": "2.0.0",
         "_androidNative": true
       },
       {
@@ -626,25 +626,25 @@
         "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/game-studio",
         "displayName": "Game Studio 2D/3D",
-        "description": "12 native ARM64 Rust MCP tools for 2D/3D game creation & porting: Godot 4 Vulkan Mobile (60-120 FPS) touch projects, multi-core Rayon Sprite Atlas (PNG/WebP/TGA/DDS) & 2D normal maps, 3D GLB optimizer + native LODs, 0-ms WAV DSP & Shizuku FPS profiler.",
+        "description": "16 native ARM64 Rust MCP tools + GDExtension (C/C++ & Rust) + Zero-Cloud Local APK Compiler for Godot 4.7 Vulkan (120-144 FPS): .gdshader & MultiMesh GPU Instancing (5,000+ units), Rayon Sprite Atlas (PNG/WebP/TGA/DDS), 3D GLB LODs, 0-ms WAV DSP & 144 Hz rish debugger.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/game-studio.zip?v=1.1.0",
-            "sha256": "28e9cf750438c840884dfc2ac3d256c5d6bdd7100acdf801f96674b2dbf86168"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/game-studio.zip?v=2.0.0",
+            "sha256": "8cf5607b6a5091cd25418737f7907bd57aab9b709cdc8f99ccc2f94f4b283a6d"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/logo.svg",
-        "version": "1.1.0",
+        "version": "2.0.0",
         "_androidNative": true
       },
       "plugin": {
         "name": "game-studio",
         "displayName": "Game Studio 2D/3D",
-        "version": "1.1.0",
+        "version": "2.0.0",
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/game-studio/logo.svg",
-        "description": "12 native ARM64 Rust MCP tools for 2D/3D game creation & porting: Godot 4 Vulkan Mobile (60-120 FPS) touch projects, multi-core Rayon Sprite Atlas (PNG/WebP/TGA/DDS) & 2D normal maps, 3D GLB optimizer + native LODs, 0-ms WAV DSP & Shizuku FPS profiler.",
-        "readme": "# Game Studio 2D/3D (`v1.1.0`) — Estudio Nativo en Rust ARM64 para Videojuegos y Porting en Android\n\nPlugin oficial nativo **ARM64 (`aarch64` + `LSE` + `Rayon` multinúcleo)** para **Antigravity for Android** que convierte tu teléfono o tablet en un estudio completo de desarrollo y *porting* de videojuegos **2D y 3D** con arranque instantáneo (`<2 ms`, `<15 MB` de RAM, cero dependencias de JVM).\n\n> [!TIP]\n> **Flujo Dual (Juegos Nuevos + Porting con Craft Anything & Ghidra):**\n> - **Crear juegos nuevos desde cero:** Usa `game-studio` directamente para generar proyectos **Godot 4 Vulkan Mobile (60–120 FPS)** con controles táctiles, empaquetar Sprite Atlases, optimizar mallas 3D `.glb`, masterizar audio sin latencia y balancear combates.\n> - **Portear juegos de PC/Consola a Android nativo:** Combínalo con **Craft Anything + Ghidra 12.1.4** (que extrae fórmulas y archivos de `.exe`/`.dll`/`.pak`) y pasa las texturas `.dds`/`.tga`, modelos `.glb` y efectos `.wav` directo a `game-studio`.\n\n---\n\n## Las 12 Herramientas MCP Nativas en Rust\n\n| Herramienta | Departamento | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `studio_status` | Diagnóstico | Verifica motores Rust (`Rayon`, `GLB LOD`, `WAV DSP`, `DDS/TGA/WebP`), conexión en vivo con **Shizuku (`rish`)**, **Godot 4 Android** y puente con **Craft Anything + Ghidra**. |\n| `godot_scaffold_project` | Motor 2D/3D | Genera proyectos completos **Godot 4.x (Vulkan Mobile)** 2D o 3D con joystick táctil flotante, cámara táctil, botones de acción y preset Android `arm64-v8a`. |\n| `godot_create_scene` | Motor 2D/3D | Crea escenas `.tscn` válidas (personajes, enemigos, proyectiles, UI) con colisiones y scripts `.gd`. |\n| `godot_validate_project` | QA Estático | Audita referencias `res://` rotas en `.tscn/.tres/.gd` y detecta texturas móviles mayores a `2048px`. |\n| `sprite_pack_atlas` | Arte 2D Multinúcleo | Empaqueta en paralelo con `Rayon` sprites `.png`, `.webp`, `.tga`, `.dds`, `.bmp` y `.jpg` en un **Sprite Atlas RGBA** (PNG + WebP), `.json` y recursos `AtlasTexture` (`.tres`) para Godot 4. |\n| `sprite_process` | Pixel Art y Luz 2D | Escalado *Nearest-Neighbor*, recorte alfa, *colorkey* transparente, **generador Sobel 3x3 de Mapas Normales 2D (`generate_normal_map`)**, corte de *spritesheets* e iconos Android (`mdpi`–`xxxhdpi` + `512px`). |\n| `model3d_inspect_glb` | Pipeline 3D | Inspector binario `glTF 2.0` (`.glb/.gltf`): mallas, vértices, triángulos, *draw calls*, huesos (`joints`), animaciones y dimensiones de texturas embebidas. |\n| `model3d_optimize_glb` | Pipeline 3D + LODs | Reempaqueta binarios `.glb` reduciendo texturas 2K/4K a WebP/PNG **y ejecuta decimación espacial 3D nativa de triángulos (`simplify_ratio`)** para *LODs* móviles. |\n| `audio_sfx_master` | Audio DSP 0-Delay | Motor DSP Rust (`hound`) para WAV de 8/16/24/32 bits: recorta silencio inicial (`0 ms` de latencia), normaliza a `-1.0 dBFS` y crea **bucles BGM continuos (`seamless_loop_fade_ms`)**. |\n| `gamedata_balance_sim` | Game Design | Simulador Monte Carlo ultrarrápido (hasta `100,000` combates en milisegundos) para *Time-To-Kill*, DPS efectivo, armadura y críticos. |\n| `android_game_profiler` | QA en Vivo | Perfila cualquier juego corriendo en Android vía **Shizuku (`rish`)**: tiempos de cuadro GPU/CPU (`p50/p90/p95/p99`), FPS reales, *jank*, RAM (`PSS`), temperatura y *crashes*. |\n| `android_godot_launch` | Lanzador | Abre **Godot 4 Android Editor** o tu APK compilado directamente en pantalla vía Shizuku. |\n\n---\n\n## Potenciador Multimedia Opcional\n\nLas 12 herramientas en Rust funcionan **100 % al instante tras instalar** sin descargas extra. Cuando necesites comprimir audio a `.ogg`/`.opus`/`.mp3` con `FFmpeg` o simplificar mallas animadas con `@gltf-transform/cli`, ejecuta una sola vez:\n\n```bash\ngame-studio-setup\n```\n",
+        "description": "16 native ARM64 Rust MCP tools + GDExtension (C/C++ & Rust) + Zero-Cloud Local APK Compiler for Godot 4.7 Vulkan (120-144 FPS): .gdshader & MultiMesh GPU Instancing (5,000+ units), Rayon Sprite Atlas (PNG/WebP/TGA/DDS), 3D GLB LODs, 0-ms WAV DSP & 144 Hz rish debugger.",
+        "readme": "# Game Studio 2D/3D (`v2.0.0`) — Motor Nativo en Rust ARM64 + `GDExtension` + Compilador Local de `.apk`\n\nPlugin oficial nativo **ARM64 (`aarch64` + `LSE` + `Rayon` multinúcleo)** para **Antigravity for Android** que convierte tu teléfono o tablet en un estudio AAA **100 % local y sin nube** para desarrollar y *portear* videojuegos **2D y 3D a 120–144 FPS** sobre **Godot 4.7 Vulkan**.\n\n> [!TIP]\n> **Novedades de `v2.0.0` (Potencia Nivel Unity `IL2CPP` / C++ 100 % Offline en tu Android):**\n> - **Motor `GDExtension` Nativo ARM64 (`godot_gdextension_build`):** Compila en **~1 segundo** librerías `.so` (`arm64-v8a` Bionic) en **C/C++ (`clang -O3 -march=armv8.1-a`)** o **Rust (`rustc cdylib -O3`)** registradas directamente en `ClassDB` de Godot 4 para mover cientos o miles de unidades RTS/MOBA, *Fog of War* o física pesada a velocidad de código máquina.\n> - **Compilación e Instalación Local de `.apk` en Segundos (`godot_apk_build_deploy`):** Usa **`godot 4.7` headless parcheado** + extractor inteligente HTTP-Range (descarga solo ~120 MB de plantilla Android ahorrando **>1 GB**) + firma `apksigner` v2 e inyección automática de tus `.so` en `lib/arm64-v8a/` para instalar y jugar al instante vía `rish` sin tocar la nube.\n> - **Shaders Vulkan (`.gdshader`) + `MultiMesh` GPU Instancing (`godot_shader_and_world`):** Terreno *splatmap* multicapa con *Fog of War* en GPU, agua estilizada, *toon/cel-shading*, PBR neón con *glow* y escenas `MultiMeshInstance3D` capaces de dibujar **500–5,000 unidades 3D en 1 solo *draw call***.\n> - **Live Debugger 144 Hz (`android_game_profiler`):** Detecta la tasa real de pantalla (`SurfaceFlinger` 60/120/144 Hz) y captura en vivo `logcat -s godot` (errores `GDScript`, trazas de `GDExtension`, Vulkan y RAM `PSS`).\n\n---\n\n## Las 16 Herramientas MCP Nativas en Rust\n\n| Herramienta | Departamento | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `studio_status` | Diagnóstico | Verifica motores Rust (`Rayon`, `GLB`, `WAV DSP`, `DDS/TGA`), `godot-bin` 4.7 headless, compiladores `GDExtension` (`clang`/`rustc`), plantillas APK y conexión `rish`. |\n| `godot_toolchain_setup` | Auto-Instalador | Instala y parchea `godot 4.7` (`31-byte prefix`), extrae `gdextension_interface.h`, configura SDK/Keystore Android y descarga solo la plantilla Android vía HTTP Range (ahorra >1 GB). |\n| `godot_scaffold_project` | Motor 2D/3D | Genera proyectos **Godot 4.7 (Vulkan PBR + Glow, 120–144 Hz)** 2D/3D con HUD táctil, preset APK válido y módulo opcional `GDExtension` (`with_gdextension: true`). |\n| `godot_gdextension_build` | Núcleo C++/Rust | Compila librerías nativas `lib*.android.arm64.so` en **C/C++ o Rust** (`~1s`) y escribe `<mod>.gdextension` compatible tanto con consola local como con `.apk` Android. |\n| `godot_shader_and_world` | Vulkan & GPU | Crea shaders `.gdshader` + `.tres` (`rts_splatmap_fog`, `stylized_water`, `neon_pbr_emissive`, `toon_cel_outline`) y enjambres `MultiMeshInstance3D` (1 *draw call*). |\n| `godot_apk_build_deploy` | Build APK 0-Cloud | Exporta en local el `.apk` firmado `arm64-v8a` (con `libgodot_android.so` + tus `.so` de `GDExtension`), lo instala con `pm install` y lanza el juego en pantalla vía `rish`. |\n| `godot_create_scene` | Escenas `.tscn` | Genera escenas `.tscn` válidas (personajes, enemigos, proyectiles, UI) con colisiones y scripts `.gd`. |\n| `godot_validate_project` | QA Estático | Audita referencias `res://` rotas en `.tscn/.tres/.gd/.gdextension` y detecta texturas móviles mayores a `2048px`. |\n| `sprite_pack_atlas` | Arte 2D Multinúcleo | Empaqueta en paralelo con `Rayon` sprites `.png`, `.webp`, `.tga`, `.dds`, `.bmp` y `.jpg` en un **Sprite Atlas RGBA** + `AtlasTexture` (`.tres`). |\n| `sprite_process` | Pixel Art y Luz 2D | Escalado *Nearest-Neighbor*, recorte alfa, *colorkey*, **Mapas Normales 2D Sobel (`generate_normal_map`)**, corte de *spritesheets* e iconos Android. |\n| `model3d_inspect_glb` | Pipeline 3D | Inspector binario `glTF 2.0` (`.glb/.gltf`): mallas, vértices, triángulos, *draw calls*, huesos (`joints`), animaciones y texturas embebidas. |\n| `model3d_optimize_glb` | Pipeline 3D + LODs | Reduce texturas 2K/4K embebidas en `.glb` (PNG/JPEG/WebP) y ejecuta **decimación espacial 3D nativa de triángulos (`simplify_ratio`)**. |\n| `audio_sfx_master` | Audio DSP 0-Delay | Motor DSP Rust (`hound`) para WAV de 8/16/24/32 bits: recorta silencio inicial (`0 ms` attack), normaliza a `-1.0 dBFS` y crea **bucles BGM sin clics**. |\n| `gamedata_balance_sim` | Game Design | Simulador Monte Carlo ultrarrápido (hasta `100,000` duelos en ms) para *Time-To-Kill*, DPS efectivo, armadura estilo Warcraft/DotA y críticos. |\n| `android_game_profiler` | Live Debugger | Perfila juegos a **60–144 Hz** vía `rish`: FPS reales, `SurfaceFlinger` Hz, `gfxinfo`, RAM `PSS`, temperatura y logs en vivo de **`logcat -s godot`**. |\n| `android_godot_launch` | Lanzador | Abre **Godot 4 Android Editor** (`org.godotengine.editor.v4`) o cualquier APK compilado directamente en pantalla vía `rish`. |\n\n---\n\n## Comandos Rápidos en Terminal (`agy-game-studio`)\n\n```bash\n# 1. Preparar compilador local de APK (Godot 4.7 headless + plantilla Android por HTTP Range):\nagy-game-studio setup\n\n# 2. Compilar GDExtension nativo ARM64 (C/C++ o Rust) dentro de un proyecto:\nagy-game-studio gdext /storage/emulated/0/Documents/Games/MiJuego cpp\n\n# 3. Exportar APK firmado en segundos, instalar y lanzar en pantalla:\nagy-game-studio export-apk /storage/emulated/0/Documents/Games/MiJuego\n```\n",
         "skills": [
           {
             "name": "game-architect",
@@ -652,7 +652,7 @@
           },
           {
             "name": "godot-android",
-            "description": "Build, edit, validate, and test Godot 4.x 2D and 3D games natively on Android ARM64, including .tscn/.tres scene authoring, Vulkan Mobile optimization, custom shaders, and launching projects in Godot 4 Android Editor."
+            "description": "Build, edit, compile native ARM64 GDExtensions (C/C++/Rust), generate Vulkan .gdshader & MultiMesh worlds, export/install signed Android APKs 100% locally offline, and debug live 120-144 FPS Godot 4.x games on Android (`godot_scaffold_project`, `godot_gdextension_build`, `godot_shader_and_world`, `godot_apk_build_deploy`, `android_game_profiler`)."
           },
           {
             "name": "game-porting-bridge",
@@ -664,13 +664,13 @@
             "serverName": "game-studio",
             "originalServerName": "game-studio",
             "pluginName": "game-studio",
-            "pluginVersion": "1.1.0"
+            "pluginVersion": "2.0.0"
           }
         ],
         "suggestedPrompts": [
-          "Crea un proyecto 3D o 2D en Godot 4 con joystick tactil y escena jugable lista para Android",
-          "Empaqueta mis sprites (.png/.tga/.dds/.webp) en un Atlas 2D con mapas normales y elimina el silencio inicial del audio",
-          "Inspecciona y optimiza mis modelos 3D .glb con LODs nativos para GPU movil y mide los FPS reales con Shizuku"
+          "Crea un proyecto 3D en Godot 4.7 con GDExtension nativo ARM64 (NativeMobaCore), shader Vulkan y enjambre MultiMesh listo para exportar APK en local",
+          "Compila e instala mi juego de Godot 4 en un APK nativo ARM64 sin nube (godot_apk_build_deploy) y mide los 144 FPS reales y logs con rish",
+          "Empaqueta mis sprites (.png/.tga/.dds/.webp) en un Atlas 2D con mapas normales, optimiza modelos 3D .glb con LODs y elimina la latencia del audio"
         ]
       }
     },
