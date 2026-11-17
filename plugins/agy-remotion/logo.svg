@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="28" y1="28" x2="228" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1026"/>
+      <stop offset="55%" stop-color="#131B42"/>
+      <stop offset="100%" stop-color="#1E1038"/>
+    </linearGradient>
+    <linearGradient id="playGrad" x1="78" y1="68" x2="196" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#E879F9"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="48" y1="64" x2="208" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer rounded badge with >11% margin -->
+  <rect x="28" y="28" width="200" height="200" rx="46" fill="url(#bgGrad)" stroke="url(#ringGrad)" stroke-width="5"/>
+  <!-- React-inspired orbital motion arcs -->
+  <ellipse cx="128" cy="128" rx="74" ry="30" transform="rotate(-28 128 128)" stroke="url(#ringGrad)" stroke-width="4" stroke-dasharray="14 8" opacity="0.72"/>
+  <ellipse cx="128" cy="128" rx="74" ry="30" transform="rotate(28 128 128)" stroke="url(#ringGrad)" stroke-width="4" opacity="0.45"/>
+  <!-- Remotion play prism -->
+  <path d="M104 83.5C104 76.9 111.2 72.8 116.9 76.2L181.5 114.7C187.1 118.0 187.1 126.0 181.5 129.3L116.9 167.8C111.2 171.2 104 167.1 104 160.5V83.5Z" fill="url(#playGrad)"/>
+  <!-- Inner code bracket accent -->
+  <path d="M118 108L134 122L118 136" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+  <!-- Keyframe nodes -->
+  <circle cx="66" cy="96" r="6" fill="#22D3EE"/>
+  <circle cx="190" cy="160" r="6" fill="#E879F9"/>
+  <!-- Timeline bar at bottom -->
+  <rect x="68" y="194" width="120" height="6" rx="3" fill="#1E293B"/>
+  <rect x="68" y="194" width="76" height="6" rx="3" fill="url(#playGrad)"/>
+  <circle cx="144" cy="197" r="6.5" fill="#FFFFFF"/>
+</svg>

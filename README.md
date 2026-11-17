@@ -7,6 +7,7 @@
   <p>
     <code>ARM64 v8.0-A+</code> &nbsp;&bull;&nbsp;
     <code>GPU h264_mediacodec</code> &nbsp;&bull;&nbsp;
+    <code>Remotion 4.0 Studio (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Craft Anything + Ghidra 12.1.4</code> &nbsp;&bull;&nbsp;
     <code>Unity 6 Studio + CLI (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Game Studio 2D/3D (Rust)</code> &nbsp;&bull;&nbsp;
@@ -51,6 +52,7 @@ https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/catal
 | **7** | **Science (Android Clean)** | `antigravity-plugins-official/plugin/science` | `1.3.2-android` | All 28 official Science skills (AlphaFold, ChEMBL, PubMed, RDKit, genomics & structure analysis) pre-cleaned for Android ARM64 without desktop Electron sidecars. |
 | **8** | **AGY ADB Bridge** | `antigravity-plugins-official/plugin/agy-adb-bridge` | `1.0.1` | **7 MCP tools + CLI Rust ARM64:** Puente nativo `uid=2000(shell)` sin Shizuku externo mediante `android-tools` (`adb`), llave RSA persistente, modo local `127.0.0.1:5555` inmune a apagar Wi-Fi, mDNS UDP 0% batería y wrapper auto-reparable `$PREFIX/bin/rish` con watchdog de 2s para MIUI/HyperOS. |
 | **9** | **Unity Studio Android** | `antigravity-plugins-official/plugin/unity-android` | `1.0.0` | **13 native ARM64 Rust MCP tools + Ported Official `unity-cli v1.0.0`:** Proyectos **Unity 6.3 LTS (`6000.3.28f1` Personal)** 2D/3D a 120–144 FPS (`arm64-v8a` IL2CPP), serializador/auditor YAML de escenas `.unity`/`.prefab` y GUIDs `.meta`, shader `NeonLit` anti-stripping, `.unitypackage` offline, `$0` GitHub Actions `GameCI` / Cloud Build, auto-instalación APK y Live Debugger (`logcat -s Unity` + FPS/RAM) vía `rish`. |
+| **10** | **Remotion Studio Android** | `antigravity-plugins-official/plugin/agy-remotion` | `1.0.0` | **10 native ARM64 Rust MCP tools + Ported Official Remotion `v4.0.544` Engine:** Compositor Rust `musl` ARM64 + FFmpeg 7.1 (`remotionshm`), renderizado programático React/TypeScript a **60 FPS** (`saas_launch`, `apple_keynote`, `viral_reels_9_16`, `code_walkthrough`, `data_charts`), proyectos `<50 KB` compatibles con `/sdcard` (`noexec`-safe), vista previa interactiva **Remotion Studio** en vivo (`127.0.0.1:3100`), `@remotion/captions`, aceleración GPU `h264_mediacodec` y Skills oficiales de Remotion. |
 
 ---
 
@@ -68,6 +70,7 @@ Each plugin connects its MCP server immediately upon installation (`<1s` zero-da
 | **Android CLI** | Start the **Shizuku** app on Android | Enables live `android layout`, `android screen capture`, `android install`, and `rish` ADB shell operations on-device. |
 | **AGY ADB Bridge** | `agy-adb setup && agy-adb pair <6-digitos>` (o **vía chat** con `adb_bridge_pair`) | Puente nativo `uid=2000(shell)` en `127.0.0.1:5555` con llave RSA persistente sin depender de Shizuku ni de Wi-Fi tras vincular una vez. |
 | **Unity Studio Android** | `agy-unity setup && unity auth login` *(13 Rust MCP tools work immediately with 0 downloads)* | Downloads & patches official **`unity-cli v1.0.0` (`linux-arm64`)** + isolated `glibc` runtime + `ENOSYS` syscall shim, unlocking `unity docs`, `unity vcs`, `unity releases`, `unity projects`, and `unity pipeline cloud-build`. |
+| **Remotion Studio Android** | `agy-remotion-setup` *(o vía chat con `remotion_setup`; el servidor MCP en Rust arranca al instante)* | Instala `chromium` + `ffmpeg` ARM64, configura el motor compartido **Remotion `v4.0.544`** en `$PREFIX/opt/remotion-engine` y enlaza `@remotion/compositor-linux-arm64-musl` con su micro-runtime `musl` (`~2 MB`). |
 
 ---
 
