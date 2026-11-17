@@ -26,13 +26,13 @@
         "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial Remotion 4.0.544 porteado a Android (compositor Rust musl + Chromium Headless + GPU h264_mediacodec) y Skills oficiales de Remotion para programar, previsualizar en vivo y renderizar videos React/TypeScript a 60 FPS.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/agy-remotion.zip?v=1.0.0",
-            "sha256": "52a281beeda90d7f3710acc09bcb79b5466479ae126b33dde9180d0ddfb98c70"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/agy-remotion.zip?v=1.0.1",
+            "sha256": "c313951b2a3428690b83315023cdbe237d85b769421a83a1669fe3b770d6838c"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/logo.svg",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "_androidNative": true
       },
       {
@@ -789,19 +789,19 @@
         "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial Remotion 4.0.544 porteado a Android (compositor Rust musl + Chromium Headless + GPU h264_mediacodec) y Skills oficiales de Remotion para programar, previsualizar en vivo y renderizar videos React/TypeScript a 60 FPS.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/agy-remotion.zip?v=1.0.0",
-            "sha256": "52a281beeda90d7f3710acc09bcb79b5466479ae126b33dde9180d0ddfb98c70"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/agy-remotion.zip?v=1.0.1",
+            "sha256": "c313951b2a3428690b83315023cdbe237d85b769421a83a1669fe3b770d6838c"
           }
         },
         "plugin": {},
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/logo.svg",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "_androidNative": true
       },
       "plugin": {
         "name": "agy-remotion",
         "displayName": "Remotion Studio Android",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/logo.svg",
         "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial Remotion 4.0.544 porteado a Android (compositor Rust musl + Chromium Headless + GPU h264_mediacodec) y Skills oficiales de Remotion para programar, previsualizar en vivo y renderizar videos React/TypeScript a 60 FPS.",
         "readme": "# Remotion Studio Android (`v1.0.0`) — Motor Oficial Remotion 4.0 ARM64 + Servidor MCP Nativo en Rust\n\nPlugin nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que une un servidor MCP ultrarrápido en **Rust puro (`<5 MB` RAM, arranque instantáneo)** con el **motor oficial Remotion `v4.0.544` porteado a Android Bionic**, junto con los **Skills oficiales de Remotion** (`remotion-best-practices`, `remotion-markup`, `remotion-saas`, `remotion-captions`, `remotion-studio`, `remotion-render`) para programar, previsualizar en vivo y exportar videos en **React & TypeScript a 60 FPS** directamente desde tu teléfono o tablet.\n\n> [!TIP]\n> **Arquitectura Android ARM64 Verificada en Dispositivo Real:**\n> 1. **Compositor Rust `musl` ARM64 + FFmpeg 7.1 (`remotionshm`):** Ejecuta `@remotion/compositor-linux-arm64-musl` a velocidad nativa de CPU mediante un micro-runtime `musl` aislado (`~2 MB`).\n> 2. **Proyectos `<50 KB` en `/sdcard/Video` (`noexec`-safe):** El motor compartido vive en `$PREFIX/opt/remotion-engine`, evitando descargar ~400 MB de `node_modules` por proyecto y eliminando errores `Permission denied` en almacenamiento compartido.\n> 3. **Puente Bionic + Chromium Headless + GPU MediaCodec:** Desbloquea `process.platform === 'android'`, preserva `@esbuild/android-arm64`, renderiza en Chromium ARM64 sin bloqueos de `requestAnimationFrame` e indexa el `.mp4` al instante en la Galería de Android (`MediaStore`) vía `rish`.\n\n---\n\n## Las 10 Herramientas MCP Nativas en Rust\n\n| Herramienta | Departamento | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `remotion_status` | Diagnóstico | Verifica Remotion 4.0, compositor `musl` ARM64, Chromium, `ffmpeg` (`h264_mediacodec` GPU) y `rish`. |\n| `remotion_setup` | Auto-Instalador | Instala y configura en 1 paso `chromium`, `ffmpeg`, `remotion-engine` y el micro-runtime `musl` ARM64. |\n| `remotion_project_create` | Plantillas 60 FPS | Crea proyectos React/TS ligeros (`saas_launch`, `apple_keynote`, `viral_reels_9_16`, `code_walkthrough`, `data_charts`) en `16:9`, `9:16`, `1:1` o `4:5`. |\n| `remotion_composition_write` | Escenas React | Crea o actualiza componentes `.tsx` y registra `<Composition>` automáticamente en `src/Root.tsx`. |\n| `remotion_compositions_list` | Inspector | Empaqueta el proyecto y devuelve todas las composiciones registradas, dimensiones, FPS y `defaultProps`. |\n| `remotion_still_render` | QA Visual `<2.5s` | Renderiza cualquier fotograma exacto a `.png` o `.jpeg` para verificar tipografía, contraste y físicas `spring` antes del render completo. |\n| `remotion_render_video` | Exportador MP4 | Renderiza `.mp4`/`.webm`/`.gif` a 30/60 FPS con opción hardware `gpu_mediacodec` y escaneo inmediato en Galería Android. |\n| `remotion_studio_server` | Editor en Vivo | Levanta **Remotion Studio** en `127.0.0.1:3100` y lo abre en el navegador Android vía `xdg-open` para editar la línea de tiempo en vivo. |\n| `remotion_captions_generate` | Subtítulos & TTS | Genera subtítulos `@remotion/captions` sincronizados palabra por palabra (+ locución neuronal `edge-tts` opcional). |\n| `remotion_cli_exec` | CLI Oficial | Ejecuta cualquier subcomando oficial de `@remotion/cli` (`versions`, `benchmark`, `bundle`, `compositions`) bajo el puente Android ARM64. |\n\n---\n\n## Activación Rápida del Motor Remotion 4.0\n\nLas **10 herramientas MCP en Rust** arrancan en `<5 ms` tras instalar el plugin desde el Marketplace. Para aprovisionar por primera vez Chromium ARM64 + Remotion 4.0 + el compositor `musl` (puedes pedírselo al agente con `remotion_setup` o ejecutar en terminal):\n\n```bash\nagy-remotion-setup\n```\n",
@@ -816,7 +816,7 @@
             "serverName": "agy-remotion",
             "originalServerName": "agy-remotion",
             "pluginName": "agy-remotion",
-            "pluginVersion": "1.0.0"
+            "pluginVersion": "1.0.1"
           }
         ],
         "suggestedPrompts": [
