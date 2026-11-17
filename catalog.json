@@ -27,7 +27,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/agy-remotion.zip?v=1.0.0",
-            "sha256": "28ff4b2b70f78156afe91a6709ceb41738e7ebd8592b0d66d3c76e6fbfe71130"
+            "sha256": "52a281beeda90d7f3710acc09bcb79b5466479ae126b33dde9180d0ddfb98c70"
           }
         },
         "plugin": {},
@@ -790,7 +790,7 @@
         "source": {
           "archive": {
             "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-remotion/agy-remotion.zip?v=1.0.0",
-            "sha256": "28ff4b2b70f78156afe91a6709ceb41738e7ebd8592b0d66d3c76e6fbfe71130"
+            "sha256": "52a281beeda90d7f3710acc09bcb79b5466479ae126b33dde9180d0ddfb98c70"
           }
         },
         "plugin": {},
