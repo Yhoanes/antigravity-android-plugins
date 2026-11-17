@@ -6,17 +6,17 @@
       {
         "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/agy-video-studio",
-        "displayName": "AGY Video Studio",
-        "description": "Universal native ARM64 Android video studio: 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via GPU h264_mediacodec, neural ES/EN/PT voiceover, rootless CapCut drafts & Shizuku.",
+        "displayName": "AGY Video Studio 3D (Rust)",
+        "description": "18 herramientas MCP nativas en Rust ARM64 + Motor Blender 5.0.0 Headless porteado (Cycles + OpenImageDenoise vía ld-musl sin root ni X11): animaciones 3D Vóxel y Backrooms por código bpy, exportación .glb, pantallas dinámicas de código/chat, síntesis de música y SFX a 48kHz en Rust, edición 16:9 YouTube / 9:16 TikTok con GPU h264_mediacodec, puente CapCut sin root y Shizuku.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip?v=2.1.3",
-            "sha256": "21cca780d8f662db254a5dbf787ad2c7d10bba21218544029d0533f886bc3ad2"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip?v=3.0.0",
+            "sha256": "23b62e37497737aae5f162c547e2ed98866154817567d2e74ed2c4f84f65fa0a"
           }
         },
         "plugin": {},
-        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
-        "version": "2.1.3",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg?v=3.0.0",
+        "version": "3.0.0",
         "_androidNative": true
       },
       {
@@ -168,7 +168,7 @@
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered for Android: GPU video production, Remotion 4.0 React video studio (Rust), Ghidra binary analysis, Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
           "antigravity-plugins-official/plugin/agy-remotion",
@@ -188,30 +188,30 @@
       "customization": {
         "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/agy-video-studio",
-        "displayName": "AGY Video Studio",
-        "description": "Universal native ARM64 Android video studio: 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via GPU h264_mediacodec, neural ES/EN/PT voiceover, rootless CapCut drafts & Shizuku.",
+        "displayName": "AGY Video Studio 3D (Rust)",
+        "description": "18 herramientas MCP nativas en Rust ARM64 + Motor Blender 5.0.0 Headless porteado (Cycles + OpenImageDenoise vía ld-musl sin root ni X11): animaciones 3D Vóxel y Backrooms por código bpy, exportación .glb, pantallas dinámicas de código/chat, síntesis de música y SFX a 48kHz en Rust, edición 16:9 YouTube / 9:16 TikTok con GPU h264_mediacodec, puente CapCut sin root y Shizuku.",
         "source": {
           "archive": {
-            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip?v=2.1.3",
-            "sha256": "21cca780d8f662db254a5dbf787ad2c7d10bba21218544029d0533f886bc3ad2"
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/agy-video-studio.zip?v=3.0.0",
+            "sha256": "23b62e37497737aae5f162c547e2ed98866154817567d2e74ed2c4f84f65fa0a"
           }
         },
         "plugin": {},
-        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
-        "version": "2.1.3",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg?v=3.0.0",
+        "version": "3.0.0",
         "_androidNative": true
       },
       "plugin": {
         "name": "agy-video-studio",
-        "displayName": "AGY Video Studio",
-        "version": "2.1.3",
-        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg",
-        "description": "Universal native ARM64 Android video studio: 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via GPU h264_mediacodec, neural ES/EN/PT voiceover, rootless CapCut drafts & Shizuku.",
-        "readme": "# AGY Video Studio v2.1.3 — Estudio Universal de Video para Antigravity Android\n\n**`agy-video-studio` (`v2.1.3`)** es un plugin MCP **100 % independiente y todo-terreno** diseñado para **Antigravity for Android (ARM64 Bionic + Shizuku `rish`)** (y compatible con PC). Sirve para editar **cualquier tipo de video y cualquier formato**.\n\n---\n\n## ¿Qué tipos de video puedes crear y editar?\n\n| Tipo de Video | Formato(s) | Herramienta Principal | Funciones Destacadas |\n| :--- | :--- | :--- | :--- |\n| **YouTube Horizontal, Cursos y Tutoriales** | `16:9` (`1920×1080`) | `video_universal_edit` | Cámara flotante *Facecam* (`pip_corner`), plecas de nombre (`lower_thirds`), transiciones `xfade`, mezcla de fotos + clips y música con *ducking* bajo tu voz real. |\n| **Vlogs de Cámara, Viajes y Cine** | `16:9`, `9:16`, `4:5`, `21:9` | `video_universal_edit` | Etalonaje de color (`cinematic_teal_orange`, `warm_vlog`, `moody_matte`, `bw_film`), subtítulos de cine (`cinema_yellow`) y limpieza de micrófono (`enhance_speech`). |\n| **Podcasts, Entrevistas y Gaming** | `9:16` o `16:9` | `video_universal_edit` + `video_smart_autocut` | Pantalla dividida 50/50 (`split_vertical`), eliminación automática de silencios (`silencedetect`) y mejora de voz de estudio (`podcast_voice_enhance`). |\n| **Canales *Faceless* / Documentales / Historias** | `16:9` o `9:16` | `audio_studio_generate` + `video_universal_edit` | Voz neuronal (`ES`/`EN`/`PT`) sincronizada al milisegundo + música `cinematic_epic` o `lofi_vlog` sin copyright + fotos con *Ken Burns*. |\n| **TikToks, Reels y Shorts Virales** | `9:16` (`1080×1920`) | `video_render_viral_tiktok` / `video_universal_edit` | *Zoom punches*, *speed-ramps*, encuadre `blurred_bg` (para pasar clips `16:9` a `9:16`) y subtítulos animados `Outfit Bold`. |\n| **Tráilers de Apps y Presentaciones** | `9:16` y `16:9` | `video_render_keynote_trailer` | Marcos en titanio cepillado, degradados ópticos estilo Google Gemini y lupas flotantes (`pip_crop`) sin usar navegador. |\n| **Utilidades Rápidas del Día a Día** | Todos | `video_utility_ops` | Compresión exacta en MB para WhatsApp/Discord (`compress_social`), miniaturas con título para YouTube (`cover_thumbnail`), extracción MP3/WAV y GIFs. |\n| **Proyectos Editables en CapCut Android** | `16:9`, `9:16`, `1:1`, `4:5` | `capcut_export_draft` | Inyección multipista **sin root** en CapCut Mobile vía Shizuku conservando el `draft_id` de SQLite. |\n\n---\n\n## Las 14 Herramientas MCP Incluidas\n\n1. `video_environment_status`: Diagnóstico de ARM64, GPU `h264_mediacodec`, fuentes offline, Shizuku y apps instaladas.\n2. `video_probe_and_scenes`: Detección rápida de escenas (`scdet`), silencios (`silencedetect`) y pausas congeladas (`freezedetect`).\n3. `video_smart_autocut`: Recorte automático de silencios de voz o pantallas muertas.\n4. `video_universal_edit`: Editor multipropósito (`16:9`, `9:16`, `1:1`, `4:5`, `source`) con transiciones `xfade`, color grading, *Split-Screen*, *Facecam PiP*, *lower-thirds* y audio de cámara conservado.\n5. `video_utility_ops`: Limpieza de micrófono a `-16 LUFS`, compresión para WhatsApp/redes, portadas/miniaturas con texto, extracción de audio y GIFs.\n6. `audio_studio_generate`: Locución neuronal (`ES`/`EN`/`PT`) + subtítulos exactos + 5 estilos musicales libres de copyright (`lofi_vlog`, `cinematic_epic`, `gemini_keynote`, `deep_tech_pulse`, `minimal_pad`).\n7. `video_render_keynote_trailer`: Motor de presentaciones estilo Google/Apple (`9:16` vertical y `16:9` horizontal a 2 columnas).\n8. `video_render_viral_tiktok`: Renderizador rápido de formato corto con *zoom punches* y subtítulos `.ass`.\n9. `capcut_android_list_drafts`: Lista proyectos existentes de CapCut Android vía Shizuku (`rish`) o PC.\n10. `capcut_export_draft`: Inyección multipista sin root en CapCut Android (`16:9`, `9:16`, `1:1`, `4:5`).\n11. `android_screen_record`: Grabación por hardware (`start` en segundo plano / `stop` limpio con `SIGINT` / `timed`).\n12. `android_ui_inspect`: Lectura en vivo de botones y coordenadas en pantalla vía `uiautomator`.\n13. `android_ui_action`: Toques autónomos (`tap`, `tap_text`, `swipe`, `text`, `keyevent`, `launch_app`).\n14. `android_media_and_intent`: Refresco inmediato en Galería (`MediaStore`) y apertura directa en TikTok, YouTube, Instagram, VN o CapCut.\n\n---\n\n## Instalación y Activación en Antigravity for Android\n\n1. Instala **AGY Video Studio** con un toque desde **Customizations &rarr; Marketplace &rarr; Built for Android**.\n2. Ejecuta una sola vez el asistente de dependencias ARM64 en el chat o en la terminal:\n\n```sh\nagy-video-setup\n```\n",
+        "displayName": "AGY Video Studio 3D (Rust)",
+        "version": "3.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/agy-video-studio/logo.svg?v=3.0.0",
+        "description": "18 herramientas MCP nativas en Rust ARM64 + Motor Blender 5.0.0 Headless porteado (Cycles + OpenImageDenoise vía ld-musl sin root ni X11): animaciones 3D Vóxel y Backrooms por código bpy, exportación .glb, pantallas dinámicas de código/chat, síntesis de música y SFX a 48kHz en Rust, edición 16:9 YouTube / 9:16 TikTok con GPU h264_mediacodec, puente CapCut sin root y Shizuku.",
+        "readme": "# AGY Video Studio 3D v3.0.0 (Native Rust ARM64 + Blender 5.0 Headless)\n\n**`agy-video-studio` (`v3.0.0`)** es un servidor MCP y CLI **compilado en Rust nativo ARM64 (`-O3`, `LTO`, `LSE`)** para **Antigravity for Android**. Combina edición universal de video 2D acelerada por GPU (`h264_mediacodec`), síntesis de música y efectos en **Rust nativo a 48 kHz estéreo**, y animación 3D real con **Blender 5.0.0 Headless (`Cycles` + `OpenImageDenoise`)** vía `ld-musl-aarch64.so.1` sin necesitar root, servidor X11 ni `proot`.\n\n---\n\n## Novedades Clave en v3.0.0 (Edición Rust + Blender 3D)\n\n1. **Binario MCP y CLI 100% en Rust Nativo ARM64 (`mcp/bin/agy-video-mcp` / `agy-video`):**\n   - Arranque instantáneo (`<1 ms`, `<4 MB` RAM), sin dependencias externas de crates y compilado con atómicos hardware `+lse`.\n2. **Motor 3D Real con Blender 5.0.0 Headless (`blender_status`, `blender_setup`, `blender_render_scene`):**\n   - Ejecuta `import bpy, bmesh` real con *raytracing* **Cycles** + denoiser de IA **Intel OpenImageDenoise (`2.3.3`)** directo sobre los núcleos ARM64.\n   - **Presets 3D integrados estilo Claude Fable:**\n     - `\"voxel_coder_laptop\"`: Laptop 3D biselada con teclas individuales, pantalla emisiva sincronizada a video de código/chat y mascota **Vóxel 3D** articulada con ojos brillantes y disolución *glitch*.\n     - `\"voxel_backrooms_loop\"`: Laberinto 3D amarillo estilo *Backrooms* con tapiz `retry()`, luces fluorescentes, texto 3D extruido (`ATTEMPT 44`), barra `CONTEXT`, clones grises y portal luminoso `break;`.\n     - `\"studio_pedestal_3d\"` y `\"custom_bpy\"` (scripts Python `bpy` libres + exportación `.glb` / `.blend`).\n3. **Pantallas Animadas de Código, Terminal y Chat (`video_render_code_screen`):**\n   - Renderiza ventanas de editor con coloreado de sintaxis (`checkout.js`), bucles `$ run tests -> ✗ Attempt 31 -> Thinking...` y chats animados, listos para TikTok o proyectados dentro de la laptop 3D en Blender.\n4. **Estudio de Audio y SFX en Rust Nativo (`audio_studio_generate`):**\n   - Síntesis en Rust de 6 estilos musicales (incluyendo `\"dark_synth_slowed\"`) y 6 efectos estéreo procedurales (`\"mech_typing\"`, `\"error_buzz\"`, `\"white_glitch\"`, `\"portal_flash\"`, `\"success_chime\"`, `\"footsteps\"`), más voces de personaje (`\"cute_voxel_bot\"`, `\"backrooms_echo\"`, `\"deep_ai\"`).\n\n---\n\n## Las 18 Herramientas MCP Incluidas\n\n1. `video_environment_status`: Diagnóstico en Rust de ARM64, GPU `h264_mediacodec`, Blender 5.0, fuentes, Shizuku y apps.\n2. `blender_status`: Estado de Blender 5.0 Headless, OpenImageDenoise, RAM libre y presets 3D.\n3. `blender_setup`: Instalador bajo demanda de Blender 5.0 ARM64 en `$PREFIX/opt/blender-rootfs`.\n4. `blender_render_scene`: Constructor y renderizador 3D (`preview_stills` para autoverificación visual, `animation` MP4 por GPU y `model_only` `.glb`/`.blend`).\n5. `video_render_code_screen`: Pantallas animadas de código, intentos de terminal y burbujas de chat IA.\n6. `audio_studio_generate`: Síntesis musical y SFX en Rust + diálogos cronometrados con DSP de personaje y subtítulos.\n7. `video_probe_and_scenes`: Detección rápida de escenas (`scdet`), silencios y pausas congeladas.\n8. `video_smart_autocut`: Recorte automático de silencios o esperas muertas.\n9. `video_universal_edit`: Editor multipropósito (`16:9`, `9:16`, `1:1`, `4:5`, `source`) con transiciones `xfade`, color grading, *Split-Screen*, *Facecam PiP* y subtítulos.\n10. `video_utility_ops`: Limpieza de micrófono a `-16 LUFS`, compresión para WhatsApp, miniaturas, extracción de audio y GIFs.\n11. `video_render_keynote_trailer`: Presentaciones Keynote a 60fps con marcos de titanio y degradados ópticos.\n12. `video_render_viral_tiktok`: Renderizador rápido de formato corto con *zoom punches* y subtítulos `.ass`.\n13. `capcut_android_list_drafts`: Lista borradores de CapCut Android vía Shizuku (`rish`).\n14. `capcut_export_draft`: Inyección multipista sin root en CapCut Mobile.\n15. `android_screen_record`: Grabación por hardware vía Shizuku (`start`, `stop`, `timed`).\n16. `android_ui_inspect`: Inspección de botones y coordenadas en pantalla (`uiautomator`).\n17. `android_ui_action`: Control táctil autónomo (`tap`, `tap_text`, `swipe`, `launch_app`).\n18. `android_media_and_intent`: Refresco en Galería (`MediaStore`) y envío directo a TikTok, YouTube, Instagram o CapCut.\n",
         "skills": [
           {
             "name": "agy-video-studio",
-            "description": "Universal native Android ARM64 video production studio (v2.1.3): 16:9 YouTube, Vlogs, Split-Screen Podcasts, Facecam PiP, 9:16 Reels/TikTok & 60fps Keynote trailers with GPU h264_mediacodec, neural voice/music, rootless CapCut drafts & Shizuku."
+            "description": "Estudio universal nativo Android ARM64 en Rust de edición 2D y animación 3D con Blender 5.0 Headless (v3.0.0): personajes Vóxel 3D, escenarios Backrooms, código bpy con Cycles + OpenImageDenoise, pantallas de código/chat, síntesis musical y SFX a 48kHz en Rust, GPU h264_mediacodec, puente CapCut sin root y Shizuku."
           }
         ],
         "mcpServers": [
@@ -219,13 +219,13 @@
             "serverName": "agy-video-studio",
             "originalServerName": "agy-video-studio",
             "pluginName": "agy-video-studio",
-            "pluginVersion": "2.1.3"
+            "pluginVersion": "3.0.0"
           }
         ],
         "suggestedPrompts": [
-          "Run agy-video-setup and check my phone's GPU h264_mediacodec & Shizuku status",
-          "Create a 60fps 9:16 TikTok/Reels trailer with neural Spanish voiceover and background music",
-          "Auto-cut silences from my camera vlog in /sdcard/DCIM and export an editable CapCut draft"
+          "Crea una animación 3D en Blender de un robot vóxel depurando código en su laptop para TikTok",
+          "Renderiza una escena 3D estilo Backrooms con ATTEMPT 44, voz robótica y música dark synth",
+          "Edita mis clips en formato 9:16 con recorte de silencios, subtítulos y música con ducking"
         ]
       }
     },

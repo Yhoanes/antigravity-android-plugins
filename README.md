@@ -6,7 +6,7 @@
 
   <p>
     <code>ARM64 v8.0-A+</code> &nbsp;&bull;&nbsp;
-    <code>GPU h264_mediacodec</code> &nbsp;&bull;&nbsp;
+    <code>Blender 5.0 3D + GPU Video (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Remotion 4.0 Studio (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Craft Anything + Ghidra 12.1.4</code> &nbsp;&bull;&nbsp;
     <code>Unity 6 Studio + CLI (Rust)</code> &nbsp;&bull;&nbsp;
@@ -43,7 +43,7 @@ https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/catal
 
 | # | Plugin | Catalog ID | Version | Capabilities |
 | :-: | :--- | :--- | :---: | :--- |
-| **1** | **AGY Video Studio** | `antigravity-plugins-official/plugin/agy-video-studio` | `2.1.3` | **14 MCP tools:** 16:9 YouTube, Vlogs, Split-Screen Podcasts, 9:16 TikTok/Reels & 60fps Keynote trailers via Android hardware GPU (`h264_mediacodec`), neural ES/EN/PT voiceover (`edge-tts`), procedural ambient music, rootless CapCut drafts & Shizuku UI automation. |
+| **1** | **AGY Video Studio 3D (Rust)** | `antigravity-plugins-official/plugin/agy-video-studio` | `3.0.0` | **18 native ARM64 Rust MCP tools + Bare-Metal Blender 5.0.0 Headless (`Cycles` + `OpenImageDenoise`):** 3D Voxel & *Backrooms* animations (`bpy` + `.glb` export via `ld-musl` without root/X11), dynamic code/terminal/chat screens, **Rust 48kHz stereo music & SFX DSP** (`dark_synth_slowed`, `cute_voxel_bot`), 16:9 YouTube, Vlogs & 9:16 TikTok/Reels via GPU `h264_mediacodec`, rootless CapCut bridge & Shizuku. |
 | **2** | **Craft Anything + Ghidra** | `antigravity-plugins-official/plugin/craft-anything` | `0.5.0` | **335 native ARM64 Rust MCP tools** (`craft-anything-cli` + `craft-plus-mcp` LSE) for static triage of `ELF`, `PE`, `Mach-O`, `APK/DEX`, `.NET & NativeAOT`, `WASM`, `CUDA/PTX`, `ESP32/UF2/DTB`, `Godot .pck`, `Unity IL2CPP`, `Wii/GC .dol -> ELF` & stateful **RL `.har` mock environments** + on-demand native ARM64 **Ghidra 12.1.4** (`decompile`, `sleigh` & `ghidra_headless_run`). |
 | **3** | **Game Studio 2D/3D** | `antigravity-plugins-official/plugin/game-studio` | `2.0.0` | **16 native ARM64 Rust MCP tools + `GDExtension` (`C/C++` & `Rust`) + Zero-Cloud Local `.apk` Compiler:** **Godot 4.7 Vulkan (120–144 FPS)** 2D/3D touch projects, native `arm64-v8a` `.so` compilation in `<1s`, local signed `.apk` build/deploy (`apksigner` v2/v3 + HTTP-Range template saving `>1 GB`), `.gdshader` + `MultiMesh` GPU Instancing (`5,000+` units), Sprite Atlas (`PNG/WebP/TGA/DDS`), 3D `.glb` LODs, `0 ms` WAV DSP & `144 Hz` live `logcat -s godot` debugger via `rish`. |
 | **4** | **GitHub (Local ARM64 MCP)** | `antigravity-plugins-official/plugin/github` | `2.1.1-android` | **91 native ARM64 GitHub MCP tools** (`github-mcp-server` `v2.1.0` without Docker: repos, PRs, code reviews, issues, Actions CI/CD logs, Dependabot & security) + 1-command Bionic `git`/`gh` OAuth bridge (`github-mcp-setup`). |
@@ -62,7 +62,7 @@ Each plugin connects its MCP server immediately upon installation (`<1s` zero-da
 
 | Plugin | One-Time Setup Command (run inside Antigravity chat or terminal) | What It Unlocks |
 | :--- | :--- | :--- |
-| **AGY Video Studio** | `agy-video-setup` | Installs native ARM64 `python`, `ffmpeg` (`h264_mediacodec` GPU), `Pillow`, `NumPy` & `edge-tts`, activating all 14 video production tools. |
+| **AGY Video Studio 3D** | `agy-video-setup` *(+ `agy-blender-setup` o `blender_setup` para 3D; el servidor MCP en Rust arranca al instante)* | Instala `ffmpeg` (`h264_mediacodec` GPU), `Pillow`, `edge-tts` y configura **Blender `5.0.0` Headless** (`Cycles` + `OpenImageDenoise` vía `ld-musl` sin `proot`) en `$PREFIX/opt/blender-rootfs`. |
 | **Craft Anything + Ghidra** | `craft-ghidra-setup` *(optional — 335 Rust tools work immediately with 0 downloads)* | Downloads & configures `openjdk-21` + **Ghidra 12.1.4 PUBLIC** (~450 MB) and injects native ARM64 `decompile` & `sleigh`. |
 | **Game Studio 2D/3D** | `agy-game-studio setup` *(optional — all 16 Rust MCP tools work immediately)* | Patches headless **Godot 4.7** (`godot-bin`), dumps `gdextension_interface.h`, configures Android keystore/SDK, and extracts `android_debug.apk` (~120 MB via HTTP Range, saving >1.1 GB) for 100% offline local `.apk` builds. |
 | **GitHub** | `github-mcp-setup` *(automatic if already logged into `gh`)* | Launches Android browser OAuth login (`https://github.com/login/device`), configures Bionic `git` (`GODEBUG=netdns=cgo`, `GIT_EXEC_PATH`, `.netrc`), and unlocks all 91 local GitHub MCP tools. |

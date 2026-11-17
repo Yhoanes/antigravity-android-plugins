@@ -1,24 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#0B0E17"/>
-  <rect x="6" y="6" width="116" height="116" rx="23" stroke="url(#rim)" stroke-width="3"/>
-  <path d="M36 38C36 33.5817 39.5817 30 44 30H70C74.4183 30 78 33.5817 78 38V68C78 72.4183 74.4183 76 70 76H44C39.5817 76 36 72.4183 36 68V38Z" fill="url(#accent)"/>
-  <path d="M78 46L96 35V71L78 60V46Z" fill="#34D399"/>
-  <rect x="28" y="88" width="72" height="10" rx="5" fill="#1E2638"/>
-  <rect x="28" y="88" width="46" height="10" rx="5" fill="url(#bar)"/>
-  <circle cx="74" cy="93" r="7" fill="#F5F7FA"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
   <defs>
-    <linearGradient id="rim" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2B7FFF"/>
-      <stop offset="0.5" stop-color="#34D399"/>
-      <stop offset="1" stop-color="#FF5A36"/>
+    <linearGradient id="bg" x1="128" y1="24" x2="128" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#24262C"/>
+      <stop offset="100%" stop-color="#121317"/>
     </linearGradient>
-    <linearGradient id="accent" x1="36" y1="30" x2="78" y2="76" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2B7FFF"/>
-      <stop offset="1" stop-color="#FF5A36"/>
+    <linearGradient id="bevel" x1="128" y1="24" x2="128" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.24"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
     </linearGradient>
-    <linearGradient id="bar" x1="28" y1="93" x2="74" y2="93" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2B7FFF"/>
-      <stop offset="1" stop-color="#34D399"/>
+    <linearGradient id="topFace" x1="76" y1="64" x2="164" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DFE4EC"/>
     </linearGradient>
+    <linearGradient id="leftFace" x1="68" y1="96" x2="122" y2="184" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B0B8C6"/>
+      <stop offset="100%" stop-color="#70798A"/>
+    </linearGradient>
+    <linearGradient id="rightFace" x1="122" y1="96" x2="176" y2="184" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F5722E"/>
+      <stop offset="100%" stop-color="#C84710"/>
+    </linearGradient>
+    <filter id="softDrop" filterUnits="userSpaceOnUse" x="0" y="0" width="256" height="256">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
   </defs>
+
+  <!-- Matte Anodized Graphite Squircle (10% margin baked in) -->
+  <rect x="24" y="24" width="208" height="208" rx="46" fill="url(#bg)"/>
+  <rect x="25" y="25" width="206" height="206" rx="45" stroke="url(#bevel)" stroke-width="2"/>
+
+  <!-- Subtle ARRI/Leica Optical Viewfinder Corner Ticks -->
+  <g stroke="#555C6B" stroke-width="2.5" stroke-linecap="round" opacity="0.5">
+    <path d="M54 68V56H66"/>
+    <path d="M202 68V56H190"/>
+    <path d="M54 188V200H66"/>
+  </g>
+
+  <!-- Unclipped Precision Isometric 3D Studio Cube -->
+  <g filter="url(#softDrop)">
+    <polygon points="122,62 176,93 122,124 68,93" fill="url(#topFace)"/>
+    <polygon points="68,93 122,124 122,186 68,155" fill="url(#leftFace)"/>
+    <polygon points="122,124 176,93 176,155 122,186" fill="url(#rightFace)"/>
+    <path d="M68 93L122 124L176 93M122 124V186" stroke="#15171C" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Tactile Cinema Play Pill Badge (Knockout Border) -->
+  <circle cx="173" cy="171" r="31" fill="#141519"/>
+  <circle cx="173" cy="171" r="25" fill="#F6F8FB"/>
+  <path d="M166.5 159.8C166.5 158.1 168.4 157.1 169.8 158.0L185.6 167.7C187.0 168.5 187.0 170.5 185.6 171.3L169.8 181.0C168.4 181.9 166.5 180.9 166.5 179.2V159.8Z" fill="#141519"/>
 </svg>
