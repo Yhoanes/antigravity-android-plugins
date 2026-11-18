@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="24" x2="128" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#13222E"/>
+      <stop offset="55%" stop-color="#0C1520"/>
+      <stop offset="100%" stop-color="#070B12"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="36" y1="24" x2="220" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="120" y1="56" x2="184" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="56" y1="56" x2="184" y2="184" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="55%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="drop" filterUnits="userSpaceOnUse" x="12" y="12" width="232" height="232">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Anodized Deep-Teal Obsidian Squircle (10% margin baked in) -->
+  <rect x="24" y="24" width="208" height="208" rx="46" fill="url(#bg)"/>
+  <rect x="25" y="25" width="206" height="206" rx="45" stroke="url(#bevel)" stroke-width="2.2"/>
+
+  <!-- Precision Radar Calibration Ticks -->
+  <g stroke="#475569" stroke-width="2.2" stroke-linecap="round" opacity="0.5">
+    <path d="M52 66V54H64"/>
+    <path d="M204 66V54H192"/>
+    <path d="M52 190V202H64"/>
+  </g>
+
+  <!-- Optical Surface & API Route Recon Matrix -->
+  <g filter="url(#drop)">
+    <!-- Radar Sweep Wedge -->
+    <path d="M120 120 L120 52 A68 68 0 0 1 188 120 Z" fill="url(#sweep)"/>
+
+    <!-- Concentric Precision Telemetry Rings -->
+    <circle cx="120" cy="120" r="66" stroke="url(#ring)" stroke-width="4"/>
+    <circle cx="120" cy="120" r="44" stroke="#38BDF8" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.78"/>
+    <line x1="120" y1="48" x2="120" y2="192" stroke="#1E293B" stroke-width="2"/>
+    <line x1="48" y1="120" x2="192" y2="120" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Active Sweep Hand -->
+    <line x1="120" y1="120" x2="168" y2="72" stroke="#34D399" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Discovered API Endpoint Blips -->
+    <circle cx="152" cy="88" r="6.5" fill="#34D399" stroke="#ECFDF5" stroke-width="2"/>
+    <circle cx="88" cy="96" r="5.5" fill="#38BDF8"/>
+    <circle cx="96" cy="148" r="5.5" fill="#A78BFA"/>
+
+    <!-- Center API Slash Badge {/} -->
+    <circle cx="120" cy="120" r="21" fill="#0B1320" stroke="#22D3EE" stroke-width="2.8"/>
+    <path d="M111 113L105 120L111 127M129 113L135 120L129 127M123 111L117 129" stroke="#F8FAFC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Tactile Knockout Route-Lock Pill Badge (Bottom-Right) -->
+  <circle cx="175" cy="175" r="31" fill="#080D14"/>
+  <circle cx="175" cy="175" r="25" fill="#38BDF8"/>
+  <circle cx="173" cy="173" r="9" stroke="#081420" stroke-width="4.5"/>
+  <path d="M180 180L187 187" stroke="#081420" stroke-width="4.8" stroke-linecap="round"/>
+</svg>

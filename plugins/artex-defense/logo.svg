@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="24" x2="128" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A1936"/>
+      <stop offset="55%" stop-color="#0F1024"/>
+      <stop offset="100%" stop-color="#080914"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="36" y1="24" x2="220" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="shieldLeft" x1="68" y1="54" x2="124" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="45%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="shieldRight" x1="124" y1="54" x2="180" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="55%" stop-color="#6B34DB"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <filter id="drop" filterUnits="userSpaceOnUse" x="12" y="12" width="232" height="232">
+      <feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#000000" flood-opacity="0.58"/>
+    </filter>
+  </defs>
+
+  <!-- Anodized Royal-Slate Squircle (10% margin baked in) -->
+  <rect x="24" y="24" width="208" height="208" rx="46" fill="url(#bg)"/>
+  <rect x="25" y="25" width="206" height="206" rx="45" stroke="url(#bevel)" stroke-width="2.2"/>
+
+  <!-- Subtle ATT&CK Matrix Ticks -->
+  <g stroke="#64748B" stroke-width="2.2" stroke-linecap="round" opacity="0.45">
+    <path d="M52 66V54H64"/>
+    <path d="M204 66V54H192"/>
+    <path d="M52 190V202H64"/>
+  </g>
+
+  <!-- 3D Faceted Blue-Team Aegis Shield + Sigma Pulse -->
+  <g filter="url(#drop)">
+    <!-- Left Shield Facet -->
+    <path d="M122 52 L64 76 V128 C64 165 90 190 122 202 V52 Z" fill="url(#shieldLeft)"/>
+    <!-- Right Shield Facet -->
+    <path d="M122 52 L180 76 V128 C180 165 154 190 122 202 V52 Z" fill="url(#shieldRight)"/>
+    <!-- Outer Specular Shield Frame -->
+    <path d="M122 52 L180 76 V128 C180 165 154 190 122 202 C90 190 64 165 64 128 V76 L122 52 Z" stroke="#E0E7FF" stroke-width="2.6" stroke-linejoin="round"/>
+    <line x1="122" y1="54" x2="122" y2="200" stroke="#C7D2FE" stroke-width="1.5" opacity="0.45"/>
+
+    <!-- Telemetry / Sigma Detection Pulse Waveform -->
+    <path d="M78 126 H98 L109 102 L122 146 L135 112 L144 126 H166" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Tactile Knockout Sigma-Telemetry Badge (Bottom-Right) -->
+  <circle cx="175" cy="175" r="31" fill="#090A16"/>
+  <circle cx="175" cy="175" r="25" fill="#F59E0B"/>
+  <path d="M183 165H167L176 175L167 185H183" stroke="#1C1204" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

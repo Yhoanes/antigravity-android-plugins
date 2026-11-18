@@ -53,6 +53,54 @@
       },
       {
         "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/artex-audit",
+        "displayName": "ARTEX Audit Core & Dual-Graph",
+        "description": "12 herramientas MCP nativas en Rust ARM64 + SQLite WAL porteando el motor de auditoría autorizada de ARTEX Global: Grafo Dual (Asset Graph + Exploration Graph), todolist multi-ronda, trazas compartidas entre subagentes, Hook PreToolUse (artex-guard) y Mini-Dashboard Web local (127.0.0.1:8787) con exportación Markdown/CSV.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-audit/artex-audit.zip?v=1.0.0",
+            "sha256": "cf60fe71259d25864f79d54c6cb9ad9bb53e671eb1ebecf860bcf1360518ee53"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-audit/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/artex-recon",
+        "displayName": "ARTEX API & Surface Recon",
+        "description": "6 herramientas MCP nativas en Rust ARM64 + Skills no destructivos porteados de ARTEX Global (api-recon & scopesentry): cosecha recursiva de bundles JS/webpack/Vite, reconstrucción de mapas de rutas SPA y permisos RBAC, escaneo de rutas en código fuente, detección de Shadow APIs (OpenAPI diff) y enriquecimiento DNS/HTTP hacia el Asset Graph.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-recon/artex-recon.zip?v=1.0.0",
+            "sha256": "55c61697e164603bc9ca9e6d7f7d4e6aef062c4c7d447457c8241c69653c2472"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-recon/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/artex-defense",
+        "displayName": "ARTEX Blue-Team Defense & Triage",
+        "description": "6 herramientas MCP nativas en Rust ARM64 porteando la suite defensiva Blue-Team de ARTEX Global: motor de evaluación de reglas Sigma (atómicas + correlación de velocidad y fan-out), firmas Suricata IDS, catálogo MISP/CSV de IoCs, matriz MITRE ATT&CK v16 Navigator y triage forense de host (compatible con Shizuku rish).",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-defense/artex-defense.zip?v=1.0.0",
+            "sha256": "a36b34af4ed444e541b7b8ae98561ae0f3c46eb43eada2c59f8ce53da6776e23"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-defense/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/unity-android",
         "displayName": "Unity Studio Android",
         "description": "13 herramientas MCP nativas en Rust ARM64 + Unity CLI v1.0.0 oficial porteado para desarrollar, auditar, compilar ($0 Cloud CI en Unity 6.3 LTS Personal) y depurar en vivo juegos Unity 2D/3D a 120-144 FPS en Android: escenas YAML y GUIDs .meta sin roturas, shaders anti-stripping, .unitypackage offline, auto-instalacion APK y Live Debugger con rish.",
@@ -168,11 +216,14 @@
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, ARTEX Dual-Graph AppSec & Blue-Team Defense Suite (Rust + SQLite), Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
           "antigravity-plugins-official/plugin/agy-remotion",
           "antigravity-plugins-official/plugin/craft-anything",
+          "antigravity-plugins-official/plugin/artex-audit",
+          "antigravity-plugins-official/plugin/artex-recon",
+          "antigravity-plugins-official/plugin/artex-defense",
           "antigravity-plugins-official/plugin/unity-android",
           "antigravity-plugins-official/plugin/game-studio",
           "antigravity-plugins-official/plugin/agy-adb-bridge",
@@ -827,6 +878,187 @@
           "Crea un video promocional SaaS o Keynote de 15s a 60 FPS con animaciones spring, tarjetas con brillo y contadores dinamicos usando Remotion",
           "Genera un Reel 9:16 con tipografia cinetica sincronizada palabra por palabra (@remotion/captions) y exportalo en MP4 acelerado por GPU",
           "Abre Remotion Studio en vivo en mi navegador Android para previsualizar y editar las escenas React fotograma a fotograma"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/artex-audit": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/artex-audit",
+        "displayName": "ARTEX Audit Core & Dual-Graph",
+        "description": "12 herramientas MCP nativas en Rust ARM64 + SQLite WAL porteando el motor de auditoría autorizada de ARTEX Global: Grafo Dual (Asset Graph + Exploration Graph), todolist multi-ronda, trazas compartidas entre subagentes, Hook PreToolUse (artex-guard) y Mini-Dashboard Web local (127.0.0.1:8787) con exportación Markdown/CSV.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-audit/artex-audit.zip?v=1.0.0",
+            "sha256": "cf60fe71259d25864f79d54c6cb9ad9bb53e671eb1ebecf860bcf1360518ee53"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-audit/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "artex-audit",
+        "displayName": "ARTEX Audit Core & Dual-Graph",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-audit/logo.svg?v=1.0.0",
+        "description": "12 herramientas MCP nativas en Rust ARM64 + SQLite WAL porteando el motor de auditoría autorizada de ARTEX Global: Grafo Dual (Asset Graph + Exploration Graph), todolist multi-ronda, trazas compartidas entre subagentes, Hook PreToolUse (artex-guard) y Mini-Dashboard Web local (127.0.0.1:8787) con exportación Markdown/CSV.",
+        "readme": "# ARTEX Audit Core & Dual-Graph (`v1.0.0`) — Motor de Auditoría Autorizada en Rust ARM64 + SQLite WAL\n\nPlugin nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que porta la arquitectura central de [`jiwoochris/artex-global`](https://github.com/jiwoochris/artex-global) (`AGPL-3.0`) a un binario ultrarrápido en **Rust puro (`559 KB`, `<10 MB` RAM)** sobre **SQLite 3.54+ WAL (`~/.gemini/artex/artex.db`)** — **cero Docker y cero PostgreSQL**.\n\n> [!IMPORTANT]\n> **Uso Autorizado Exclusivamente (`artex-guard` Activo):**\n> Diseñado estrictamente para auditar aplicaciones propias, servidores locales (`localhost` / `127.0.0.1`), laboratorios aislados (OWASP Juice Shop, DVWA) o entornos con autorización explícita por escrito registrada en `artex_scope_configure`. Incluye el hook `PreToolUse` (`artex-guard`) activo por defecto para bloquear comandos destructivos y controlar el alcance.\n\n---\n\n## Arquitectura en Antigravity Android\n\n1. **Grafo Dual Anclado (`Asset Graph` ⇄ `Exploration Graph`):**\n   - **Asset Graph (Global):** Deduplica jerárquicamente `root_domain → subdomain → ip → service → app → endpoint` y soporta búsqueda DSL (`type=endpoint status=200 value~/api/`).\n   - **Exploration Graph (Por Tarea):** Registra la cadena `goal → intent → fact → finding` conectada a activos reales mediante `exploration_anchors`.\n2. **Intercambio de Trazas entre Subagentes + Todolist del Planner:**\n   - Permite que múltiples subagentes (`/teamwork` / `swarm`) compartan observaciones de proceso (`artex_worker_trace`) y avancen en orden de dependencias sin repetir pruebas.\n3. **Mini-Dashboard Web Local (`http://127.0.0.1:8787`):**\n   - Servidor HTTP nativo embebido en el propio binario Rust con interfaz oscura bilingüe (**ES / EN**), diagrama SVG interactivo del Grafo Dual, filtro de severidades, auditoría `PreToolUse` y descarga en 1 clic de reportes **CSV** y **Markdown**.\n\n---\n\n## Las 12 Herramientas MCP Nativas en Rust\n\n| Herramienta | Categoría | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `artex_audit_status` | Diagnóstico | Estado del motor Rust, versión SQLite WAL, conteos del Grafo Dual y estado del Dashboard `:8787`. |\n| `artex_scope_configure` | Alcance & Guard | Configura dominios/IPs autorizados y reglas personalizadas de intercepción `PreToolUse`. |\n| `artex_task_manage` | Orquestación | Crea/lista tareas de auditoría y gestiona el *todolist* compartido por dependencias del Planner. |\n| `artex_asset_upsert` | Asset Graph | Inserta y deduplica nodos en el grafo global de activos con enlace padre-hijo. |\n| `artex_asset_dsl_search` | Asset Graph | Consulta rápida tipo DSL (`type=endpoint`, `host~api`, `tech~next`, `status=200`). |\n| `artex_graph_record` | Exploration Graph | Registra `goal`, `intent`, `fact`, `hint`, aristas de linaje y anclas a `asset_ids` (`prove_goal`). |\n| `artex_graph_overview` | Grafo Dual | Snapshot completo de objetivos, intents, hechos, hallazgos y superficie pendiente de auditar. |\n| `artex_worker_trace` | Multi-Agente | Comparte y busca trazas de ejecución entre workers (`record`, `search`, `get`). |\n| `artex_finding_manage` | Vulnerabilidades | Registra, actualiza o re-verifica (`retested_fixed`) hallazgos con **CVSS v3.1**, **CWE** y mitigación. |\n| `artex_evidence_archive` | Evidencia | Archiva peticiones/respuestas HTTP sanitizadas con huella de integridad vinculadas a cada hallazgo. |\n| `artex_report_export` | Entregables | Exporta informes ejecutivos y técnicos en **Markdown (`.md`)** o **CSV (`.csv`)** en español o inglés. |\n| `artex_dashboard_server` | Consola Web | Inicia, detiene o abre (`xdg-open`) el Mini-Dashboard local en `http://127.0.0.1:8787`. |\n\n---\n\n## CLI en Terminal (`$PREFIX/bin/artex-audit`)\n\n```bash\nartex-audit status\nartex-audit dashboard open      # Levanta http://127.0.0.1:8787 y lo abre en el navegador Android\nartex-audit report markdown     # Exporta el informe completo en Markdown\nartex-audit report csv          # Exporta la tabla de hallazgos en CSV\n```\n",
+        "skills": [
+          {
+            "name": "artex-audit",
+            "description": "Structured authorized security auditing using ARTEX Global's Dual-Graph architecture (Asset Graph + Exploration Graph), multi-round Planner todolist, worker trace sharing, PreToolUse Guard, and the local 127.0.0.1:8787 Mini-Dashboard in native Rust ARM64 + SQLite."
+          }
+        ],
+        "rules": [
+          {
+            "title": "AGENTS.md",
+            "metadata": {
+              "tags": [
+                "plugin_rule"
+              ]
+            },
+            "source": "CORTEX_MEMORY_SOURCE_USER",
+            "textMemory": {
+              "content": "# ARTEX Audit Core & Dual-Graph Rules (Android ARM64)\n\nWhen the `artex-audit` plugin is enabled:\n\n1. **Authorized Scope Only (Strict Legal & Safety Boundary):**\n   - Only run security assessments, surface discovery, or verification against local sandboxes (`localhost`, `127.0.0.1`), local workspace codebases, or external targets explicitly authorized in writing and registered via `artex_scope_configure`.\n   - Never run destructive commands, DoS, or unauthorized data exfiltration. The bundled `PreToolUse` hook (`artex-guard`) actively audits `run_command` and gates external scanners against `companies.scope_patterns`.\n\n2. **Dual-Graph Audit Workflow (`$HOME/.gemini/artex/artex.db`):**\n   - **Step 1 (Task & Scope):** Call `artex_scope_configure` (if adding a new authorized target) and `artex_task_manage` (`action: \"create\"`) with an `initial_goal` and `lang` (`es` by default).\n   - **Step 2 (Asset Graph):** Persist discovered domains, services, apps, and endpoints via `artex_asset_upsert` (`root_domain -> subdomain -> ip -> service -> app -> endpoint`) and query them with `artex_asset_dsl_search`.\n   - **Step 3 (Exploration Graph & Worker Traces):** Track reasoning lineage (`goal -> intent -> fact -> finding`) via `artex_graph_record` anchored to `asset_ids`, and share intermediate observations across subagents via `artex_worker_trace`.\n   - **Step 4 (Findings, Evidence & Dashboard):** Record verified issues with CWE/CVSS and remediation via `artex_finding_manage` + `artex_evidence_archive`, export reports via `artex_report_export`, and launch the live console at `http://127.0.0.1:8787` via `artex_dashboard_server` (`action: \"start\"`).\n"
+            }
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "artex-audit",
+            "originalServerName": "artex-audit",
+            "pluginName": "artex-audit",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Inicia una auditoría de seguridad sobre mi servidor local o proyecto actual registrando activos y hallazgos en el Grafo Dual de ARTEX",
+          "Levanta el Mini-Dashboard web de ARTEX en 127.0.0.1:8787 y ábrelo en mi navegador para explorar el Grafo Dual y los hallazgos",
+          "Exporta el informe ejecutivo y técnico de auditoría en Markdown y CSV desde la base SQLite de ARTEX"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/artex-recon": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/artex-recon",
+        "displayName": "ARTEX API & Surface Recon",
+        "description": "6 herramientas MCP nativas en Rust ARM64 + Skills no destructivos porteados de ARTEX Global (api-recon & scopesentry): cosecha recursiva de bundles JS/webpack/Vite, reconstrucción de mapas de rutas SPA y permisos RBAC, escaneo de rutas en código fuente, detección de Shadow APIs (OpenAPI diff) y enriquecimiento DNS/HTTP hacia el Asset Graph.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-recon/artex-recon.zip?v=1.0.0",
+            "sha256": "55c61697e164603bc9ca9e6d7f7d4e6aef062c4c7d447457c8241c69653c2472"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-recon/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "artex-recon",
+        "displayName": "ARTEX API & Surface Recon",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-recon/logo.svg?v=1.0.0",
+        "description": "6 herramientas MCP nativas en Rust ARM64 + Skills no destructivos porteados de ARTEX Global (api-recon & scopesentry): cosecha recursiva de bundles JS/webpack/Vite, reconstrucción de mapas de rutas SPA y permisos RBAC, escaneo de rutas en código fuente, detección de Shadow APIs (OpenAPI diff) y enriquecimiento DNS/HTTP hacia el Asset Graph.",
+        "readme": "# ARTEX API & Surface Recon (`v1.0.0`) — Reconocimiento No Destructivo de APIs y Superficie Web en Rust ARM64\n\nPlugin nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que porta los módulos `skills/api-recon`, `skills/scopesentry` y `enrich/` de [`jiwoochris/artex-global`](https://github.com/jiwoochris/artex-global) (`AGPL-3.0`), sincronizando automáticamente cada ruta y servicio descubierto con la base SQLite compartida de ARTEX (`~/.gemini/artex/artex.db`).\n\n> [!TIP]\n> **Cero Saturación de Contexto en Bundles Minificados:**\n> En lugar de leer archivos `index-*.js` de varios megabytes dentro del prompt, `artex_harvest_static` y `artex_route_perm_map` expanden recursivamente los manifiestos de chunks **Webpack (`__webpack_require__.u`)** y **Vite (`__vite__mapDeps`)** fuera de contexto, devolviendo listas limpias de endpoints, rutas SPA y árboles de permisos RBAC.\n\n---\n\n## Las 6 Herramientas MCP Nativas en Rust\n\n| Herramienta | Categoría | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `artex_recon_status` | Diagnóstico | Verifica Python 3, Node.js, Chromium ARM64 Headless (`runtime/bin/chrome`) y conexión con `artex.db`. |\n| `artex_harvest_static` | SPA / Bundles JS | Cosecha recursiva de chunks JS estáticos (URL autorizada o carpeta local `dist/`/`out/`) y sincronización al Asset Graph. |\n| `artex_route_perm_map` | Rutas & RBAC | Reconstruye `route_map.json` y árboles de códigos de permisos (`role_permissions_stub.json`) desde módulos frontend. |\n| `artex_source_api_scan` | Código Fuente | Escáner nativo en Rust para **Next.js App Router, Express, Fastify, FastAPI, Flask, Go y Spring**, detectando endpoints sin referencias de autenticación. |\n| `artex_enrich_target` | Postura HTTP/TLS | Sondeo pasivo de 1 petición sobre objetivos en alcance: `<title>`, stack tecnológico, `CORS` y cabeceras ausentes (`CSP`, `HSTS`, `X-Frame-Options`). |\n| `artex_openapi_diff` | Shadow APIs | Compara tu `openapi.json` / `swagger.json` contra los endpoints reales del Asset Graph para descubrir rutas fantasma sin documentar. |\n\n---\n\n## Skills Incluidos\n\n- **`artex-api-recon`:** Flujo estructurado de descubrimiento de superficie API estática y dinámica compatible con `chrome-devtools-plugin` en Android.\n- **`artex-surface-sync`:** Inventario y sincronización jerárquica de dominios, servicios y endpoints hacia el Grafo Dual de ARTEX.\n",
+        "skills": [
+          {
+            "name": "artex-api-recon",
+            "description": "Non-destructive static & runtime API endpoint, SPA route-map, RBAC permission-tree, and shadow-API discovery workflow ported from artex-global/skills/api-recon for Android ARM64."
+          },
+          {
+            "name": "artex-surface-sync",
+            "description": "Attack-surface inventory and external asset-list synchronization into ARTEX's SQLite Asset Graph (ported from artex-global/skills/scopesentry)."
+          }
+        ],
+        "rules": [
+          {
+            "title": "AGENTS.md",
+            "metadata": {
+              "tags": [
+                "plugin_rule"
+              ]
+            },
+            "source": "CORTEX_MEMORY_SOURCE_USER",
+            "textMemory": {
+              "content": "# ARTEX API & Surface Recon Rules (Android ARM64)\n\nWhen the `artex-recon` plugin is enabled:\n\n1. **Non-Destructive Recon Boundary (`api-recon` Contract):**\n   - `artex-recon` performs **surface, route, RBAC permission-tree, and security-header discovery only** against authorized targets (`localhost`, local repositories, or targets registered in `artex_scope_configure`).\n   - Never read >100 KB minified `.js` bundles directly into LLM context — always run `artex_harvest_static` and `artex_route_perm_map` first so static chunks are processed out-of-context and summarized cleanly.\n   - For live SPA DOM inspection on Android, pair with `chrome-devtools-plugin` / native ARM64 Chromium (`$HOME/runtime/bin/chrome`) — never invoke the desktop `browser` subagent.\n\n2. **Asset Graph Synchronization:**\n   - Keep `sync_asset_graph: true` when calling `artex_harvest_static`, `artex_source_api_scan`, and `artex_enrich_target` so discovered endpoints and security header posture populate `~/.gemini/artex/artex.db` automatically for `artex-audit` and the `127.0.0.1:8787` console.\n"
+            }
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "artex-recon",
+            "originalServerName": "artex-recon",
+            "pluginName": "artex-recon",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Escanea las rutas API y middlewares de autenticación de mi proyecto actual y sincronízalos con el Asset Graph de ARTEX",
+          "Ejecuta una cosecha estática de bundles JS y rutas SPA sobre http://127.0.0.1:3000 y reconstruye su mapa de permisos RBAC",
+          "Compara mi archivo openapi.json contra los endpoints reales descubiertos para detectar shadow APIs sin documentar"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/artex-defense": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/artex-defense",
+        "displayName": "ARTEX Blue-Team Defense & Triage",
+        "description": "6 herramientas MCP nativas en Rust ARM64 porteando la suite defensiva Blue-Team de ARTEX Global: motor de evaluación de reglas Sigma (atómicas + correlación de velocidad y fan-out), firmas Suricata IDS, catálogo MISP/CSV de IoCs, matriz MITRE ATT&CK v16 Navigator y triage forense de host (compatible con Shizuku rish).",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-defense/artex-defense.zip?v=1.0.0",
+            "sha256": "a36b34af4ed444e541b7b8ae98561ae0f3c46eb43eada2c59f8ce53da6776e23"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-defense/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "artex-defense",
+        "displayName": "ARTEX Blue-Team Defense & Triage",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/artex-defense/logo.svg?v=1.0.0",
+        "description": "6 herramientas MCP nativas en Rust ARM64 porteando la suite defensiva Blue-Team de ARTEX Global: motor de evaluación de reglas Sigma (atómicas + correlación de velocidad y fan-out), firmas Suricata IDS, catálogo MISP/CSV de IoCs, matriz MITRE ATT&CK v16 Navigator y triage forense de host (compatible con Shizuku rish).",
+        "readme": "# ARTEX Blue-Team Defense & Triage (`v1.0.0`) — Detección Sigma/Suricata, MITRE ATT&CK v16 y Triage Forense en Rust ARM64\n\nPlugin nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que porta el directorio completo `detections/` y la guía defensiva de [`jiwoochris/artex-global`](https://github.com/jiwoochris/artex-global) (`AGPL-3.0`) a un motor de respuesta a incidentes y caza de amenazas en **Rust puro (`451 KB`)**.\n\n> [!NOTE]\n> **Enfoque Defensivo y Forense (Solo Lectura):**\n> Ayuda a equipos Blue-Team y desarrolladores a entender, detectar y bloquear ataques automatizados por agentes IA mediante firmas verificadas en código fuente, correlaciones de comportamiento (velocidad y *fan-out*) y triage local sin modificar el sistema.\n\n---\n\n## Las 6 Herramientas MCP Nativas en Rust\n\n| Herramienta | Categoría | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `artex_defense_status` | Diagnóstico | Inventario de reglas Sigma atómicas/correlación, Suricata SIDs, atributos MISP, técnicas ATT&CK y Shizuku `rish`. |\n| `artex_host_triage` | Forense Host | Triage de solo lectura (puertos `8787`/`8788`, CA MITM `_ca/mitmproxy-ca-cert.pem`, inyección `HTTP_PROXY` + `SSL_CERT_FILE`/`NODE_EXTRA_CA_CERTS` en `/proc` y marcadores en logs; soporta `use_rish: true`). |\n| `artex_sigma_scan` | Motor Sigma | Evalúa las **9 reglas Sigma** de ARTEX (5 atómicas + 4 correlaciones: *Scan Velocity*, *Distinct-Host Fan-Out*, *Guard Burst* y *Destructive Co-occurrence*) sobre logs o JSONL. |\n| `artex_suricata_inspect` | Red / IDS | Inspecciona/exporta `artex.rules` (SIDs `1000001`–`1000003`) y audita logs HTTP de acceso en busca de agentes `artex-enrich/` y `norma/`. |\n| `artex_ioc_lookup` | Threat Intel | Consulta o exporta indicadores verificados en formato **MISP (`artex_indicators.misp.json`)** o **CSV (`artex_indicators.csv`)** para SIEM. |\n| `artex_attack_coverage` | MITRE ATT&CK | Devuelve la capa **ATT&CK Navigator v16** (`T1595`, `T1592`, `T1105`, `T1059`, `T1485`, `T1561.002`, `T1489`, `T1557`) y genera un checklist de hardening anti-IDOR y *rate-limiting*. |\n\n---\n\n## CLI en Terminal (`$PREFIX/bin/artex-defense`)\n\n```bash\nartex-defense status\nartex-defense triage\n```\n",
+        "skills": [
+          {
+            "name": "artex-blue-team",
+            "description": "Blue-Team detection engineering, Sigma/Suricata log hunting, MISP/CSV threat intelligence export, MITRE ATT&CK v16 coverage analysis, and read-only host forensic triage against autonomous AI attacks (ported from jiwoochris/artex-global)."
+          }
+        ],
+        "rules": [
+          {
+            "title": "AGENTS.md",
+            "metadata": {
+              "tags": [
+                "plugin_rule"
+              ]
+            },
+            "source": "CORTEX_MEMORY_SOURCE_USER",
+            "textMemory": {
+              "content": "# ARTEX Blue-Team Defense & Triage Rules (Android ARM64)\n\nWhen the `artex-defense` plugin is enabled:\n\n1. **Prefer Native `artex-defense` Rust MCP Tools for Detection & Incident Triage:**\n   - Use `artex_host_triage` (read-only) to inspect local ports (`8787`, `127.0.0.1:8788`), `_ca/mitmproxy-ca-cert.pem` MITM root CAs, and `HTTP_PROXY` + `SSL_CERT_FILE`/`NODE_EXTRA_CA_CERTS` process injections (`use_rish: true` optional on Android).\n   - Use `artex_sigma_scan` and `artex_suricata_inspect` to evaluate web/proxy/process logs against ARTEX's 9 Sigma rules (atomic + velocity/fan-out correlations) and Suricata SIDs `1000001`–`1000003`.\n   - Use `artex_ioc_lookup` and `artex_attack_coverage` to export MISP/CSV indicators and generate Blue-Team hardening guides grounded in MITRE ATT&CK v16.\n\n2. **Honest Attribution Caveats:**\n   - Static User-Agents (`artex-enrich/1.0`, `norma/`) and default ports (`8787`/`8788`) can be changed by an operator, and `mitmproxy-ca-cert.pem` is shared with standalone mitmproxy — always treat hits as triage leads and pair static indicators with behavioral velocity/fan-out correlations and object-level API hardening.\n"
+            }
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "artex-defense",
+            "originalServerName": "artex-defense",
+            "pluginName": "artex-defense",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Ejecuta un triage forense de solo lectura en este dispositivo y revisa si existen artefactos de proxy MITM o indicadores de escaneo autónomo",
+          "Analiza mis archivos de logs con las 9 reglas Sigma y las firmas Suricata de ARTEX para detectar actividad de agentes IA",
+          "Muéstrame la cobertura MITRE ATT&CK v16 y genera un checklist de hardening Blue-Team para blindar mi API"
         ]
       }
     }

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="128" y1="24" x2="128" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1D1F33"/>
+      <stop offset="55%" stop-color="#111322"/>
+      <stop offset="100%" stop-color="#0A0B14"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="40" y1="24" x2="216" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(122 118) scale(86)">
+      <stop offset="0%" stop-color="#6B34DB" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#6B34DB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="expGrad" x1="56" y1="74" x2="124" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+    <linearGradient id="assetGrad" x1="120" y1="74" x2="194" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="anchorBeam" x1="82" y1="118" x2="166" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E879F9"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="drop" filterUnits="userSpaceOnUse" x="12" y="12" width="232" height="232">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Anodized Obsidian-Indigo Squircle (10% margin baked in) -->
+  <rect x="24" y="24" width="208" height="208" rx="46" fill="url(#bg)"/>
+  <rect x="25" y="25" width="206" height="206" rx="45" stroke="url(#bevel)" stroke-width="2.2"/>
+  <circle cx="122" cy="118" r="84" fill="url(#coreGlow)"/>
+
+  <!-- Precision Corner Viewfinder Ticks -->
+  <g stroke="#64748B" stroke-width="2.2" stroke-linecap="round" opacity="0.45">
+    <path d="M52 66V54H64"/>
+    <path d="M204 66V54H192"/>
+    <path d="M52 190V202H64"/>
+  </g>
+
+  <!-- ARTEX Dual-Graph Interlocking Möbius / Isometric Nodes -->
+  <g filter="url(#drop)">
+    <!-- Anchor Bridges Linking Exploration Graph <-> Asset Graph -->
+    <path d="M88 86 C112 86, 132 86, 156 86" stroke="url(#anchorBeam)" stroke-width="4" stroke-dasharray="6 5" stroke-linecap="round"/>
+    <path d="M76 126 C108 104, 136 144, 168 122" stroke="url(#anchorBeam)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M92 162 C116 162, 132 156, 152 148" stroke="url(#anchorBeam)" stroke-width="3.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+
+    <!-- Left Lineage Chain: Exploration Graph (Goal -> Intent -> Finding) -->
+    <path d="M88 86 L74 126 L92 164" stroke="#C084FC" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="88,68 104,77 104,95 88,104 72,95 72,77" fill="url(#expGrad)" stroke="#F3E8FF" stroke-width="2"/>
+    <polygon points="74,108 90,117 90,135 74,144 58,135 58,117" fill="url(#expGrad)" stroke="#E9D5FF" stroke-width="2"/>
+    <polygon points="92,146 108,155 108,173 92,182 76,173 76,155" fill="url(#expGrad)" stroke="#F3E8FF" stroke-width="2"/>
+
+    <!-- Right Hierarchy: Asset Graph (Domain -> Service -> Endpoint) -->
+    <path d="M158 86 L172 124 L154 156" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="158,68 174,77 174,95 158,104 142,95 142,77" fill="url(#assetGrad)" stroke="#E0F2FE" stroke-width="2"/>
+    <polygon points="172,106 188,115 188,133 172,142 156,133 156,115" fill="url(#assetGrad)" stroke="#BAE6FD" stroke-width="2"/>
+
+    <!-- Center Nexus Core Jewel -->
+    <circle cx="122" cy="118" r="14" fill="#0F172A" stroke="#FBBF24" stroke-width="3"/>
+    <circle cx="122" cy="118" r="5.5" fill="#FBBF24"/>
+  </g>
+
+  <!-- Tactile Knockout Guard Badge (Bottom-Right) -->
+  <circle cx="175" cy="175" r="31" fill="#0B0D17"/>
+  <circle cx="175" cy="175" r="25" fill="#10B981"/>
+  <path d="M165 175.5L172 182.5L186 168.5" stroke="#06281E" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
