@@ -21,6 +21,22 @@
       },
       {
         "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/peakcut",
+        "displayName": "PeakCut Pro: Live & AI Clipper",
+        "description": "12 herramientas MCP nativas en Rust ARM64 + Motor PeakCut Pro mejorado para Android: Clipping en Caliente de streams en vivo (YouTube, Twitch y Kick mientras transmiten) y videos largos a Shorts 9:16 con seguimiento facial activo (auto_face), Split-Screen, subtítulos karaoke en Español/Inglés, GPU h264_mediacodec, sherpa-onnx Bionic offline + Groq Whisper y Dashboard Web local (127.0.0.1:8765).",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/peakcut/peakcut.zip?v=1.0.0",
+            "sha256": "011d9e25ea27bfb39cc11dffad3581808d1c8002abf5e668ddd71fa59cb7a055"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/peakcut/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/agy-remotion",
         "displayName": "Remotion Studio Android",
         "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial Remotion 4.0.544 porteado a Android (compositor Rust musl + Chromium Headless + GPU h264_mediacodec) y Skills oficiales de Remotion para programar, previsualizar en vivo y renderizar videos React/TypeScript a 60 FPS.",
@@ -232,9 +248,10 @@
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, CLI-Anything Studio & Hub (103+ agent CLIs, Rust), ARTEX Dual-Graph AppSec & Blue-Team Defense Suite (Rust + SQLite), Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), PeakCut Pro Live & AI Clipper (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, CLI-Anything Studio & Hub (103+ agent CLIs, Rust), ARTEX Dual-Graph AppSec & Blue-Team Defense Suite (Rust + SQLite), Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
+          "antigravity-plugins-official/plugin/peakcut",
           "antigravity-plugins-official/plugin/agy-remotion",
           "antigravity-plugins-official/plugin/craft-anything",
           "antigravity-plugins-official/plugin/cli-anything",
@@ -1139,6 +1156,65 @@
           "Busca en CLI-Hub todas las herramientas compatibles nativamente con Android ARM64 para diagramas, bases vectoriales o automatización e instala mermaid",
           "Analiza mi proyecto o un repositorio de GitHub y genera un CLI agent-native completo con salida --json, undo/redo, REPL y validación 52/52 de HARNESS.md",
           "Explora las Matrices de Capacidades de CLI-Anything y ejecuta un preflight en mi Android para ver qué proveedores están listos"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/peakcut": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/peakcut",
+        "displayName": "PeakCut Pro: Live & AI Clipper",
+        "description": "12 herramientas MCP nativas en Rust ARM64 + Motor PeakCut Pro mejorado para Android: Clipping en Caliente de streams en vivo (YouTube, Twitch y Kick mientras transmiten) y videos largos a Shorts 9:16 con seguimiento facial activo (auto_face), Split-Screen, subtítulos karaoke en Español/Inglés, GPU h264_mediacodec, sherpa-onnx Bionic offline + Groq Whisper y Dashboard Web local (127.0.0.1:8765).",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/peakcut/peakcut.zip?v=1.0.0",
+            "sha256": "011d9e25ea27bfb39cc11dffad3581808d1c8002abf5e668ddd71fa59cb7a055"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/peakcut/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "peakcut",
+        "displayName": "PeakCut Pro: Live & AI Clipper",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/peakcut/logo.svg?v=1.0.0",
+        "description": "12 herramientas MCP nativas en Rust ARM64 + Motor PeakCut Pro mejorado para Android: Clipping en Caliente de streams en vivo (YouTube, Twitch y Kick mientras transmiten) y videos largos a Shorts 9:16 con seguimiento facial activo (auto_face), Split-Screen, subtítulos karaoke en Español/Inglés, GPU h264_mediacodec, sherpa-onnx Bionic offline + Groq Whisper y Dashboard Web local (127.0.0.1:8765).",
+        "readme": "# PeakCut Pro: Live & AI Clipper Studio (`v1.0.0`) — Clipping en Caliente & Shorts `9:16` en Rust ARM64\n\nPlugin nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que porta y potencia [`haziqahmedqasmi/PeakCut`](https://github.com/haziqahmedqasmi/PeakCut) (`MIT`) con un servidor MCP en **Rust puro (`509 KB`, `<10 MB` RAM, `0` crates externas)**, aceleración por hardware **GPU `h264_mediacodec`**, seguimiento activo de hablante (**`auto_face`**), **Español nativo (`es`)** y **Clipping en Caliente** sobre *streams* en vivo.\n\n---\n\n## 5 Mejoras Pro Exclusivas Frente al PeakCut Original\n\n1. **Clipping en Caliente (`YouTube Live`, `Twitch` y `Kick` en Vivo):**\n   - Graba transmisiones en directo en un búfer rotativo continuo, monitorea picos de volumen (`LOUD`), explosiones de chat en vivo (`CHAT`) y comandos de voz en inglés y español (`\"clip that\"`, `\"clipea\"`, `\"saca clip\"`), o recorta al instante los últimos `N` segundos con `peakcut_live_clip_now`.\n2. **Seguimiento Facial Inteligente `9:16` (`auto_face`) + `gameplay` PiP + `split`:**\n   - Nuevo modo `auto_face` que rastrea horizontalmente el rostro/hablante activo con filtro suavizado EMA + banda muerta en una sola pasada de `ffmpeg`, evitando rostros cortados por la mitad en podcasts y reacciones.\n3. **Español (`es`) y Multilingüe 100% Nativos (Offline Bionic + Cloud Instantáneo):**\n   - Integra **`sherpa-onnx v2.0.2` nativo para Android ARM64 Bionic** (`$PREFIX/opt/sherpa-onnx`, cero errores `glibc` y cero `libsndfile`) con modelos compactos **NVIDIA FastConformer Español (`102 MB`)**, **Parakeet Inglés (`103 MB`)** y **Parakeet v3 25 Idiomas (`464 MB`)**, además de acelerador opcional **Groq / OpenAI Whisper (`<2 s`, `0 MB`)** y ganchos/títulos virales con tildes y `ñ` intactas.\n4. **Codificación por Hardware GPU (`h264_mediacodec`) + Exportación a Galería:**\n   - Renderiza Shorts `1080x1920` con subtítulos karaoke `libass` (`bounce`, `hype`, `clean`) y normalización `-14 LUFS` usando la GPU de Android e indexa los `.mp4` en `/storage/emulated/0/Movies/PeakCut/`.\n5. **Preparación Lista para Whop Content Rewards:**\n   - Incluye `peakcut_whop_campaign_prep` para validar requisitos de campaña (`9:16`, cero marcas de agua, duración, hashtags obligatorios) y calcular proyecciones de pago por CPM.\n\n---\n\n## Las 12 Herramientas MCP Nativas en Rust\n\n| Herramienta | Categoría | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `peakcut_status` | Diagnóstico | Estado del servidor `:8765`, GPU `h264_mediacodec`, `sherpa-onnx` Bionic, `yt-dlp` + `node`, IA y modelos de voz. |\n| `peakcut_setup` | Bootstrap 1-Click | Instala `FastAPI`/`Uvicorn`/`SQLAlchemy`, configura `sherpa-onnx` Android ARM64 e inicia el estudio web. |\n| `peakcut_studio_server` | Consola Web | Inicia, detiene o abre (`xdg-open`) el Dashboard completo en `http://127.0.0.1:8765/app`. |\n| `peakcut_ai_configure` | Cerebro IA | Configura y prueba `gemini`, `groq`, `openai`, `openrouter`, `anthropic`, `xai` u `ollama`. |\n| `peakcut_speech_models` | Voz Offline | Lista, descarga o elimina modelos locales `int8` (`es` 102 MB, `en` 103 MB, `multi` 464 MB, `ar` 107 MB). |\n| `peakcut_clip_vod` | Videos / Podcasts | Recorta URLs (`YouTube`, `Twitch`, `Kick`) o archivos locales en Android con `auto_face`, `split` o `gameplay`. |\n| `peakcut_live_monitor` | Live en Caliente | Inicia, lista o detiene el monitoreo y recorte automático en vivo mientras el streamer sigue transmitiendo. |\n| `peakcut_live_clip_now` | Botón \"¡Clipea!\" | Corta, subtitula y renderiza al instante los últimos `5–180 s` de un *stream* activo. |\n| `peakcut_jobs_list` | Cola & Puntajes | Inspecciona trabajos, puntajes de viralidad (`0–100`), hooks y rutas `.mp4` en disco. |\n| `peakcut_clip_rerender` | Re-edición | Re-renderiza cualquier clip cambiando layout (`auto_face`, `split`), estilo (`hype`, `bounce`), hook o tiempos. |\n| `peakcut_export_gallery` | Galería Android | Copia clips terminados a `/storage/emulated/0/Movies/PeakCut/` y dispara el escaneo de `MediaStore`. |\n| `peakcut_whop_campaign_prep` | Monetización | Prepara copys, verifica reglas anti-rechazo y proyecta ganancias CPM para campañas de **Whop Content Rewards**. |\n\n---\n\n## CLI en Terminal (`$PREFIX/bin/peakcut`)\n\n```bash\npeakcut status\npeakcut setup\npeakcut studio open                        # Abre http://127.0.0.1:8765/app en el navegador Android\npeakcut live start https://kick.com/canal  # Clipping en caliente mientras transmite\npeakcut live clip-now 45                   # Saca clip inmediato de los últimos 45 segundos\npeakcut clip /sdcard/Download/podcast.mp4 es\npeakcut export <job_id>\n```\n",
+        "skills": [
+          {
+            "name": "peakcut",
+            "description": "Turn live streams (\"clipping en caliente\" on Kick, Twitch, YouTube Live while broadcasting) and long VODs/podcasts into viral 9:16 Shorts/TikToks/Reels with active-speaker face tracking (auto_face), gameplay+facecam PiP, split-screen, Spanish/English bouncy libass karaoke captions, GPU h264_mediacodec encoding, and Whop Content Rewards prep."
+          }
+        ],
+        "rules": [
+          {
+            "title": "AGENTS.md",
+            "metadata": {
+              "tags": [
+                "plugin_rule"
+              ]
+            },
+            "source": "CORTEX_MEMORY_SOURCE_USER",
+            "textMemory": {
+              "content": "# PeakCut Pro: Live & AI Clipper Rules (Android ARM64 — Native Rust)\n\nWhen the `peakcut` plugin is enabled on Antigravity for Android:\n\n1. **Prefer Native `peakcut` Rust MCP Tools for VOD & Hot Live Stream Clipping (`9:16`):**\n   - Check `peakcut_status` first; if `studio_running` is false or FastAPI dependencies are missing, call `peakcut_setup` (which configures FastAPI/Uvicorn, native Android Bionic `sherpa-onnx v2.0.2`, and starts `http://127.0.0.1:8765/app`).\n   - **Hot Live Clipping (\"Clipping en Caliente\"):** Use `peakcut_live_monitor` (`action: \"start\"`, `channel_url`, `lang: \"es\"` or `\"en\"`, `layout: \"auto_face\"` or `\"gameplay\"`) to record a live **YouTube, Twitch, or Kick** stream into a rolling buffer and automatically clip loudness spikes, chat bursts, and spoken `\"clip that\"` / `\"clipea\"` moments while the creator is still live! Use `peakcut_live_clip_now` (`seconds: 45`) whenever the user wants an immediate clip of what just happened.\n   - **VOD Clipping:** Use `peakcut_clip_vod` for YouTube/Twitch/Kick VOD links or local `.mp4`/`.mkv` files on Android storage. Default `layout` to `\"auto_face\"` (active-speaker face tracking in `9:16`), `\"split\"` (2-person podcast), or `\"gameplay\"` (game + webcam PiP).\n\n2. **ASR & AI Configuration Best Practices on Mobile:**\n   - Configuring `groq` or `openai` via `peakcut_ai_configure` automatically unlocks **2-second Cloud Whisper word-timestamp transcription** (`0 MB` local model needed), while `peakcut_speech_models` (`action: \"download\"`, `lang: \"es\"` `102 MB` or `\"en\"` `103 MB`) enables **100% free offline transcription** via `$PREFIX/opt/sherpa-onnx`. For YouTube VODs, PeakCut also reads YouTube's word-level `json3` captions directly in `<1s`.\n   - Always call `peakcut_export_gallery` when clips finish so Android `MediaStore` indexes them `#1` in Gallery (`/storage/emulated/0/Movies/PeakCut/`), and use `peakcut_whop_campaign_prep` when preparing clips for Whop Content Rewards / creator bounties.\n\n3. **Android Sandbox Safety:**\n   - Never modify or delete anything inside `/data/user/0/com.agy/files/runtime/bin/`; wrappers live in `$PREFIX/bin/peakcut` and `$PREFIX/opt/sherpa-onnx/`.\n"
+            }
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "peakcut",
+            "originalServerName": "peakcut",
+            "pluginName": "peakcut",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Inicia el Dashboard Web de PeakCut Pro en 127.0.0.1:8765 y verifica el estado de la GPU Android y los modelos de voz en español",
+          "Monitorea en vivo un stream de Kick o Twitch haciendo clipping en caliente con seguimiento facial 9:16 y subtítulos hype en español",
+          "Recorta los mejores momentos virales de este video de YouTube a 9:16 con auto_face, prepáralos para Whop Content Rewards y expórtalos a mi Galería"
         ]
       }
     }
