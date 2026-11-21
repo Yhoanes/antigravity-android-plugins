@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08111e"/>
+      <stop offset="55%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38f9d7"/>
+      <stop offset="50%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#3a7bd5"/>
+    </linearGradient>
+    <linearGradient id="amberAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ffcc33"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Tile (10% safe margin friendly) -->
+  <rect x="36" y="36" width="440" height="440" rx="96" fill="url(#bgGrad)" stroke="#1b3a57" stroke-width="6"/>
+  <rect x="52" y="52" width="408" height="408" rx="82" fill="none" stroke="url(#cyanGlow)" stroke-opacity="0.28" stroke-width="2.5"/>
+
+  <!-- Terminal Window Frame -->
+  <rect x="86" y="102" width="340" height="264" rx="28" fill="#0b1624" stroke="#224b6e" stroke-width="4"/>
+  <!-- Titlebar -->
+  <path d="M86 130 A28 28 0 0 1 114 102 L398 102 A28 28 0 0 1 426 130 L426 148 L86 148 Z" fill="#12263d"/>
+  <circle cx="118" cy="125" r="7.5" fill="#ff5f56"/>
+  <circle cx="142" cy="125" r="7.5" fill="#ffbd2e"/>
+  <circle cx="166" cy="125" r="7.5" fill="#27c93f"/>
+  <text x="256" y="130" text-anchor="middle" font-family="monospace" font-size="15" font-weight="700" fill="#7fb3d5">--json • REPL</text>
+
+  <!-- CLI-Anything Brand Diamond + Chevron Prompt -->
+  <g filter="url(#softGlow)">
+    <polygon points="148,205 174,231 148,257 122,231" fill="url(#cyanGlow)"/>
+    <path d="M196 205 L228 231 L196 257" fill="none" stroke="#38f9d7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="246" y1="255" x2="306" y2="255" stroke="url(#amberAccent)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- Structured JSON Nodes on Right -->
+  <g stroke="#38f9d7" stroke-width="4" fill="none" opacity="0.9">
+    <path d="M338 192 C326 192 326 204 326 214 C326 224 318 231 312 231 C318 231 326 238 326 248 C326 258 326 270 338 270"/>
+    <path d="M376 192 C388 192 388 204 388 214 C388 224 396 231 402 231 C396 231 388 238 388 248 C388 258 388 270 376 270"/>
+  </g>
+  <circle cx="357" cy="216" r="6" fill="#ffcc33"/>
+  <circle cx="357" cy="246" r="6" fill="#38f9d7"/>
+
+  <!-- Status Bar inside Terminal -->
+  <rect x="112" y="302" width="288" height="36" rx="10" fill="#102338" stroke="#1e496d" stroke-width="2"/>
+  <text x="256" y="325" text-anchor="middle" font-family="monospace" font-size="16" font-weight="700" fill="#38f9d7">HARNESS 52/52 • HUB 103+</text>
+
+  <!-- Bottom Pill Badge -->
+  <rect x="128" y="392" width="256" height="44" rx="22" fill="url(#cyanGlow)"/>
+  <text x="256" y="420" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="800" letter-spacing="1.2" fill="#06101c">CLI-ANYTHING</text>
+</svg>

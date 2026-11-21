@@ -9,6 +9,7 @@
     <code>Blender 5.0 3D + GPU Video (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Remotion 4.0 Studio (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Craft Anything + Ghidra 12.1.4</code> &nbsp;&bull;&nbsp;
+    <code>CLI-Anything Studio &amp; Hub (Rust)</code> &nbsp;&bull;&nbsp;
     <code>ARTEX AppSec &amp; Blue-Team Suite (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Unity 6 Studio + CLI (Rust)</code> &nbsp;&bull;&nbsp;
     <code>Game Studio 2D/3D (Rust)</code> &nbsp;&bull;&nbsp;
@@ -57,6 +58,7 @@ https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/catal
 | **11** | **ARTEX Audit Core & Dual-Graph** | `antigravity-plugins-official/plugin/artex-audit` | `1.0.0` | **12 native ARM64 Rust MCP tools + SQLite 3.54 WAL (`0` Docker / `0` Postgres):** Authorized security auditing engine ported from `artex-global` — anchored **Dual Graph** (*Asset Graph* + *Exploration Graph*), Planner dependency todolist, cross-worker trace sharing, **`PreToolUse` Scope & Safety Guard (`artex-guard`)**, and embedded **Local Web Console (`127.0.0.1:8787`)** with ES/EN toggle, live Dual-Graph SVG & 1-click Markdown/CSV export. |
 | **12** | **ARTEX API & Surface Recon** | `antigravity-plugins-official/plugin/artex-recon` | `1.0.0` | **6 native ARM64 Rust MCP tools + `api-recon` & `scopesentry` Skills:** Non-destructive recursive **Webpack/Vite JS chunk harvester**, SPA `route_map` & **RBAC permission-tree** reconstructor, native Rust source route scanner (**Next.js, Express, FastAPI, Flask, Go, Spring**), **OpenAPI shadow-API diff**, and passive HTTP/TLS header posture enrichment synced to `artex.db`. |
 | **13** | **ARTEX Blue-Team Defense & Triage** | `antigravity-plugins-official/plugin/artex-defense` | `1.0.0` | **6 native ARM64 Rust MCP tools + Official `detections/` Suite:** Evaluates **9 Sigma rules** (5 atomic + 4 behavioral velocity/fan-out correlations) & **Suricata IDS SIDs (`1000001`–`1000003`)**, exports verified **MISP JSON / SIEM CSV IoCs**, maps **MITRE ATT&CK v16** coverage + API hardening checklists, and runs read-only **Host Forensic Triage** (with optional Shizuku `rish`). |
+| **14** | **CLI-Anything Studio & Hub** | `antigravity-plugins-official/plugin/cli-anything` | `1.0.0` | **10 native ARM64 Rust MCP tools + Ported `HKUDS/CLI-Anything` & `cli-hub v0.4.1`:** Instant Rust search & `<3s` streaming tarball installer for **103+ agent-native CLIs** & **5 Capability Matrices** (with Android ARM64 `native_ready`/`remote_api`/`desktop_gui` classifier, `agy-fix-paths` & `SKILL.md` auto-sync), plus full **PEP 420 `cli_anything.<app>` Harness Scaffolder & `52/52` `HARNESS.md` Validator**. |
 
 ---
 
@@ -75,6 +77,7 @@ Each plugin connects its MCP server immediately upon installation (`<1s` zero-da
 | **AGY ADB Bridge** | `agy-adb setup && agy-adb pair <6-digitos>` (o **vía chat** con `adb_bridge_pair`) | Puente nativo `uid=2000(shell)` en `127.0.0.1:5555` con llave RSA persistente sin depender de Shizuku ni de Wi-Fi tras vincular una vez. |
 | **Unity Studio Android** | `agy-unity setup && unity auth login` *(13 Rust MCP tools work immediately with 0 downloads)* | Downloads & patches official **`unity-cli v1.0.0` (`linux-arm64`)** + isolated `glibc` runtime + `ENOSYS` syscall shim, unlocking `unity docs`, `unity vcs`, `unity releases`, `unity projects`, and `unity pipeline cloud-build`. |
 | **Remotion Studio Android** | `agy-remotion-setup` *(o vía chat con `remotion_setup`; el servidor MCP en Rust arranca al instante)* | Instala `chromium` + `ffmpeg` ARM64, configura el motor compartido **Remotion `v4.0.544`** en `$PREFIX/opt/remotion-engine` y enlaza `@remotion/compositor-linux-arm64-musl` con su micro-runtime `musl` (`~2 MB`). |
+| **CLI-Anything Studio & Hub** | `cli-anything setup` *(o vía chat con `cli_anything_setup`; las 10 herramientas MCP en Rust arrancan al instante)* | Instala `click`, `requests`, `pytest`, `prompt_toolkit` y el gestor oficial **`cli-anything-hub v0.4.1`** con sus 5 Matrices de Capacidades, aplica `agy-fix-paths` y precarga los +103 CLIs en `~/.cli-hub`. |
 
 ---
 

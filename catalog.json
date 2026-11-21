@@ -53,6 +53,22 @@
       },
       {
         "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/cli-anything",
+        "displayName": "CLI-Anything Studio & Hub",
+        "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial HKUDS/CLI-Anything y cli-hub v0.4.1 porteados a Android: explora e instala +103 CLIs agent-native en <3s (con semáforo de compatibilidad ARM64, agy-fix-paths y auto-sync de SKILL.md), ejecuta Matrices de Capacidades y genera/valida nuevos harnesses PEP 420 (52/52 checks HARNESS.md) desde cualquier repositorio.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/cli-anything/cli-anything.zip?v=1.0.0",
+            "sha256": "fea75450003ebe892c8e2a7c697ad8e92c9138a3fa4e15f7160099ae6ce6fabb"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/cli-anything/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      {
+        "marketplace": "antigravity-plugins-official",
         "id": "antigravity-plugins-official/plugin/artex-audit",
         "displayName": "ARTEX Audit Core & Dual-Graph",
         "description": "12 herramientas MCP nativas en Rust ARM64 + SQLite WAL porteando el motor de auditoría autorizada de ARTEX Global: Grafo Dual (Asset Graph + Exploration Graph), todolist multi-ronda, trazas compartidas entre subagentes, Hook PreToolUse (artex-guard) y Mini-Dashboard Web local (127.0.0.1:8787) con exportación Markdown/CSV.",
@@ -216,11 +232,12 @@
       {
         "id": "built-for-android",
         "displayName": "Built for Android",
-        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, ARTEX Dual-Graph AppSec & Blue-Team Defense Suite (Rust + SQLite), Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
+        "description": "Native ARM64 plugins engineered for Android: Blender 5.0 3D + GPU video studio (Rust), Remotion 4.0 React video studio (Rust), Ghidra binary analysis, CLI-Anything Studio & Hub (103+ agent CLIs, Rust), ARTEX Dual-Graph AppSec & Blue-Team Defense Suite (Rust + SQLite), Unity 6 Studio + Official CLI, 2D/3D Rust game studio, local GitHub MCP, headless Chromium, persistent ADB bridge, and Shizuku.",
         "memberIds": [
           "antigravity-plugins-official/plugin/agy-video-studio",
           "antigravity-plugins-official/plugin/agy-remotion",
           "antigravity-plugins-official/plugin/craft-anything",
+          "antigravity-plugins-official/plugin/cli-anything",
           "antigravity-plugins-official/plugin/artex-audit",
           "antigravity-plugins-official/plugin/artex-recon",
           "antigravity-plugins-official/plugin/artex-defense",
@@ -1059,6 +1076,69 @@
           "Ejecuta un triage forense de solo lectura en este dispositivo y revisa si existen artefactos de proxy MITM o indicadores de escaneo autónomo",
           "Analiza mis archivos de logs con las 9 reglas Sigma y las firmas Suricata de ARTEX para detectar actividad de agentes IA",
           "Muéstrame la cobertura MITRE ATT&CK v16 y genera un checklist de hardening Blue-Team para blindar mi API"
+        ]
+      }
+    },
+    "antigravity-plugins-official/plugin/cli-anything": {
+      "customization": {
+        "marketplace": "antigravity-plugins-official",
+        "id": "antigravity-plugins-official/plugin/cli-anything",
+        "displayName": "CLI-Anything Studio & Hub",
+        "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial HKUDS/CLI-Anything y cli-hub v0.4.1 porteados a Android: explora e instala +103 CLIs agent-native en <3s (con semáforo de compatibilidad ARM64, agy-fix-paths y auto-sync de SKILL.md), ejecuta Matrices de Capacidades y genera/valida nuevos harnesses PEP 420 (52/52 checks HARNESS.md) desde cualquier repositorio.",
+        "source": {
+          "archive": {
+            "url": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/cli-anything/cli-anything.zip?v=1.0.0",
+            "sha256": "fea75450003ebe892c8e2a7c697ad8e92c9138a3fa4e15f7160099ae6ce6fabb"
+          }
+        },
+        "plugin": {},
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/cli-anything/logo.svg?v=1.0.0",
+        "version": "1.0.0",
+        "_androidNative": true
+      },
+      "plugin": {
+        "name": "cli-anything",
+        "displayName": "CLI-Anything Studio & Hub",
+        "version": "1.0.0",
+        "logo": "https://raw.githubusercontent.com/Yhoanes/antigravity-android-plugins/main/plugins/cli-anything/logo.svg?v=1.0.0",
+        "description": "10 herramientas MCP nativas en Rust ARM64 + Motor oficial HKUDS/CLI-Anything y cli-hub v0.4.1 porteados a Android: explora e instala +103 CLIs agent-native en <3s (con semáforo de compatibilidad ARM64, agy-fix-paths y auto-sync de SKILL.md), ejecuta Matrices de Capacidades y genera/valida nuevos harnesses PEP 420 (52/52 checks HARNESS.md) desde cualquier repositorio.",
+        "readme": "# CLI-Anything Studio & Hub (`v1.0.0`) — Motor Agent-Native CLI & CLI-Hub en Rust ARM64\n\nPlugin nativo **ARM64 (`aarch64` + `LSE`)** para **Antigravity for Android** que porta la arquitectura completa de [`HKUDS/CLI-Anything`](https://github.com/HKUDS/CLI-Anything) (`MIT`) y **`cli-anything-hub v0.4.1`** a un servidor MCP ultrarrápido en **Rust puro (`614 KB`, `<10 MB` RAM, `0` crates externas)**.\n\nConvierte cualquier repositorio, librería o aplicación en una **interfaz de línea de comandos determinista para agentes de IA** (con estado persistente, bloqueo `fcntl`, `undo/redo`, `--dry-run`, modo `ReplSkin` interactivo y salida `--json`) y te conecta al catálogo en vivo de **+103 CLIs agent-native y 5 Matrices de Capacidades**.\n\n---\n\n## Ventajas Exclusivas en Antigravity Android ARM64\n\n1. **Instalación Streaming en `<3s` (Sin Clonar `100+ MB`):**\n   - En lugar de clonar todo el monorepo de `HKUDS/CLI-Anything` con `pip install git+https://...`, `cli_anything_hub_install` extrae en streaming únicamente el subdirectorio `<app>/agent-harness` y su `SKILL.md`, ejecuta **`agy-fix-paths`** para corregir los *shebangs* Bionic en `$PREFIX/bin` y sincroniza el `SKILL.md` automáticamente en `~/.gemini/config/skills/`.\n2. **Semáforo Inteligente de Compatibilidad Android (`android_tier`):**\n   - Clasifica automáticamente las +103 herramientas de CLI-Hub en `native_ready` (100% nativas en Android ARM64), `remote_api` (clientes REST/API para `n8n`, `dify`, `ollama`, `comfyui`, `jumpserver`) y `desktop_gui` (manipulación de proyectos en Python con aviso claro cuando el renderizado final requiere app de escritorio), detectando sinergias con tus plugins nativos en Rust (`agy-video-studio`, `game-studio`, `unity-android`, `github`).\n3. **Generador PEP 420 + Validador Oficial `52/52` en `<15 ms`:**\n   - Escanea cualquier código fuente local o repo de GitHub (`cli_anything_analyze_target`), genera el paquete completo `cli_anything.<software>` (`cli_anything_scaffold`) compatible con almacenamiento Android `/sdcard` (`noexec`-safe) y audita las **52 reglas oficiales de `HARNESS.md`** en Rust puro (`cli_anything_validate`).\n\n---\n\n## Las 10 Herramientas MCP Nativas en Rust\n\n| Herramienta | Categoría | Función Nativa ARM64 |\n| :--- | :--- | :--- |\n| `cli_anything_status` | Diagnóstico | Estado del motor Rust, Python 3, `click`/`pytest`, `cli-hub`, cachés locales, CLIs instalados y Skills sincronizados. |\n| `cli_anything_setup` | Bootstrap 1-Click | Instala `click`, `requests`, `pytest`, `prompt_toolkit` y el `cli-anything-hub v0.4.1` embebido + `agy-fix-paths` y precarga el registro. |\n| `cli_anything_hub_search` | Catálogo `103+` | Búsqueda instantánea en Rust sobre los 79 harnesses HKUDS + 24 CLIs públicos con filtro `android_tier`. |\n| `cli_anything_hub_install` | Gestor de Paquetes | Instala, actualiza o elimina CLIs en `<3s` vía tarball streaming + `agy-fix-paths` + auto-sync de `SKILL.md`. |\n| `cli_anything_matrix` | Workflow Matrices | Explora las 5 Matrices (`video-creation`, `image-design`, `knowledge-research`, etc.), busca capacidades (`can`), corre `preflight` y sincroniza su `SKILL.md`. |\n| `cli_anything_analyze_target` | `HARNESS` Fase 0–1 | Clona o escanea un repositorio detectando lenguajes, frameworks CLI/API/GUI, formatos de estado y patrones `undo`. |\n| `cli_anything_scaffold` | `HARNESS` Fase 2–3 | Genera un paquete PEP 420 `cli_anything.<software>` completo (`Click` + `ReplSkin` + `Session` `fcntl` + tests), instala `-e` y ejecuta `agy-fix-paths`. |\n| `cli_anything_validate` | `HARNESS` Fase 4–6 | Audita las **52 comprobaciones oficiales** en 8 categorías en `<15ms`, ejecuta `pytest -v` opcional y actualiza `TEST.md`. |\n| `cli_anything_skill_sync` | `HARNESS` Fase 6.5–7 | Extrae metadatos AST con `skill_generator.py`, genera `SKILL.md` y gestiona skills sincronizados en Antigravity. |\n| `cli_anything_exec` | Ejecutor JSON | Ejecuta cualquier `cli-anything-<app>` instalado inyectando `--json` y variables Bionic de forma determinista. |\n\n---\n\n## CLI en Terminal (`$PREFIX/bin/cli-anything` & `$PREFIX/bin/cli-hub`)\n\n```bash\ncli-anything status\ncli-anything setup\ncli-anything search diagram\ncli-anything install mermaid\ncli-anything scaffold my-workflow\ncli-anything validate /storage/emulated/0/Documents/CLI-Anything/my-workflow/agent-harness --pytest\n```\n",
+        "skills": [
+          {
+            "name": "cli-anything",
+            "description": "Build, refine, test, and validate stateful agent-native Python Click CLIs (--json, ReplSkin REPL, fcntl session locking, undo/redo, auto-save + --dry-run, PEP 420 cli_anything.* namespace, and SKILL.md) from any local codebase or GitHub repository using HKUDS/CLI-Anything's 7-phase HARNESS.md methodology on Android ARM64."
+          },
+          {
+            "name": "cli-hub",
+            "description": "Browse, filter by Android ARM64 compatibility, install, and run 103+ pre-built agent-native CLIs and 5 Curated Capability Matrices from HKUDS CLI-Hub (clianything.cc) using native Rust MCP tools and ported cli-hub v0.4.1."
+          }
+        ],
+        "rules": [
+          {
+            "title": "AGENTS.md",
+            "metadata": {
+              "tags": [
+                "plugin_rule"
+              ]
+            },
+            "source": "CORTEX_MEMORY_SOURCE_USER",
+            "textMemory": {
+              "content": "# CLI-Anything Studio & Hub Rules (Android ARM64 — Native Rust)\n\nWhen the `cli-anything` plugin is enabled on Antigravity for Android:\n\n1. **Prefer Native `cli-anything` Rust MCP Tools for Agent-Native CLI Workflows:**\n   - **Discover & Install Pre-Built CLIs (`103+` in CLI-Hub):** Call `cli_anything_hub_search` first (filter with `android_tier: \"native_ready\"` or `\"remote_api\"` on Android) and install via `cli_anything_hub_install` (`action: \"install\"`), which streams only the target subdirectory from GitHub in `<3s` (avoiding `100+ MB` monorepo clones), runs `agy-fix-paths`, and syncs `SKILL.md` into `~/.gemini/config/skills/` automatically.\n   - **Multi-Tool Capability Matrices:** Use `cli_anything_matrix` (`list`, `can`, `preflight`, `render_skill`) before bulk-installing workflow tools so only required capabilities are installed.\n   - **Build Custom Agent-Native CLIs from Any Repo (`HARNESS.md` 7-Phase SOP):** Read the `cli-anything` skill first, run `cli_anything_analyze_target` -> `cli_anything_scaffold` -> customize domain modules -> `cli_anything_validate` (`52/52` checks + `run_pytest: true`) -> `cli_anything_skill_sync`.\n\n2. **Android ARM64 & Native Studio Plugin Synergy:**\n   - Check `android_tier` in `cli_anything_hub_search`: `desktop_gui` harnesses (like desktop `gimp`, `obs-studio`, or `iterm2`) can manipulate project XML/JSON state in Python on Android, but require their desktop GUI binary for final local rendering.\n   - For **Blender 5.0 3D / Video**, **Remotion 4.0**, **Godot 4**, **Unity 6**, **GitHub**, and **Binary Reverse Engineering**, prefer pairing with your installed native Rust plugins (`agy-video-studio`, `agy-remotion`, `game-studio`, `unity-android`, `github`, `craft-anything`).\n\n3. **Android Sandbox & Bionic Safety:**\n   - Always run `agy-fix-paths` (handled automatically by `cli_anything_setup`, `cli_anything_hub_install`, and `cli_anything_scaffold`) after `pip` or `npm` console-script installs so `$PREFIX/bin/cli-anything-*` shebangs work cleanly on Android.\n   - Never modify, overwrite, or delete anything inside `/data/user/0/com.agy/files/runtime/bin/`; CLI wrappers live exclusively in `$PREFIX/bin/{cli-anything,cli-hub}`.\n"
+            }
+          }
+        ],
+        "mcpServers": [
+          {
+            "serverName": "cli-anything",
+            "originalServerName": "cli-anything",
+            "pluginName": "cli-anything",
+            "pluginVersion": "1.0.0"
+          }
+        ],
+        "suggestedPrompts": [
+          "Busca en CLI-Hub todas las herramientas compatibles nativamente con Android ARM64 para diagramas, bases vectoriales o automatización e instala mermaid",
+          "Analiza mi proyecto o un repositorio de GitHub y genera un CLI agent-native completo con salida --json, undo/redo, REPL y validación 52/52 de HARNESS.md",
+          "Explora las Matrices de Capacidades de CLI-Anything y ejecuta un preflight en mi Android para ver qué proveedores están listos"
         ]
       }
     }
